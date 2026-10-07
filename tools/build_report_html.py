@@ -630,27 +630,15 @@ meet on one HTTP contract, which is why a benchmark number can become a routing 
     answering with both confidence notions so a client cannot tell which model replied.</li>
 <li><code>cli.py</code> &mdash; the seven subcommands below.</li>
 <li><code>tools/</code> &mdash; <code>build_focused.py</code> writes the dataset,
-    <code>build_report_html.py</code> writes this page, <code>phase6_patch.py</code> patches the
-    three experiment modules living outside this workspace.</li>
-<li><code>tests/</code> &mdash; eight test modules.</li>
-<li><code>Route_gate/src/router.ts</code> &mdash; the routing decision itself.</li>
-<li><code>Route_gate/src/clients/http-decision-client.ts</code> &mdash; the client that talks to
-    <code>decision_models serve</code>.</li>
-<li><code>Route_gate/src/supervisor.ts</code> &mdash; wraps a request, then routes it
-    synchronously or asynchronously.</li>
-<li><code>Route_gate/src/subagents/</code> &mdash; the four registered destinations:
-    reservation, weather, cost, general.</li>
+    <code>build_report_html.py</code> writes this page.</li>
+<li><code>tests/</code> &mdash; seven test modules (100 unit tests).</li>
 </ul>
 
 <h3>Run it again, in this order</h3>
 <ol>
-<li><strong>Install once.</strong> <code>pip install -r decision_models/requirements.txt</code>,
-    then <code>npm install</code> in <code>Route_gate/</code>. Deliberately not a virtualenv
-    &mdash; the comment at the top of that file explains why.</li>
-<li><strong>Check the harness.</strong> <code>python -m pytest</code> &mdash; 113 tests, no
+<li><strong>Install once.</strong> <code>pip install -r requirements.txt</code></li>
+<li><strong>Check the harness.</strong> <code>python -m pytest</code> &mdash; 100 tests, no
     weights loaded.</li>
-<li><strong>Check the contracts.</strong> <code>npm run typecheck</code> and
-    <code>npm test</code> in <code>Route_gate/</code>.</li>
 <li><strong>Regenerate the dataset (optional).</strong>
     <code>python -m decision_models.cli build</code> rewrites
     <code>data/focused_items.jsonl</code> and is byte-identical to the committed file. Use
@@ -757,18 +745,12 @@ such rather than omitted.</p>
 <tr><td>gate catches a regression</td><td><code>... gate --baseline regressed.json</code></td>
     <td><code>task_accuracy</code> diff &minus;0.337 &gt; 0.05</td>
     <td><span class="tag ok">exit 1</span></td></tr>
-<tr><td>patched experiments compile</td><td><code>python -m py_compile</code> &times;3</td>
-    <td>all three modules</td><td><span class="tag ok">exit 0</span></td></tr>
-<tr><td>patch script is idempotent</td><td>second <code>phase6_patch.py</code> run</td>
-    <td>3&times; "no edits applied"</td><td><span class="tag ok">exit 0</span></td></tr>
 <tr><td>dispatcher serves real models</td><td>live <code>POST /v1/systemone</code></td>
     <td>200 &middot; <code>output_tokens: 0</code> &middot; both confidence fields</td>
     <td><span class="tag ok">verified</span></td></tr>
 <tr><td>per-request backend override</td><td><code>{"model":"laya-ml"}</code></td>
     <td><code>model: laya-multilingual</code>, Thai script</td>
     <td><span class="tag ok">verified</span></td></tr>
-<tr><td>legacy server Thai routing</td><td>live <code>laya_server.py</code></td>
-    <td><code>answered_by: multilingual</code></td><td><span class="tag ok">verified</span></td></tr>
 <tr><td>public-benchmark replication</td><td><code>pip install datasets</code></td>
     <td>timed out before it could install</td><td><span class="tag no">not run</span></td></tr>
 <tr><td><code>OpenThai-SystemOne/server.py</code> error path</td><td>&mdash;</td>
