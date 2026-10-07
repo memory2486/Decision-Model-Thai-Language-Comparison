@@ -102,30 +102,6 @@ The unit tests use fake backends and synthetic records, so they run in about two
 seconds without touching a checkpoint. The end-to-end claim they cover is that
 `laya.evals.evaluate` scores this package's runner with no special casing.
 
-## Phase 6: what was patched, and what was not
-
-`tools/phase6_patch.py` fixes the three modules that were loading a checkpoint
-directly, and is idempotent (re-running reports no edits rather than duplicating
-a line):
-
-| module | defect fixed |
-|---|---|
-| `Laya_Agent_Gating/laya_router.py` | English checkpoint for every request; fabricated `0.9` and defaulted `"general"` choice |
-| `exp_tetris/laya_player.py` | same loader defect; fabricated `0.85` and defaulted `"opt_0"` choice |
-| `dsh-subagent-dispatch/laya_server.py` | same loader defect in the **served** component, reachable over HTTP; also now reports `answered_by` / `routing_reason`, and emits `answer_confidence` alongside `confidence` so the bare name is not the only signal |
-
-Verified live in each case: Thai reports `answered_by: multilingual` with reason
-`non-Latin script (thai, ...); the English checkpoint cannot read it`, and
-English stays on `english`.
-
-**Not patched:** `OpenThai-SystemOne/server.py`. Its loader is already correct
-(it uses OpenThai-SystemOne, which reads Thai), so there is no router fix to
-make. It does still return `move_candidates[0]` with `confidence_prob: 0.5` when
-inference throws — a fail-open default of the same family as the others — but it
-is a demo error path feeding a JavaScript client that was not inspected here,
-and changing its contract without checking that client would be guesswork. It is
-recorded rather than silently left.
-
 ## Limitations
 
 - **Public benchmarks were not run.** `datasets.py` builds the MASSIVE (parallel
