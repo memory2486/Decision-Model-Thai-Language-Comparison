@@ -1,0 +1,43 @@
+scoring 4 backends: laya-auto, laya-en, laya-ml, openthai
+  -> laya-auto
+scoring 1 backends: laya-auto
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1696.86it/s]
+C:\Users\LOQ\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\laya\router.py:774: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  return Agent(repo, **kwargs)
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1396.70it/s]
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1616.93it/s]
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_laya-auto.json
+rows: 90 | errored: 0
+  laya-auto    n=90   acc=0.678   choice=0.708   noul=0.696   score_mae=0.575  ece=0.193  p50ms=215.266
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_laya-auto.md
+  -> laya-en
+scoring 1 backends: laya-en
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1751.57it/s]
+C:\Users\LOQ\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\laya\agent.py:2110: RuntimeWarning: laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated.
+  return Agent(model_id_or_path, device=device, token=token, subfolder=subfolder, fast=fast,
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_laya-en.json
+rows: 90 | errored: 0
+  laya-en      n=90   acc=0.533   choice=0.521   noul=0.609   score_mae=0.698  ece=0.169  p50ms=379.318
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_laya-en.md
+  -> laya-ml
+scoring 1 backends: laya-ml
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 1660.19it/s]
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_laya-ml.json
+rows: 90 | errored: 0
+  laya-ml      n=90   acc=0.633   choice=0.688   noul=0.652   score_mae=0.789  ece=0.204  p50ms=106.766
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_laya-ml.md
+  -> openthai
+scoring 1 backends: openthai
+Loading weights:   0%|          | 0/323 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 51/323 [00:00<00:00, 503.15it/s]Loading weights:  32%|███▏      | 102/323 [00:00<00:00, 357.82it/s]Loading weights:  44%|████▎     | 141/323 [00:00<00:00, 332.69it/s]Loading weights:  54%|█████▍    | 176/323 [00:00<00:00, 271.45it/s]Loading weights:  63%|██████▎   | 205/323 [00:00<00:00, 247.85it/s]Loading weights:  72%|███████▏  | 231/323 [00:00<00:00, 231.93it/s]Loading weights:  79%|███████▉  | 255/323 [00:00<00:00, 214.86it/s]Loading weights:  87%|████████▋ | 280/323 [00:01<00:00, 221.91it/s]Loading weights:  95%|█████████▌| 307/323 [00:01<00:00, 230.11it/s]Loading weights: 100%|██████████| 323/323 [00:01<00:00, 264.08it/s]
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_openthai.json
+rows: 90 | errored: 0
+  openthai     n=90   acc=0.767   choice=0.750   noul=0.783   score_mae=0.265  ece=0.162  p50ms=572.830
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\partial_openthai.md
+merged 4 report(s) into C:\Users\LOQ\Desktop\Try_out\decision_models\results\focused.json
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\results\focused.json
+rows: 360 | errored: 0
+  laya-auto    n=90   acc=0.678   choice=0.708   noul=0.696   score_mae=0.575  ece=0.193  p50ms=215.266
+  laya-en      n=90   acc=0.533   choice=0.521   noul=0.609   score_mae=0.698  ece=0.169  p50ms=379.318
+  laya-ml      n=90   acc=0.633   choice=0.688   noul=0.652   score_mae=0.789  ece=0.204  p50ms=106.766
+  openthai     n=90   acc=0.767   choice=0.750   noul=0.783   score_mae=0.265  ece=0.162  p50ms=572.830
+wrote C:\Users\LOQ\Desktop\Try_out\decision_models\report.md

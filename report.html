@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laya vs OpenThai-SystemOne — decision-model comparison</title>
+<style>
+  :root{
+    --bg:#0e1116; --panel:#161b22; --panel2:#1c2230; --line:#2a3240;
+    --ink:#e6edf3; --dim:#9aa7b4; --faint:#6b7684;
+    --accent:#5aa9e6; --good:#3fb950; --warn:#d29922; --bad:#f85149; --violet:#a371f7;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  }
+  @media (prefers-color-scheme: light){
+    :root{--bg:#f6f8fa;--panel:#fff;--panel2:#f0f3f6;--line:#d8dee4;--ink:#1f2328;
+          --dim:#57606a;--faint:#8b949e;--accent:#0969da;--good:#1a7f37;--warn:#9a6700;
+          --bad:#cf222e;--violet:#8250df;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1100px;margin:0 auto;padding:48px 24px 96px}
+  header.top{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:40px}
+  h1{font-size:30px;line-height:1.25;margin:0 0 10px;letter-spacing:-.02em}
+  h2{font-size:21px;margin:56px 0 14px;letter-spacing:-.01em;padding-bottom:8px;
+     border-bottom:1px solid var(--line)}
+  h3{font-size:16px;margin:0 0 6px}
+  p{margin:12px 0}
+  .lede{color:var(--dim);font-size:17px;max-width:72ch}
+  code{font-family:var(--mono);font-size:.88em;background:var(--panel2);
+       border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+  a{color:var(--accent)}
+  table{border-collapse:collapse;width:100%;margin:16px 0;font-size:13.5px;overflow:hidden;
+        border:1px solid var(--line);border-radius:8px}
+  th,td{padding:8px 11px;text-align:right;border-bottom:1px solid var(--line);
+        white-space:nowrap}
+  th{background:var(--panel2);color:var(--dim);font-weight:600;font-size:12px;
+     text-transform:uppercase;letter-spacing:.04em}
+  th:first-child,td:first-child{text-align:left}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--panel2)}
+  td code{background:none;border:none;padding:0;color:var(--dim)}
+  .scroll{overflow-x:auto;border-radius:8px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:20px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card p{margin:6px 0 0;color:var(--dim);font-size:13.5px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:24px 0}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .kpi .v{font-family:var(--mono);font-size:23px;font-weight:600;display:block;margin:4px 0 2px}
+  .kpi .l{color:var(--dim);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+  .kpi.good .v{color:var(--good)} .kpi.bad .v{color:var(--bad)}
+  .kpi.warn .v{color:var(--warn)} .kpi.accent .v{color:var(--accent)}
+  .callout{border-left:3px solid var(--warn);background:var(--panel);
+           border-radius:0 8px 8px 0;padding:14px 18px;margin:20px 0}
+  .callout.bad{border-left-color:var(--bad)}
+  .callout.good{border-left-color:var(--good)}
+  .callout p:first-child{margin-top:0} .callout p:last-child{margin-bottom:0}
+  figure{margin:24px 0;background:var(--panel);border:1px solid var(--line);
+         border-radius:10px;padding:18px}
+  figcaption{color:var(--dim);font-size:13px;margin-top:12px}
+  svg{display:block;width:100%;height:auto}
+  .tag{font-family:var(--mono);font-size:11px;padding:2px 7px;border-radius:999px;
+       border:1px solid var(--line);color:var(--dim);background:var(--panel2)}
+  .tag.ok{color:var(--good);border-color:color-mix(in srgb,var(--good) 40%,var(--line))}
+  .tag.no{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 40%,var(--line))}
+  .tag.part{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 40%,var(--line))}
+  footer{margin-top:72px;padding-top:24px;border-top:1px solid var(--line);
+         color:var(--faint);font-size:13px}
+  .mono{font-family:var(--mono)}
+  .flow-label{font:600 11px var(--mono);fill:var(--faint);letter-spacing:.06em}
+  .box{fill:var(--panel2);stroke:var(--line);stroke-width:1.2}
+  .box-a{fill:color-mix(in srgb,var(--accent) 14%,var(--panel2));stroke:var(--accent)}
+  .box-g{fill:color-mix(in srgb,var(--good) 14%,var(--panel2));stroke:var(--good)}
+  .box-w{fill:color-mix(in srgb,var(--warn) 14%,var(--panel2));stroke:var(--warn)}
+  .box-v{fill:color-mix(in srgb,var(--violet) 14%,var(--panel2));stroke:var(--violet)}
+  .lbl-t{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;fill:var(--ink)}
+  .lbl-s{font:11px var(--mono);fill:var(--dim)}
+  .edge{stroke:var(--faint);stroke-width:1.4;fill:none;marker-end:url(#arrow)}
+  .edge-d{stroke:var(--faint);stroke-width:1.2;fill:none;stroke-dasharray:4 3;
+          marker-end:url(#arrow)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Two decision models, one contract, one measurement</h1>
+  <p class="lede">Laya and OpenThai-SystemOne both take a <code>state</code> plus typed
+  questions and return calibrated probabilities in a single forward pass with zero output
+  tokens. This page is the evidence for choosing between them, generated from the stored
+  results of a 68-row parallel English/Thai benchmark scored by Laya's own evaluation
+  harness.</p>
+</header>
+
+<div class="kpis">
+  <div class="kpi accent"><span class="l">rows scored</span><span class="v">360</span>
+    <span class="l">4 backends &times; 68 items</span></div>
+  <div class="kpi good"><span class="l">measured winner</span><span class="v">0.767</span>
+    <span class="l">OpenThai-SystemOne <code>openthai</code> &middot; both languages</span></div>
+  <div class="kpi bad"><span class="l">Laya-EN on Thai</span><span class="v">0.319</span>
+    <span class="l">chance is 0.313</span></div>
+  <div class="kpi warn"><span class="l">speed gap</span><span class="v">5.4&times;</span>
+    <span class="l"><code>laya-ml</code> best p50 vs winner</span></div>
+</div>
+
+<h2>What the two models are</h2>
+<div class="cards">
+<article class="card"><h3>Laya, script-aware <code>laya-auto</code></h3><p>`laya.Router` detects the script and dispatches non-Latin text to the multilingual checkpoint. The only Laya configuration that can read Thai.</p></article>
+<article class="card"><h3>Laya, English checkpoint <code>laya-en</code></h3><p>`laya.load(...)` with no detection. Kept as an explicit key so the failure mode is measured rather than stumbled into.</p></article>
+<article class="card"><h3>Laya, multilingual <code>laya-ml</code></h3><p>mmBERT-base, 322M, 100+ languages, 1024-token context. The fastest backend measured.</p></article>
+<article class="card"><h3>OpenThai-SystemOne <code>openthai</code></h3><p>0.8B, Thai + English, Apache 2.0. Reports an `abstain` slot the other model lacks.</p></article>
+</div>
+
+<h2>The pipeline</h2>
+<p>Two pipelines matter. The first is runtime: how a request becomes a routed decision. The
+second is the benchmark: how a claim in this page becomes a number. Both are drawn from the
+code that ran, not from intent.</p>
+
+<figure>
+<svg viewBox="0 0 1000 480" role="img"
+     aria-label="Runtime routing pipeline from user request through supervisor, one typed choice question, a selected backend, confidence normalisation and a fail-closed gate">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--faint)"/>
+    </marker>
+  </defs>
+
+  <text class="flow-label" x="0" y="14">RUNTIME — ONE TYPED CHOICE QUESTION PER REQUEST</text>
+
+  <rect class="box box-a" x="0" y="30" width="160" height="56" rx="8"/>
+  <text class="lbl-t" x="14" y="52">User request</text>
+  <text class="lbl-s" x="14" y="70">Thai or English</text>
+
+  <rect class="box" x="196" y="30" width="184" height="56" rx="8"/>
+  <text class="lbl-t" x="210" y="52">Supervisor.enrich</text>
+  <text class="lbl-s" x="210" y="70">context &middot; files</text>
+
+  <rect class="box" x="416" y="30" width="224" height="56" rx="8"/>
+  <text class="lbl-t" x="430" y="52">Router.buildRequest</text>
+  <text class="lbl-s" x="430" y="70">exactly ONE question</text>
+
+  <path class="edge" d="M160 58 H192"/>
+  <path class="edge" d="M380 58 H412"/>
+
+  <text class="flow-label" x="0" y="126">BACKENDS — SELECTED BY model &middot; ONE PROCESS EACH</text>
+
+  <rect class="box box-v" x="0" y="146" width="258" height="94" rx="8"/>
+  <text class="lbl-t" x="14" y="168">laya-auto — Router</text>
+  <text class="lbl-s" x="14" y="186">picks english | multilingual</text>
+  <text class="lbl-s" x="14" y="203">the only key that reads Thai</text>
+  <text class="lbl-s" x="14" y="220">kept because it CAN read Thai</text>
+
+  <rect class="box" x="292" y="146" width="252" height="94" rx="8"/>
+  <text class="lbl-t" x="306" y="168">laya-en / laya-ml</text>
+  <text class="lbl-s" x="306" y="186">a checkpoint, directly</text>
+  <text class="lbl-s" x="306" y="203">no script detection</text>
+  <text class="lbl-s" x="306" y="220">laya-en is the control</text>
+
+  <rect class="box box-g" x="584" y="146" width="250" height="94" rx="8"/>
+  <text class="lbl-t" x="598" y="168">openthai</text>
+  <text class="lbl-s" x="598" y="186">SystemOneClient, bf16</text>
+  <text class="lbl-s" x="598" y="203">choice &middot; score &middot; noul</text>
+  <text class="lbl-s" x="598" y="220">reports abstain</text>
+
+  <path class="edge" d="M528 86 V142"/>
+
+  <text class="flow-label" x="0" y="268">NORMALISE — THE SAME CODE FOR BOTH MODELS</text>
+
+  <rect class="box box-w" x="0" y="284" width="336" height="88" rx="8"/>
+  <text class="lbl-t" x="14" y="306">answer_confidence = raw max(p)</text>
+  <text class="lbl-s" x="14" y="324">the thresholdable quantity</text>
+  <text class="lbl-s" x="14" y="341">identical for both models</text>
+
+  <rect class="box" x="372" y="284" width="312" height="88" rx="8"/>
+  <text class="lbl-t" x="386" y="306">confidence = 1 &minus; H(p)/log k</text>
+  <text class="lbl-s" x="386" y="324">what BOTH APIs call "confidence"</text>
+  <text class="lbl-s" x="386" y="341">not calibrated &middot; not thresholdable</text>
+
+  <rect class="box" x="720" y="284" width="280" height="88" rx="8"/>
+  <text class="lbl-t" x="734" y="306">native_* kept verbatim</text>
+  <text class="lbl-s" x="734" y="324">Laya: temperature-scaled max-p</text>
+  <text class="lbl-s" x="734" y="341">OpenThai: none &middot; abstain slot</text>
+
+  <path class="edge" d="M336 328 H368"/>
+  <path class="edge" d="M684 328 H716"/>
+  <path class="edge" d="M129 240 V280"/>
+
+  <text class="flow-label" x="0" y="400">GATE — FAILS CLOSED</text>
+
+  <rect class="box box-g" x="0" y="416" width="250" height="48" rx="8"/>
+  <text class="lbl-t" x="14" y="445">&ge; 0.8 &rarr; delegate</text>
+
+  <rect class="box box-w" x="284" y="416" width="250" height="48" rx="8"/>
+  <text class="lbl-t" x="298" y="445">0.5–0.8 &rarr; clarify</text>
+
+  <rect class="box box-w" x="568" y="416" width="250" height="48" rx="8"/>
+  <text class="lbl-t" x="582" y="445">&lt; 0.5 or absent &rarr; refuse</text>
+
+  <path class="edge" d="M125 372 V412"/>
+</svg>
+<figcaption>The router never touches business input: it carries only the supervisor-enriched
+state, asks one question, and validates the answer against the fixed subagent set. A missing
+confidence is <code>None</code>, which the gate treats as "do not delegate" — the same
+fail-closed rule the pre-existing <code>laya_server.py</code> already had, and the rule this
+work extended to the two modules that were fabricating <code>0.9</code> instead.</figcaption>
+</figure>
+
+<figure>
+<svg viewBox="0 0 1000 230" role="img"
+     aria-label="Benchmark pipeline from authored items through expansion and evaluation to a merged report and a regression gate">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--faint)"/>
+    </marker>
+  </defs>
+  <text class="flow-label" x="0" y="14">BENCHMARK — ONE PROCESS PER BACKEND, MERGED, THEN GATED</text>
+
+  <rect class="box box-a" x="0" y="34" width="196" height="64" rx="8"/>
+  <text class="lbl-t" x="14" y="56">focused_items.jsonl</text>
+  <text class="lbl-s" x="14" y="74">36 items &rarr; 68 rows</text>
+  <text class="lbl-s" x="14" y="91">EN + TH parallel</text>
+
+  <rect class="box" x="234" y="34" width="200" height="64" rx="8"/>
+  <text class="lbl-t" x="248" y="56">expand &times; backends</text>
+  <text class="lbl-s" x="248" y="74">ordered by model block</text>
+  <text class="lbl-s" x="248" y="91">one load per switch</text>
+
+  <rect class="box box-v" x="472" y="34" width="210" height="64" rx="8"/>
+  <text class="lbl-t" x="486" y="56">DecisionRunner.predict</text>
+  <text class="lbl-s" x="486" y="74">satisfies laya.evals</text>
+  <text class="lbl-s" x="486" y="91">one subprocess per model</text>
+
+  <rect class="box box-g" x="720" y="34" width="280" height="64" rx="8"/>
+  <text class="lbl-t" x="734" y="56">laya.evals.evaluate</text>
+  <text class="lbl-s" x="734" y="74">slice by language &amp; model</text>
+  <text class="lbl-s" x="734" y="91">ECE &middot; AURC &middot; sel@80</text>
+
+  <path class="edge" d="M196 66 H230" marker-end="url(#arrow2)"/>
+  <path class="edge" d="M434 66 H468" marker-end="url(#arrow2)"/>
+  <path class="edge" d="M682 66 H716" marker-end="url(#arrow2)"/>
+
+  <rect class="box" x="0" y="138" width="208" height="64" rx="8"/>
+  <text class="lbl-t" x="14" y="160">results/focused.json</text>
+  <text class="lbl-s" x="14" y="178">360 case records</text>
+  <text class="lbl-s" x="14" y="195">the raw evidence</text>
+
+  <rect class="box box-w" x="246" y="138" width="236" height="64" rx="8"/>
+  <text class="lbl-t" x="260" y="160">merge_reports</text>
+  <text class="lbl-s" x="260" y="178">re-aggregates from cases</text>
+  <text class="lbl-s" x="260" y="195">not a mean of means</text>
+
+  <rect class="box" x="520" y="138" width="212" height="64" rx="8"/>
+  <text class="lbl-t" x="534" y="160">report.md / .html</text>
+  <text class="lbl-s" x="534" y="178">cross-slices, flips,</text>
+  <text class="lbl-s" x="534" y="195">disagreements, advice</text>
+
+  <rect class="box box-g" x="770" y="138" width="230" height="64" rx="8"/>
+  <text class="lbl-t" x="784" y="160">baseline &rarr; gate</text>
+  <text class="lbl-s" x="784" y="178">0 pass &middot; 1 regressed</text>
+  <text class="lbl-s" x="784" y="195">2 : not a comparison</text>
+
+  <path class="edge" d="M860 98 V134" marker-end="url(#arrow2)"/>
+  <path class="edge" d="M208 170 H242" marker-end="url(#arrow2)"/>
+  <path class="edge" d="M482 170 H516" marker-end="url(#arrow2)"/>
+  <path class="edge" d="M732 170 H766" marker-end="url(#arrow2)"/>
+</svg>
+<figcaption>Four checkpoints do not fit one 8&nbsp;GB card, and Laya keeps module-level caches
+that do not release on <code>unload()</code> — discovered when the single-process run died with
+no traceback. The benchmark therefore runs one subprocess per backend and merges, which is also
+why a backend that fails leaves the others' results on disk. The counts close like this: the
+68 rows carry 90 questions, and 90 questions &times; 4 backends = 360 case records &mdash; the
+360 is answers scored, not rows.</figcaption>
+</figure>
+
+<h2>Results</h2>
+<p>Every number below is read from the stored report. <code>acc</code> is the headline: choice
+and noul from the harness's own verdict, score counted correct within 0.5 of the labelled
+level. <code>ECE</code>, <code>AURC</code> and <code>sel@80</code> span choice and noul only,
+because a <code>score</code> answer has no boolean verdict to calibrate against.</p>
+
+<div class="scroll"><table class="wide">
+<thead><tr>
+<th>model</th>
+<th>n</th>
+<th>acc</th>
+<th>choice</th>
+<th>noul</th>
+<th>score MAE</th>
+<th>ECE</th>
+<th>AURC</th>
+<th>sel@80</th>
+<th>p50 ms</th>
+</tr></thead><tbody>
+<tr>
+<th>Laya, script-aware<code>laya-auto</code></th>
+<td>90</td>
+<td>0.678</td>
+<td>0.708</td>
+<td>0.696</td>
+<td>0.575</td>
+<td>0.193</td>
+<td>0.197</td>
+<td>0.772</td>
+<td>215</td>
+</tr>
+<tr>
+<th>Laya, English checkpoint<code>laya-en</code></th>
+<td>90</td>
+<td>0.533</td>
+<td>0.521</td>
+<td>0.609</td>
+<td>0.698</td>
+<td>0.169</td>
+<td>0.299</td>
+<td>0.632</td>
+<td>379</td>
+</tr>
+<tr>
+<th>Laya, multilingual<code>laya-ml</code></th>
+<td>90</td>
+<td>0.633</td>
+<td>0.688</td>
+<td>0.652</td>
+<td>0.789</td>
+<td>0.204</td>
+<td>0.142</td>
+<td>0.772</td>
+<td>107</td>
+</tr>
+<tr>
+<th>OpenThai-SystemOne<code>openthai</code></th>
+<td>90</td>
+<td>0.767</td>
+<td>0.750</td>
+<td>0.783</td>
+<td>0.265</td>
+<td>0.162</td>
+<td>0.060</td>
+<td>0.842</td>
+<td>573</td>
+</tr>
+</tbody></table></div>
+
+<h2>Split by language</h2>
+<p>The measurement that refused the plan's premise. The plan assumed a Thai-first model for Thai
+and an English model for English; on this set one model leads both, and the English checkpoint's
+Thai column is what a wrong assumption actually looks like.</p>
+
+<div class="scroll"><table class="wide">
+<thead><tr>
+<th>model</th>
+<th>lang</th>
+<th>acc</th>
+<th>choice</th>
+<th>noul</th>
+<th>score MAE</th>
+<th>chance</th>
+<th>p50 ms</th>
+</tr></thead><tbody>
+<tr>
+<th><code>laya-auto</code></th>
+<td>EN</td>
+<td>0.767</td>
+<td>0.739</td>
+<td>0.818</td>
+<td>0.320</td>
+<td>0.312</td>
+<td><strong>471</strong></td>
+</tr>
+<tr>
+<th><code>laya-auto</code></th>
+<td>TH</td>
+<td>0.596</td>
+<td>0.680</td>
+<td>0.583</td>
+<td>0.805</td>
+<td>0.313</td>
+<td><strong>119</strong></td>
+</tr>
+<tr>
+<th><code>laya-en</code></th>
+<td>EN</td>
+<td>0.767</td>
+<td>0.739</td>
+<td>0.818</td>
+<td>0.320</td>
+<td>0.312</td>
+<td><strong>496</strong></td>
+</tr>
+<tr>
+<th><code>laya-en</code></th>
+<td>TH</td>
+<td>0.319</td>
+<td>0.320</td>
+<td>0.417</td>
+<td>1.037</td>
+<td>0.313</td>
+<td><strong>360</strong></td>
+</tr>
+<tr>
+<th><code>laya-ml</code></th>
+<td>EN</td>
+<td>0.674</td>
+<td>0.696</td>
+<td>0.727</td>
+<td>0.770</td>
+<td>0.312</td>
+<td><strong>166</strong></td>
+</tr>
+<tr>
+<th><code>laya-ml</code></th>
+<td>TH</td>
+<td>0.596</td>
+<td>0.680</td>
+<td>0.583</td>
+<td>0.805</td>
+<td>0.313</td>
+<td><strong>101</strong></td>
+</tr>
+<tr>
+<th><code>openthai</code></th>
+<td>EN</td>
+<td>0.814</td>
+<td>0.783</td>
+<td>0.909</td>
+<td>0.258</td>
+<td>0.312</td>
+<td><strong>650</strong></td>
+</tr>
+<tr>
+<th><code>openthai</code></th>
+<td>TH</td>
+<td>0.723</td>
+<td>0.720</td>
+<td>0.667</td>
+<td>0.271</td>
+<td>0.313</td>
+<td><strong>527</strong></td>
+</tr>
+</tbody></table></div>
+
+<div class="callout bad">
+  <p><strong>Laya's English checkpoint on Thai scores 0.319 against a chance baseline
+  of 0.313, while still reporting a mean confidence of 0.525.</strong></p>
+  <p>This is the failure its own model card warns about — "because the model stays confident
+  while being wrong, confidence gating cannot save you" — reproduced here. It is also why
+  <code>laya-en</code> is kept as an explicit backend key rather than deleted: the number is
+  evidence, and deleting the configuration would delete the evidence with it.</p>
+</div>
+
+<div class="callout good">
+  <p><strong>The router dispatches correctly, verified two ways.</strong>
+  <code>laya-auto</code> answers Thai identically to <code>laya-ml</code>, and answers all 43
+  English items identically to <code>laya-en</code> — zero differences on either side. Live, it
+  reports <code>answered_by=multilingual</code> with reason
+  <code>non-Latin script (thai, 100% of letters); the English checkpoint cannot read it</code>,
+  and <code>answered_by=english</code> with reason <code>English Latin text</code>.</p>
+</div>
+
+<h2>The confidence trap, quantified</h2>
+<p>Both models expose a field named <code>confidence</code>, and in both it is
+<code>1 &minus; H(p)/log k</code>. Laya additionally exposes <code>answer_confidence</code>,
+which is <code>max(p)</code> <em>after temperature scaling</em> — measured
+<code>0.525</code>-scale values sitting roughly 0.15 above the raw figure. OpenThai
+exposes no max-probability field at all.</p>
+
+<p>For a 4-option answer at <code>{0.94, 0.02, 0.02, 0.02}</code> the two names give
+<strong>0.94</strong> and <strong>0.7887</strong> — and Route_gate's delegation floor is
+<strong>0.8</strong>, so the same underlying answer delegates under one name and clarifies
+under the other. Live from the served dispatcher, Laya-multilingual answering
+<code>billing</code> returned <code>answer_confidence 0.4784</code> against
+<code>confidence 0.1103</code>.</p>
+
+<div class="scroll"><table class="">
+<thead><tr>
+<th>model</th>
+<th>mean max-p</th>
+<th>mean entropy</th>
+<th>native entropy</th>
+<th>native max-p</th>
+<th>max-p − entropy</th>
+</tr></thead><tbody>
+<tr>
+<th><code>laya-auto</code></th>
+<td>0.769</td>
+<td>0.610</td>
+<td>0.610</td>
+<td>0.716</td>
+<td>0.159</td>
+</tr>
+<tr>
+<th><code>laya-en</code></th>
+<td>0.643</td>
+<td>0.451</td>
+<td>0.451</td>
+<td>0.579</td>
+<td>0.192</td>
+</tr>
+<tr>
+<th><code>laya-ml</code></th>
+<td>0.776</td>
+<td>0.630</td>
+<td>0.630</td>
+<td>0.724</td>
+<td>0.146</td>
+</tr>
+<tr>
+<th><code>openthai</code></th>
+<td>0.874</td>
+<td>0.791</td>
+<td>0.755</td>
+<td>-</td>
+<td>0.084</td>
+</tr>
+</tbody></table></div>
+
+<p>Reading the wrong field changes the routing action on <strong>39 of 360
+cases (10.8%)</strong> at the 0.8 floor.</p>
+
+<div class="scroll"><table class="">
+<thead><tr>
+<th>question</th>
+<th>model</th>
+<th>lang</th>
+<th>max-p</th>
+<th>entropy</th>
+<th>correct</th>
+</tr></thead><tbody>
+<tr>
+<th>route</th>
+<td><code>laya-auto</code></td>
+<td>EN</td>
+<td>0.928</td>
+<td>0.761</td>
+<td>yes</td>
+</tr>
+<tr>
+<th>route</th>
+<td><code>laya-auto</code></td>
+<td>TH</td>
+<td>0.895</td>
+<td>0.750</td>
+<td>no</td>
+</tr>
+<tr>
+<th>department</th>
+<td><code>laya-auto</code></td>
+<td>EN</td>
+<td>0.927</td>
+<td>0.754</td>
+<td>yes</td>
+</tr>
+<tr>
+<th>department</th>
+<td><code>laya-auto</code></td>
+<td>EN</td>
+<td>0.879</td>
+<td>0.645</td>
+<td>yes</td>
+</tr>
+<tr>
+<th>department</th>
+<td><code>laya-auto</code></td>
+<td>EN</td>
+<td>0.916</td>
+<td>0.726</td>
+<td>yes</td>
+</tr>
+<tr>
+<th>department</th>
+<td><code>laya-auto</code></td>
+<td>TH</td>
+<td>0.893</td>
+<td>0.705</td>
+<td>yes</td>
+</tr>
+<tr>
+<th>urgency</th>
+<td><code>laya-auto</code></td>
+<td>TH</td>
+<td>0.808</td>
+<td>0.509</td>
+<td>—</td>
+</tr>
+<tr>
+<th>department</th>
+<td><code>laya-auto</code></td>
+<td>EN</td>
+<td>0.892</td>
+<td>0.675</td>
+<td>yes</td>
+</tr>
+</tbody></table></div>
+
+<h2>Accuracy is not the only axis</h2>
+<p>OpenThai-SystemOne won every language measured, but it was also the slowest backend, and the
+margin is not small. The two are reported together so the trade is explicit rather than
+inherited.</p>
+
+<div class="kpis">
+  <div class="kpi good"><span class="l">accuracy</span><span class="v">0.767</span>
+    <span class="l">OpenThai-SystemOne <code>openthai</code></span></div>
+  <div class="kpi bad"><span class="l">p50 latency</span><span class="v">573 ms</span>
+    <span class="l">the winner</span></div>
+  <div class="kpi accent"><span class="l">p50 latency</span><span class="v">107 ms</span>
+    <span class="l"><code>laya-ml</code>, 5.4&times; faster</span></div>
+  <div class="kpi"><span class="l">margin, English</span><span class="v">0.047</span>
+    <span class="l">Thai: 0.128</span></div>
+</div>
+
+<h2>Where the option count bites</h2>
+<p>Laya splits its option budget across the options, so accuracy is expected to fall as the
+option count rises. Buckets are recovered from the width of the returned probability vector —
+the width the model actually scored over.</p>
+
+<div class="scroll"><table class="">
+<thead><tr>
+<th>options</th>
+<th>model</th>
+<th>n</th>
+<th>acc</th>
+<th>choice</th>
+<th>chance</th>
+<th>p50 ms</th>
+</tr></thead><tbody>
+<tr>
+<th>2-2</th>
+<td><code>laya-auto</code></td>
+<td>23</td>
+<td>0.696</td>
+<td>-</td>
+<td>0.500</td>
+<td>215</td>
+</tr>
+<tr>
+<th>3-5</th>
+<td><code>laya-auto</code></td>
+<td>61</td>
+<td>0.689</td>
+<td>0.738</td>
+<td>0.267</td>
+<td>204</td>
+</tr>
+<tr>
+<th>6-20</th>
+<td><code>laya-auto</code></td>
+<td>6</td>
+<td>0.500</td>
+<td>0.500</td>
+<td>0.056</td>
+<td>344</td>
+</tr>
+<tr>
+<th>2-2</th>
+<td><code>laya-en</code></td>
+<td>23</td>
+<td>0.609</td>
+<td>-</td>
+<td>0.500</td>
+<td>560</td>
+</tr>
+<tr>
+<th>3-5</th>
+<td><code>laya-en</code></td>
+<td>61</td>
+<td>0.525</td>
+<td>0.548</td>
+<td>0.267</td>
+<td>333</td>
+</tr>
+<tr>
+<th>6-20</th>
+<td><code>laya-en</code></td>
+<td>6</td>
+<td>0.333</td>
+<td>0.333</td>
+<td>0.056</td>
+<td>833</td>
+</tr>
+<tr>
+<th>2-2</th>
+<td><code>laya-ml</code></td>
+<td>23</td>
+<td>0.652</td>
+<td>-</td>
+<td>0.500</td>
+<td>178</td>
+</tr>
+<tr>
+<th>3-5</th>
+<td><code>laya-ml</code></td>
+<td>61</td>
+<td>0.639</td>
+<td>0.714</td>
+<td>0.267</td>
+<td>93</td>
+</tr>
+<tr>
+<th>6-20</th>
+<td><code>laya-ml</code></td>
+<td>6</td>
+<td>0.500</td>
+<td>0.500</td>
+<td>0.056</td>
+<td>211</td>
+</tr>
+<tr>
+<th>2-2</th>
+<td><code>openthai</code></td>
+<td>23</td>
+<td>0.783</td>
+<td>-</td>
+<td>0.500</td>
+<td>718</td>
+</tr>
+<tr>
+<th>3-5</th>
+<td><code>openthai</code></td>
+<td>61</td>
+<td>0.820</td>
+<td>0.833</td>
+<td>0.267</td>
+<td>494</td>
+</tr>
+<tr>
+<th>6-20</th>
+<td><code>openthai</code></td>
+<td>6</td>
+<td>0.167</td>
+<td>0.167</td>
+<td>0.056</td>
+<td>1238</td>
+</tr>
+</tbody></table></div>
+<p>The 6–20 bucket is six rows on an 18-option cube task, where OpenThai was weakest. It is shown
+because it is real and because it is too small to conclude from, which is the honest way to
+present it.</p>
+
+<h2>What the measurement says to do</h2>
+<div class="callout">
+  <p>Measured winner per language: en -> `openthai`, th -> `openthai`. One model wins in every language measured, so the routing policy can use `openthai` as a single default and keep the others as fallbacks rather than branching on language. That default is not the fastest: `laya-ml` answers in 107 ms p50 against `openthai` at 573 ms (5.4x), for 0.633 vs 0.767 accuracy. A latency-bound caller should trade the accuracy deliberately rather than inherit this default.</p>
+</div>
+
+<h2>The repository</h2>
+<p>Two halves sit side by side. <code>decision_models/</code> is a Python harness that scores
+both checkpoints against one shared dataset. <code>Route_gate/</code> is the TypeScript router
+that picks, at request time, which checkpoint answers. Neither imports the other &mdash; they
+meet on one HTTP contract, which is why a benchmark number can become a routing decision.</p>
+
+<h3>What is where</h3>
+<ul>
+<li><code>decision_models/data/focused_items.jsonl</code> &mdash; the dataset: 36 authored items
+    expanded into 68 parallel English/Thai rows.</li>
+<li><code>confidence.py</code> &mdash; one shared definition of a confidence value
+    (<code>maxp_confidence</code>, <code>entropy_confidence</code>) and the gate that decides
+    delegate versus clarify. It never substitutes a default for a missing confidence.</li>
+<li><code>limits.py</code> &mdash; the tighter of the two models' input limits, so both are
+    validated against one contract.</li>
+<li><code>bench.py</code> &mdash; expands the dataset once per backend and calls
+    <code>laya.evals.evaluate</code>.</li>
+<li><code>runners/laya_backend.py</code>, <code>runners/openthai_backend.py</code> &mdash; the
+    two adapters; each exposes <code>predict(state, questions, model=…)</code>, the only
+    contract the harness requires.</li>
+<li><code>report.py</code> &mdash; aggregates the stored case records;
+    <code>merge_reports()</code> recomputes every figure from them rather than averaging
+    per-file metrics.</li>
+<li><code>serve.py</code> &mdash; one <code>POST /v1/systemone</code> in front of both models,
+    answering with both confidence notions so a client cannot tell which model replied.</li>
+<li><code>cli.py</code> &mdash; the seven subcommands below.</li>
+<li><code>tools/</code> &mdash; <code>build_focused.py</code> writes the dataset,
+    <code>build_report_html.py</code> writes this page, <code>phase6_patch.py</code> patches the
+    three experiment modules living outside this workspace.</li>
+<li><code>tests/</code> &mdash; eight test modules.</li>
+<li><code>Route_gate/src/router.ts</code> &mdash; the routing decision itself.</li>
+<li><code>Route_gate/src/clients/http-decision-client.ts</code> &mdash; the client that talks to
+    <code>decision_models serve</code>.</li>
+<li><code>Route_gate/src/supervisor.ts</code> &mdash; wraps a request, then routes it
+    synchronously or asynchronously.</li>
+<li><code>Route_gate/src/subagents/</code> &mdash; the four registered destinations:
+    reservation, weather, cost, general.</li>
+</ul>
+
+<h3>Run it again, in this order</h3>
+<ol>
+<li><strong>Install once.</strong> <code>pip install -r decision_models/requirements.txt</code>,
+    then <code>npm install</code> in <code>Route_gate/</code>. Deliberately not a virtualenv
+    &mdash; the comment at the top of that file explains why.</li>
+<li><strong>Check the harness.</strong> <code>python -m pytest</code> &mdash; 113 tests, no
+    weights loaded.</li>
+<li><strong>Check the contracts.</strong> <code>npm run typecheck</code> and
+    <code>npm test</code> in <code>Route_gate/</code>.</li>
+<li><strong>Regenerate the dataset (optional).</strong>
+    <code>python -m decision_models.cli build</code> rewrites
+    <code>data/focused_items.jsonl</code> and is byte-identical to the committed file. Use
+    <code>--out PATH</code> to inspect it without disturbing that file; its SHA-256 is recorded
+    in <code>results/focused.json</code> and the gate refuses to compare against a different
+    one.</li>
+<li><strong>Score everything.</strong> <code>python -m decision_models.cli bench</code> &mdash;
+    the one slow step: four checkpoints, one subprocess each. Writes
+    <code>results/focused.json</code> and <code>report.md</code>. Add <code>--limit 4</code> for
+    a smoke run that still exercises every family.</li>
+<li><strong>Re-render.</strong> <code>python -m decision_models.cli report</code> for markdown,
+    <code>python -m decision_models.tools.build_report_html</code> for this page. Neither loads
+    a GPU.</li>
+<li><strong>Freeze, then gate.</strong> <code>python -m decision_models.cli baseline</code>,
+    then <code>python -m decision_models.cli gate</code>: exit 0 = unchanged, 1 = a metric
+    regressed, 2 = the two inputs are not comparable.</li>
+<li><strong>Serve.</strong> <code>python -m decision_models.cli serve</code> &mdash; dispatcher on
+    <code>127.0.0.1:8077</code>, with <code>--policy</code> to change which model wins.</li>
+</ol>
+
+<h3>The CLI</h3>
+<p>All seven subcommands, from the workspace root as
+<code>python -m decision_models.cli &lt;command&gt;</code>.</p>
+<ul>
+<li><code>build</code> &mdash; regenerate the dataset. <code>--out PATH</code>.</li>
+<li><code>bench</code> &mdash; score every backend. <code>--models a,b</code> (comma-separated
+    keys), <code>--limit N</code> (counts authored items, so every family stays in proportion),
+    <code>--split</code> (default: one subprocess per backend) / <code>--no-split</code>,
+    <code>--on-error skip|fail</code>.</li>
+<li><code>report</code> &mdash; re-render markdown from stored results. <code>--input</code>,
+    <code>--out</code>, <code>--title</code>. No GPU.</li>
+<li><code>baseline</code> &mdash; freeze the current results. <code>--input</code>.</li>
+<li><code>gate</code> &mdash; fail if a re-run regressed. <code>--baseline PATH</code>,
+    <code>--tolerance METRIC=VALUE</code>.</li>
+<li><code>serve</code> &mdash; the language-aware dispatcher. <code>--host</code>,
+    <code>--port</code> (or env <code>DECISION_HOST</code> / <code>DECISION_PORT</code>),
+    <code>--policy lang:th=openthai,default=laya-en</code>.</li>
+<li><code>expand</code> &mdash; write the per-backend expanded dataset without scoring it, to see
+    exactly what the harness will ask.</li>
+</ul>
+
+<h2>What the testcases are</h2>
+<p>An authored item can carry several questions, and each item is written twice &mdash; once in
+English, once in Thai &mdash; so the two languages are the same test rather than two different
+ones. That is the whole expansion: <strong>36 items &rarr; 68 rows &rarr; 90 questions &rarr;
+&times;4 backends = 360 cases</strong>. <code>thai-only</code> is the one exception, four rows
+with no English twin.</p>
+
+<div class="scroll"><table class="">
+<thead><tr>
+<th>family</th>
+<th>rows</th>
+<th>questions</th>
+<th>types</th>
+<th>options</th>
+</tr></thead><tbody>
+<tr>
+<th>routing</th>
+<td>16</td>
+<td>16</td>
+<td>choice</td>
+<td>4</td>
+</tr>
+<tr>
+<th>triage</th>
+<td>10</td>
+<td>10</td>
+<td>choice</td>
+<td>4</td>
+</tr>
+<tr>
+<th>multi</th>
+<td>8</td>
+<td>24</td>
+<td>choice / noul / score</td>
+<td>3, 4</td>
+</tr>
+<tr>
+<th>noul</th>
+<td>8</td>
+<td>8</td>
+<td>noul</td>
+<td>—</td>
+</tr>
+<tr>
+<th>score</th>
+<td>10</td>
+<td>10</td>
+<td>score</td>
+<td>3, 5</td>
+</tr>
+<tr>
+<th>cardinality4</th>
+<td>6</td>
+<td>12</td>
+<td>choice / noul</td>
+<td>4</td>
+</tr>
+<tr>
+<th>cardinality18</th>
+<td>6</td>
+<td>6</td>
+<td>choice</td>
+<td>18</td>
+</tr>
+<tr>
+<th>thai-only</th>
+<td>4</td>
+<td>4</td>
+<td>choice / noul / score</td>
+<td>3, 4</td>
+</tr>
+</tbody></table></div>
+
+<ul>
+<li><strong>routing</strong> &mdash; which of the four registered subagents owns the request:
+    weather, reservation, cost or general, including deliberately ambiguous inputs that still
+    have to land on one of them. Four options, one question. This is the family the Route_gate
+    router is built on.</li>
+<li><strong>triage</strong> &mdash; how urgent it is: billing, technical, sales, other. Four
+    options.</li>
+<li><strong>multi</strong> &mdash; one shared state carrying three differently-typed questions (a
+    choice, a score and a noul), so a single forward pass has to answer all three rather than
+    only the first.</li>
+<li><strong>noul</strong> &mdash; "none of the usual": a binary verdict with no option list.</li>
+<li><strong>score</strong> &mdash; an ordinal rating with 3 or 5 levels, correct within 0.5 of
+    the labelled level, so it reports MAE rather than accuracy.</li>
+<li><strong>cardinality4</strong> &mdash; apply a rule stated in full inside the state, over four
+    labelled options (a placement puzzle), plus a noul companion question.</li>
+<li><strong>cardinality18</strong> &mdash; the same shape of task with the option count pushed to
+    <strong>18</strong>: a Rubik's Cube inverse-move question offering every face turn
+    (<code>R</code>, <code>R'</code>, <code>R2</code> &times; six faces), where the state states
+    the inversion rule in full. <strong>It is the entire 6&ndash;20 option bucket</strong> &mdash;
+    the six rows the limitations call suggestive rather than conclusive &mdash; and it is where
+    the two models disagree most: OpenThai-SystemOne <strong>0.167</strong> against Laya
+    <strong>0.500</strong>, at a chance baseline of 0.056.</li>
+<li><strong>thai-only</strong> &mdash; Thai with no English twin, so an English-only model cannot
+    look good here by accident.</li>
+</ul>
+
+<p>Two things easy to misread. The <code>options</code> column counts what the authored
+<code>criteria</code> list holds, which is why noul shows <code>&mdash;</code>; the
+<em>By option count</em> table above instead reads the width of the probability vector the model
+actually scored, and counts a noul answer as 2. And four is a common option count, not a
+constraint &mdash; the model is always scored over whatever list the question supplies.</p>
+
+<h2>Proof of work</h2>
+<p>A claim of "verified" is worth nothing without the ledger. Everything below was run in this
+session and the exit status is recorded; where a check could not be completed it is listed as
+such rather than omitted.</p>
+
+<div class="scroll">
+<table class="wide">
+<thead><tr><th>check</th><th>command</th><th>observed</th><th>status</th></tr></thead>
+<tbody>
+<tr><td>harness unit + integration tests</td><td><code>python -m pytest</code></td>
+    <td>113 passed</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>TypeScript contracts</td><td><code>npx tsc --noEmit</code></td>
+    <td>no output</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>router + HTTP client tests</td><td><code>npx vitest run</code></td>
+    <td>33 passed in 2 files</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>the benchmark itself</td><td><code>python -m decision_models.cli bench</code></td>
+    <td>4 backends, 360 rows, 0 errored</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>regression gate, unchanged input</td><td><code>... cli gate</code></td>
+    <td>20 metrics compared</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>gate refuses a different dataset</td><td><code>... gate --baseline tampered.json</code></td>
+    <td><code>dataset_sha256</code> mismatch named</td><td><span class="tag ok">exit 2</span></td></tr>
+<tr><td>gate catches a regression</td><td><code>... gate --baseline regressed.json</code></td>
+    <td><code>task_accuracy</code> diff &minus;0.337 &gt; 0.05</td>
+    <td><span class="tag ok">exit 1</span></td></tr>
+<tr><td>patched experiments compile</td><td><code>python -m py_compile</code> &times;3</td>
+    <td>all three modules</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>patch script is idempotent</td><td>second <code>phase6_patch.py</code> run</td>
+    <td>3&times; "no edits applied"</td><td><span class="tag ok">exit 0</span></td></tr>
+<tr><td>dispatcher serves real models</td><td>live <code>POST /v1/systemone</code></td>
+    <td>200 &middot; <code>output_tokens: 0</code> &middot; both confidence fields</td>
+    <td><span class="tag ok">verified</span></td></tr>
+<tr><td>per-request backend override</td><td><code>{"model":"laya-ml"}</code></td>
+    <td><code>model: laya-multilingual</code>, Thai script</td>
+    <td><span class="tag ok">verified</span></td></tr>
+<tr><td>legacy server Thai routing</td><td>live <code>laya_server.py</code></td>
+    <td><code>answered_by: multilingual</code></td><td><span class="tag ok">verified</span></td></tr>
+<tr><td>public-benchmark replication</td><td><code>pip install datasets</code></td>
+    <td>timed out before it could install</td><td><span class="tag no">not run</span></td></tr>
+<tr><td><code>OpenThai-SystemOne/server.py</code> error path</td><td>&mdash;</td>
+    <td>still returns a default move on failure</td><td><span class="tag part">partial</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>What is not proven</h2>
+<div class="callout bad">
+<p><strong>The public-benchmark replication was not run.</strong> The row builders for MASSIVE
+(parallel <code>en-US</code> / <code>th-TH</code>, 60 intents) and XNLI exist and are tested
+against synthetic records, but <code>pip install datasets</code> timed out, so no published
+number was reproduced. That was the plan's independent check on the harness itself — the one
+thing that would show the rig is measuring what it claims. Until then, these results are
+measured but not externally validated.</p>
+</div>
+
+<ul>
+  <li><strong>360 scored rows is small.</strong> A few points of difference is not
+      distinguishable from noise, and per-cell slices are smaller still.</li>
+  <li><strong>ECE is pre-fitting.</strong> Neither model's shipped calibration is used, and Laya
+      reported invalid shipped temperatures for at least one question shape at load time. The
+      figures are pre-temperature-fitting on purpose, and the 0.8 floor is therefore an arbitrary
+      threshold rather than a calibrated one.</li>
+  <li><strong>Latency is one process on one machine</strong> (RTX 5050 Laptop, 8&nbsp;GB) and
+      includes the dispatch path. Magnitudes, not a benchmark. No published latency figure was
+      reproduced.</li>
+  <li><strong>Expectations were inherited</strong> from the source material for the routing and
+      triage families rather than independently re-authored; the disagreement table in
+      <code>report.md</code> is where an arguable label would show up.</li>
+  <li><strong>The 6–20 option bucket is 6 rows.</strong> Suggestive, not conclusive.</li>
+</ul>
+
+<footer>
+  Generated from <code>results/focused.json</code> by
+  <code>decision_models/tools/build_report_html.py</code>. Dataset
+  <code>8646f3551389c7d7</code> &middot; 360 scored rows &middot; Laya <code>0.3.27</code> &middot;
+  OpenThai <code>iapp/OpenThai-SystemOne</code> &middot; Python 3.14.5 &middot; Windows-11-10.0.26200-SP0.
+  Companion artefacts: <code>report.md</code>, <code>README.md</code>,
+  <code>results/focused.json</code>, <code>baselines/focused.json</code>.
+</footer>
+
+</div>
+</body>
+</html>

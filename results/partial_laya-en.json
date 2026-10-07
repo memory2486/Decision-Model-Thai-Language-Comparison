@@ -1,0 +1,4002 @@
+{
+ "cases": [
+  {
+   "answer": {
+    "_latency_ms": 4504.0419999968435,
+    "answer_confidence": 0.9794,
+    "choice": "weather",
+    "confidence": 0.9118769594623313,
+    "native_answer_confidence": 0.9794,
+    "native_confidence": 0.9117,
+    "probabilities": {
+     "cost": 0.0043,
+     "general": 0.0088,
+     "reservation": 0.0075,
+     "weather": 0.9794
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9794,
+   "correct": true,
+   "expected": "weather",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9794,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 302.88410000139265,
+    "answer_confidence": 0.4369,
+    "choice": "reservation",
+    "confidence": 0.1094277302571891,
+    "native_answer_confidence": 0.4369,
+    "native_confidence": 0.1094,
+    "probabilities": {
+     "cost": 0.1616,
+     "general": 0.3129,
+     "reservation": 0.4369,
+     "weather": 0.0886
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4369,
+   "correct": false,
+   "expected": "weather",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.4369,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 236.6769000000204,
+    "answer_confidence": 0.9277,
+    "choice": "reservation",
+    "confidence": 0.7612606424059245,
+    "native_answer_confidence": 0.9277,
+    "native_confidence": 0.7614,
+    "probabilities": {
+     "cost": 0.0316,
+     "general": 0.0314,
+     "reservation": 0.9277,
+     "weather": 0.0093
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9277,
+   "correct": true,
+   "expected": "reservation",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9277,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 350.7782999986375,
+    "answer_confidence": 0.3879,
+    "choice": "general",
+    "confidence": 0.10051432748386746,
+    "native_answer_confidence": 0.3879,
+    "native_confidence": 0.1006,
+    "probabilities": {
+     "cost": 0.176,
+     "general": 0.3879,
+     "reservation": 0.3534,
+     "weather": 0.0828
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3879,
+   "correct": false,
+   "expected": "reservation",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3879,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 261.00579999911133,
+    "answer_confidence": 0.9837,
+    "choice": "cost",
+    "confidence": 0.928840911013696,
+    "native_answer_confidence": 0.9837,
+    "native_confidence": 0.9288,
+    "probabilities": {
+     "cost": 0.9837,
+     "general": 0.0041,
+     "reservation": 0.0097,
+     "weather": 0.0025
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9837,
+   "correct": true,
+   "expected": "cost",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9837,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 274.37600000121165,
+    "answer_confidence": 0.4872,
+    "choice": "reservation",
+    "confidence": 0.1489229630302199,
+    "native_answer_confidence": 0.4872,
+    "native_confidence": 0.1489,
+    "probabilities": {
+     "cost": 0.2827,
+     "general": 0.1679,
+     "reservation": 0.4872,
+     "weather": 0.0622
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4872,
+   "correct": false,
+   "expected": "cost",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.4872,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 216.7671999995946,
+    "answer_confidence": 0.6598,
+    "choice": "general",
+    "confidence": 0.29595011900807744,
+    "native_answer_confidence": 0.6598,
+    "native_confidence": 0.2959,
+    "probabilities": {
+     "cost": 0.068,
+     "general": 0.6598,
+     "reservation": 0.1924,
+     "weather": 0.0798
+    },
+    "type": "choice"
+   },
+   "confidence": 0.6598,
+   "correct": true,
+   "expected": "general",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.6598,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-general-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 305.5215999993379,
+    "answer_confidence": 0.399,
+    "choice": "reservation",
+    "confidence": 0.08839025897468511,
+    "native_answer_confidence": 0.399,
+    "native_confidence": 0.0884,
+    "probabilities": {
+     "cost": 0.1692,
+     "general": 0.3316,
+     "reservation": 0.399,
+     "weather": 0.1002
+    },
+    "type": "choice"
+   },
+   "confidence": 0.399,
+   "correct": false,
+   "expected": "general",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.399,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-general-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 262.27790000120876,
+    "answer_confidence": 0.4948,
+    "choice": "reservation",
+    "confidence": 0.38877567890811704,
+    "native_answer_confidence": 0.4948,
+    "native_confidence": 0.3889,
+    "probabilities": {
+     "cost": 0.4687,
+     "general": 0.0244,
+     "reservation": 0.4948,
+     "weather": 0.0121
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4948,
+   "correct": true,
+   "expected": "reservation",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.4948,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-ambiguous-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 327.5705999985803,
+    "answer_confidence": 0.4007,
+    "choice": "reservation",
+    "confidence": 0.09893698945835416,
+    "native_answer_confidence": 0.4007,
+    "native_confidence": 0.099,
+    "probabilities": {
+     "cost": 0.1767,
+     "general": 0.3374,
+     "reservation": 0.4007,
+     "weather": 0.0852
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4007,
+   "correct": true,
+   "expected": "reservation",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.4007,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-ambiguous-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 273.6027999999351,
+    "answer_confidence": 0.9529,
+    "choice": "weather",
+    "confidence": 0.8275894193797323,
+    "native_answer_confidence": 0.9529,
+    "native_confidence": 0.8278,
+    "probabilities": {
+     "cost": 0.0089,
+     "general": 0.0159,
+     "reservation": 0.0224,
+     "weather": 0.9529
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9529,
+   "correct": true,
+   "expected": "weather",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9529,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-02",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 316.1586999995052,
+    "answer_confidence": 0.3878,
+    "choice": "reservation",
+    "confidence": 0.11086227435259888,
+    "native_answer_confidence": 0.3878,
+    "native_confidence": 0.1109,
+    "probabilities": {
+     "cost": 0.1483,
+     "general": 0.3756,
+     "reservation": 0.3878,
+     "weather": 0.0884
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3878,
+   "correct": false,
+   "expected": "weather",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3878,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-02",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 279.1830999995,
+    "answer_confidence": 0.9702,
+    "choice": "cost",
+    "confidence": 0.8803451294293924,
+    "native_answer_confidence": 0.9702,
+    "native_confidence": 0.8804,
+    "probabilities": {
+     "cost": 0.9702,
+     "general": 0.0119,
+     "reservation": 0.0113,
+     "weather": 0.0066
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9702,
+   "correct": true,
+   "expected": "cost",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9702,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-02",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 413.3984000000055,
+    "answer_confidence": 0.3964,
+    "choice": "reservation",
+    "confidence": 0.09652625759291034,
+    "native_answer_confidence": 0.3964,
+    "native_confidence": 0.0965,
+    "probabilities": {
+     "cost": 0.1776,
+     "general": 0.3393,
+     "reservation": 0.3964,
+     "weather": 0.0867
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3964,
+   "correct": false,
+   "expected": "cost",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3964,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-02",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 258.3076000009896,
+    "answer_confidence": 0.9498,
+    "choice": "reservation",
+    "confidence": 0.8202991035220026,
+    "native_answer_confidence": 0.9498,
+    "native_confidence": 0.8205,
+    "probabilities": {
+     "cost": 0.014,
+     "general": 0.0272,
+     "reservation": 0.9498,
+     "weather": 0.009
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9498,
+   "correct": true,
+   "expected": "reservation",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9498,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-02",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 332.4285000016971,
+    "answer_confidence": 0.5321,
+    "choice": "reservation",
+    "confidence": 0.17864601473671127,
+    "native_answer_confidence": 0.5321,
+    "native_confidence": 0.1787,
+    "probabilities": {
+     "cost": 0.2089,
+     "general": 0.2098,
+     "reservation": 0.5321,
+     "weather": 0.0492
+    },
+    "type": "choice"
+   },
+   "confidence": 0.5321,
+   "correct": true,
+   "expected": "reservation",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.5321,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-02",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 181.11280000084662,
+    "answer_confidence": 0.9271,
+    "choice": "billing",
+    "confidence": 0.7539946942509799,
+    "native_answer_confidence": 0.9271,
+    "native_confidence": 0.7541,
+    "probabilities": {
+     "billing": 0.9271,
+     "other": 0.0264,
+     "sales": 0.0205,
+     "technical": 0.0261
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9271,
+   "correct": true,
+   "expected": "billing",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9271,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 325.6725999999617,
+    "answer_confidence": 0.4128,
+    "choice": "sales",
+    "confidence": 0.051734704892203554,
+    "native_answer_confidence": 0.4128,
+    "native_confidence": 0.0517,
+    "probabilities": {
+     "billing": 0.2433,
+     "other": 0.1736,
+     "sales": 0.4128,
+     "technical": 0.1703
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4128,
+   "correct": false,
+   "expected": "billing",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.4128,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 181.05389999982435,
+    "answer_confidence": 0.8791,
+    "choice": "technical",
+    "confidence": 0.6446720642979302,
+    "native_answer_confidence": 0.8791,
+    "native_confidence": 0.6445,
+    "probabilities": {
+     "billing": 0.0237,
+     "other": 0.0607,
+     "sales": 0.0364,
+     "technical": 0.8791
+    },
+    "type": "choice"
+   },
+   "confidence": 0.8791,
+   "correct": true,
+   "expected": "technical",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.8791,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-technical-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 268.0826999967394,
+    "answer_confidence": 0.4538,
+    "choice": "technical",
+    "confidence": 0.08655578285956045,
+    "native_answer_confidence": 0.4538,
+    "native_confidence": 0.0866,
+    "probabilities": {
+     "billing": 0.1649,
+     "other": 0.2538,
+     "sales": 0.1274,
+     "technical": 0.4538
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4538,
+   "correct": true,
+   "expected": "technical",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.4538,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-technical-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 179.3199999992794,
+    "answer_confidence": 0.5215,
+    "choice": "sales",
+    "confidence": 0.12895135722765816,
+    "native_answer_confidence": 0.5215,
+    "native_confidence": 0.129,
+    "probabilities": {
+     "billing": 0.2057,
+     "other": 0.1464,
+     "sales": 0.5215,
+     "technical": 0.1264
+    },
+    "type": "choice"
+   },
+   "confidence": 0.5215,
+   "correct": true,
+   "expected": "sales",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.5215,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-sales-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 292.1695000004547,
+    "answer_confidence": 0.2874,
+    "choice": "technical",
+    "confidence": 0.006540087606274225,
+    "native_answer_confidence": 0.2874,
+    "native_confidence": 0.0065,
+    "probabilities": {
+     "billing": 0.2764,
+     "other": 0.205,
+     "sales": 0.2311,
+     "technical": 0.2874
+    },
+    "type": "choice"
+   },
+   "confidence": 0.2874,
+   "correct": false,
+   "expected": "sales",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.2874,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-sales-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 179.78299999958836,
+    "answer_confidence": 0.3645,
+    "choice": "billing",
+    "confidence": 0.030881961888802323,
+    "native_answer_confidence": 0.3645,
+    "native_confidence": 0.0309,
+    "probabilities": {
+     "billing": 0.3645,
+     "other": 0.2427,
+     "sales": 0.1585,
+     "technical": 0.2344
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3645,
+   "correct": false,
+   "expected": "other",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3645,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-other-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 289.86970000187284,
+    "answer_confidence": 0.3254,
+    "choice": "billing",
+    "confidence": 0.021586568511986926,
+    "native_answer_confidence": 0.3254,
+    "native_confidence": 0.0216,
+    "probabilities": {
+     "billing": 0.3254,
+     "other": 0.2156,
+     "sales": 0.1705,
+     "technical": 0.2885
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3254,
+   "correct": false,
+   "expected": "other",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3254,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-other-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 186.18140000035055,
+    "answer_confidence": 0.9159,
+    "choice": "billing",
+    "confidence": 0.7261098802171443,
+    "native_answer_confidence": 0.9159,
+    "native_confidence": 0.726,
+    "probabilities": {
+     "billing": 0.9159,
+     "other": 0.0256,
+     "sales": 0.0241,
+     "technical": 0.0343
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9159,
+   "correct": true,
+   "expected": "billing",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9159,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-02",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 346.23110000029556,
+    "answer_confidence": 0.3276,
+    "choice": "billing",
+    "confidence": 0.01141783647299588,
+    "native_answer_confidence": 0.3276,
+    "native_confidence": 0.0114,
+    "probabilities": {
+     "billing": 0.3276,
+     "other": 0.2359,
+     "sales": 0.2109,
+     "technical": 0.2256
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3276,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.3276,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-02",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 560.4783000017051,
+    "answer_confidence": 0.9945,
+    "choice": "billing",
+    "confidence": 0.9710763341690766,
+    "native_answer_confidence": 0.9945,
+    "native_confidence": 0.9712,
+    "probabilities": {
+     "billing": 0.9945,
+     "other": 0.002,
+     "sales": 0.0015,
+     "technical": 0.002
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9945,
+   "correct": true,
+   "expected": "billing",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9945,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 560.4783000017051,
+    "answer_confidence": 0.5768,
+    "confidence": 0.22761329892828586,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.5768,
+    "native_confidence": 0.2276,
+    "probabilities": {
+     "0": 0.057,
+     "1": 0.3662,
+     "2": 0.5768
+    },
+    "score": 1.5197,
+    "type": "score"
+   },
+   "confidence": 0.5768,
+   "correct": null,
+   "expected": 2,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5768,
+    "noul_accuracy": null,
+    "score_mae": 0.48029999999999995
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 560.4783000017051,
+    "answer_confidence": 0.8911,
+    "confidence": 0.8911,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8911,
+    "noul": 0.8911,
+    "type": "noul"
+   },
+   "confidence": 0.8911,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8911,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1027.6670999992348,
+    "answer_confidence": 0.2898,
+    "choice": "sales",
+    "confidence": 0.009708411275468398,
+    "native_answer_confidence": 0.2898,
+    "native_confidence": 0.0097,
+    "probabilities": {
+     "billing": 0.2877,
+     "other": 0.2284,
+     "sales": 0.2898,
+     "technical": 0.1941
+    },
+    "type": "choice"
+   },
+   "confidence": 0.2898,
+   "correct": false,
+   "expected": "billing",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.2898,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1027.6670999992348,
+    "answer_confidence": 0.4317,
+    "confidence": 0.06029781702859871,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.4317,
+    "native_confidence": 0.0603,
+    "probabilities": {
+     "0": 0.3962,
+     "1": 0.4317,
+     "2": 0.1722
+    },
+    "score": 0.776,
+    "type": "score"
+   },
+   "confidence": 0.4317,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.4317,
+    "noul_accuracy": null,
+    "score_mae": 1.224
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1027.6670999992348,
+    "answer_confidence": 0.912,
+    "confidence": 0.912,
+    "native_answer_confidence": null,
+    "native_confidence": 0.912,
+    "noul": 0.912,
+    "type": "noul"
+   },
+   "confidence": 0.912,
+   "correct": true,
+   "expected": true,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.912,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 495.5052000004798,
+    "answer_confidence": 0.8917,
+    "choice": "technical",
+    "confidence": 0.6749833779147615,
+    "native_answer_confidence": 0.8917,
+    "native_confidence": 0.6751,
+    "probabilities": {
+     "billing": 0.0189,
+     "other": 0.0592,
+     "sales": 0.0303,
+     "technical": 0.8917
+    },
+    "type": "choice"
+   },
+   "confidence": 0.8917,
+   "correct": true,
+   "expected": "technical",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.8917,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 495.5052000004798,
+    "answer_confidence": 0.5179,
+    "confidence": 0.11522688884520993,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.5179,
+    "native_confidence": 0.1153,
+    "probabilities": {
+     "0": 0.3536,
+     "1": 0.5179,
+     "2": 0.1285
+    },
+    "score": 0.7749,
+    "type": "score"
+   },
+   "confidence": 0.5179,
+   "correct": null,
+   "expected": 1,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5179,
+    "noul_accuracy": null,
+    "score_mae": 0.22509999999999997
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 495.5052000004798,
+    "answer_confidence": 0.9278,
+    "confidence": 0.9278,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9278,
+    "noul": 0.0722,
+    "type": "noul"
+   },
+   "confidence": 0.9278,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9278,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1049.5870999984618,
+    "answer_confidence": 0.2885,
+    "choice": "billing",
+    "confidence": 0.004510392243437633,
+    "native_answer_confidence": 0.2885,
+    "native_confidence": 0.0045,
+    "probabilities": {
+     "billing": 0.2885,
+     "other": 0.2496,
+     "sales": 0.252,
+     "technical": 0.2098
+    },
+    "type": "choice"
+   },
+   "confidence": 0.2885,
+   "correct": false,
+   "expected": "technical",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.2885,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1049.5870999984618,
+    "answer_confidence": 0.4142,
+    "confidence": 0.016910434677028907,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.4142,
+    "native_confidence": 0.0169,
+    "probabilities": {
+     "0": 0.2572,
+     "1": 0.4142,
+     "2": 0.3286
+    },
+    "score": 1.0714,
+    "type": "score"
+   },
+   "confidence": 0.4142,
+   "correct": null,
+   "expected": 1,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.4142,
+    "noul_accuracy": null,
+    "score_mae": 0.07139999999999991
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1049.5870999984618,
+    "answer_confidence": 0.893,
+    "confidence": 0.893,
+    "native_answer_confidence": null,
+    "native_confidence": 0.893,
+    "noul": 0.893,
+    "type": "noul"
+   },
+   "confidence": 0.893,
+   "correct": false,
+   "expected": false,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.893,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 499.44930000128807,
+    "answer_confidence": 0.3232,
+    "choice": "sales",
+    "confidence": 0.022600380801689246,
+    "native_answer_confidence": 0.3232,
+    "native_confidence": 0.0226,
+    "probabilities": {
+     "billing": 0.1555,
+     "other": 0.2711,
+     "sales": 0.3232,
+     "technical": 0.2503
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3232,
+   "correct": true,
+   "expected": "sales",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.3232,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 499.44930000128807,
+    "answer_confidence": 0.7089,
+    "confidence": 0.3341669476761766,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.7089,
+    "native_confidence": 0.3341,
+    "probabilities": {
+     "0": 0.7089,
+     "1": 0.2443,
+     "2": 0.0468
+    },
+    "score": 0.338,
+    "type": "score"
+   },
+   "confidence": 0.7089,
+   "correct": null,
+   "expected": 0,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7089,
+    "noul_accuracy": null,
+    "score_mae": 0.338
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 499.44930000128807,
+    "answer_confidence": 1.0,
+    "confidence": 1.0,
+    "native_answer_confidence": null,
+    "native_confidence": 1.0,
+    "noul": 0.0,
+    "type": "noul"
+   },
+   "confidence": 1.0,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 1.0,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 772.0206000012695,
+    "answer_confidence": 0.3975,
+    "choice": "billing",
+    "confidence": 0.04376890380503762,
+    "native_answer_confidence": 0.3975,
+    "native_confidence": 0.0438,
+    "probabilities": {
+     "billing": 0.3975,
+     "other": 0.1815,
+     "sales": 0.1726,
+     "technical": 0.2484
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3975,
+   "correct": false,
+   "expected": "sales",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3975,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 772.0206000012695,
+    "answer_confidence": 0.3572,
+    "confidence": 0.003740209175038145,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.3572,
+    "native_confidence": 0.0037,
+    "probabilities": {
+     "0": 0.3572,
+     "1": 0.2912,
+     "2": 0.3516
+    },
+    "score": 0.9944,
+    "type": "score"
+   },
+   "confidence": 0.3572,
+   "correct": null,
+   "expected": 0,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.3572,
+    "noul_accuracy": null,
+    "score_mae": 0.9944
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 772.0206000012695,
+    "answer_confidence": 0.8322,
+    "confidence": 0.8322,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8322,
+    "noul": 0.8322,
+    "type": "noul"
+   },
+   "confidence": 0.8322,
+   "correct": false,
+   "expected": false,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8322,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 615.6401999978698,
+    "answer_confidence": 0.4159,
+    "choice": "technical",
+    "confidence": 0.15150936033096185,
+    "native_answer_confidence": 0.4159,
+    "native_confidence": 0.1516,
+    "probabilities": {
+     "billing": 0.3958,
+     "other": 0.1002,
+     "sales": 0.0881,
+     "technical": 0.4159
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4159,
+   "correct": false,
+   "expected": "billing",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.4159,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 615.6401999978698,
+    "answer_confidence": 0.9502,
+    "confidence": 0.7931740003599294,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.9502,
+    "native_confidence": 0.7932,
+    "probabilities": {
+     "0": 0.0137,
+     "1": 0.0361,
+     "2": 0.9502
+    },
+    "score": 1.9365,
+    "type": "score"
+   },
+   "confidence": 0.9502,
+   "correct": null,
+   "expected": 2,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9502,
+    "noul_accuracy": null,
+    "score_mae": 0.06349999999999989
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 615.6401999978698,
+    "answer_confidence": 0.8865,
+    "confidence": 0.8865,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8865,
+    "noul": 0.1135,
+    "type": "noul"
+   },
+   "confidence": 0.8865,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8865,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1158.8305000004766,
+    "answer_confidence": 0.3212,
+    "choice": "billing",
+    "confidence": 0.011198227139199601,
+    "native_answer_confidence": 0.3212,
+    "native_confidence": 0.0112,
+    "probabilities": {
+     "billing": 0.3212,
+     "other": 0.2538,
+     "sales": 0.2051,
+     "technical": 0.2198
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3212,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.3212,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1158.8305000004766,
+    "answer_confidence": 0.4056,
+    "confidence": 0.010475606205544108,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": 0.4056,
+    "native_confidence": 0.0105,
+    "probabilities": {
+     "0": 0.2915,
+     "1": 0.4056,
+     "2": 0.3028
+    },
+    "score": 1.0113,
+    "type": "score"
+   },
+   "confidence": 0.4056,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.4056,
+    "noul_accuracy": null,
+    "score_mae": 0.9886999999999999
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1158.8305000004766,
+    "answer_confidence": 0.8229,
+    "confidence": 0.8229,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8229,
+    "noul": 0.8229,
+    "type": "noul"
+   },
+   "confidence": 0.8229,
+   "correct": false,
+   "expected": false,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8229,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 159.2649000012898,
+    "answer_confidence": 0.834,
+    "confidence": 0.834,
+    "native_answer_confidence": null,
+    "native_confidence": 0.834,
+    "noul": 0.834,
+    "type": "noul"
+   },
+   "confidence": 0.834,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.834,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-01",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 245.8991999992577,
+    "answer_confidence": 0.6486000000000001,
+    "confidence": 0.6486000000000001,
+    "native_answer_confidence": null,
+    "native_confidence": 0.6486,
+    "noul": 0.3514,
+    "type": "noul"
+   },
+   "confidence": 0.6486000000000001,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6486000000000001,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-01",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 133.5876000011922,
+    "answer_confidence": 1.0,
+    "confidence": 1.0,
+    "native_answer_confidence": null,
+    "native_confidence": 1.0,
+    "noul": 0.0,
+    "type": "noul"
+   },
+   "confidence": 1.0,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 1.0,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-02",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 234.5010999997612,
+    "answer_confidence": 0.5448,
+    "confidence": 0.5448,
+    "native_answer_confidence": null,
+    "native_confidence": 0.5448,
+    "noul": 0.5448,
+    "type": "noul"
+   },
+   "confidence": 0.5448,
+   "correct": false,
+   "expected": false,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5448,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-02",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 139.22250000177883,
+    "answer_confidence": 0.8028,
+    "confidence": 0.8028,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8028,
+    "noul": 0.8028,
+    "type": "noul"
+   },
+   "confidence": 0.8028,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8028,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-03",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 232.44139999951585,
+    "answer_confidence": 0.848,
+    "confidence": 0.848,
+    "native_answer_confidence": null,
+    "native_confidence": 0.848,
+    "noul": 0.848,
+    "type": "noul"
+   },
+   "confidence": 0.848,
+   "correct": true,
+   "expected": true,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.848,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-03",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 118.81889999858686,
+    "answer_confidence": 1.0,
+    "confidence": 1.0,
+    "native_answer_confidence": null,
+    "native_confidence": 1.0,
+    "noul": 0.0,
+    "type": "noul"
+   },
+   "confidence": 1.0,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 1.0,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-04",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 209.5326999988174,
+    "answer_confidence": 0.7352000000000001,
+    "confidence": 0.7352000000000001,
+    "native_answer_confidence": null,
+    "native_confidence": 0.7352,
+    "noul": 0.2648,
+    "type": "noul"
+   },
+   "confidence": 0.7352000000000001,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7352000000000001,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-04",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 138.3977999976196,
+    "answer_confidence": 0.9142,
+    "confidence": 0.7137679785206096,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.9142,
+    "native_confidence": 0.7138,
+    "probabilities": {
+     "0": 0.006,
+     "1": 0.0798,
+     "2": 0.9142
+    },
+    "score": 1.9082,
+    "type": "score"
+   },
+   "confidence": 0.9142,
+   "correct": null,
+   "expected": 2,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9142,
+    "noul_accuracy": null,
+    "score_mae": 0.0918000000000001
+   },
+   "tags": [
+    "score-frustration-01",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 342.68449999945005,
+    "answer_confidence": 0.4819,
+    "confidence": 0.09486506518275895,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.4819,
+    "native_confidence": 0.0948,
+    "probabilities": {
+     "0": 0.3785,
+     "1": 0.4819,
+     "2": 0.1396
+    },
+    "score": 0.7612,
+    "type": "score"
+   },
+   "confidence": 0.4819,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.4819,
+    "noul_accuracy": null,
+    "score_mae": 1.2388
+   },
+   "tags": [
+    "score-frustration-01",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 136.45610000094166,
+    "answer_confidence": 0.5463,
+    "confidence": 0.27681371930067167,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.5463,
+    "native_confidence": 0.2768,
+    "probabilities": {
+     "0": 0.5463,
+     "1": 0.4255,
+     "2": 0.0282
+    },
+    "score": 0.4819,
+    "type": "score"
+   },
+   "confidence": 0.5463,
+   "correct": null,
+   "expected": 0,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5463,
+    "noul_accuracy": null,
+    "score_mae": 0.4819
+   },
+   "tags": [
+    "score-frustration-02",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 312.620100001368,
+    "answer_confidence": 0.4819,
+    "confidence": 0.18927945195256535,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.4819,
+    "native_confidence": 0.1892,
+    "probabilities": {
+     "0": 0.4819,
+     "1": 0.4518,
+     "2": 0.0663
+    },
+    "score": 0.5845,
+    "type": "score"
+   },
+   "confidence": 0.4819,
+   "correct": null,
+   "expected": 0,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.4819,
+    "noul_accuracy": null,
+    "score_mae": 0.5845
+   },
+   "tags": [
+    "score-frustration-02",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 120.90940000052797,
+    "answer_confidence": 0.6172,
+    "confidence": 0.1983369840794289,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.6172,
+    "native_confidence": 0.1984,
+    "probabilities": {
+     "0": 0.0957,
+     "1": 0.2872,
+     "2": 0.6172
+    },
+    "score": 1.5215,
+    "type": "score"
+   },
+   "confidence": 0.6172,
+   "correct": null,
+   "expected": 1,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6172,
+    "noul_accuracy": null,
+    "score_mae": 0.5215000000000001
+   },
+   "tags": [
+    "score-frustration-03",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 229.77480000190553,
+    "answer_confidence": 0.5108,
+    "confidence": 0.18927003179483004,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.5108,
+    "native_confidence": 0.1893,
+    "probabilities": {
+     "0": 0.5108,
+     "1": 0.421,
+     "2": 0.0683
+    },
+    "score": 0.5575,
+    "type": "score"
+   },
+   "confidence": 0.5108,
+   "correct": null,
+   "expected": 1,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5108,
+    "noul_accuracy": null,
+    "score_mae": 0.4425
+   },
+   "tags": [
+    "score-frustration-03",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 177.4995999985549,
+    "answer_confidence": 0.5028,
+    "confidence": 0.3698229840688104,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": 0.5028,
+    "native_confidence": 0.3696,
+    "probabilities": {
+     "0": 0.0032,
+     "1": 0.0314,
+     "2": 0.0634,
+     "3": 0.3991,
+     "4": 0.5028
+    },
+    "score": 3.3668,
+    "type": "score"
+   },
+   "confidence": 0.5028,
+   "correct": null,
+   "expected": 4,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5028,
+    "noul_accuracy": null,
+    "score_mae": 0.6332
+   },
+   "tags": [
+    "score-frustration-04",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 359.75800000232994,
+    "answer_confidence": 0.3493,
+    "confidence": 0.09544626782430299,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": 0.3493,
+    "native_confidence": 0.0954,
+    "probabilities": {
+     "0": 0.2227,
+     "1": 0.3493,
+     "2": 0.2263,
+     "3": 0.1656,
+     "4": 0.0361
+    },
+    "score": 1.4433,
+    "type": "score"
+   },
+   "confidence": 0.3493,
+   "correct": null,
+   "expected": 4,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.3493,
+    "noul_accuracy": null,
+    "score_mae": 2.5567
+   },
+   "tags": [
+    "score-frustration-04",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 172.69339999984368,
+    "answer_confidence": 0.5655,
+    "confidence": 0.3430805897415351,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": 0.5655,
+    "native_confidence": 0.343,
+    "probabilities": {
+     "0": 0.2545,
+     "1": 0.5655,
+     "2": 0.1592,
+     "3": 0.0134,
+     "4": 0.0074
+    },
+    "score": 0.9539,
+    "type": "score"
+   },
+   "confidence": 0.5655,
+   "correct": null,
+   "expected": 1,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5655,
+    "noul_accuracy": null,
+    "score_mae": 0.04610000000000003
+   },
+   "tags": [
+    "score-frustration-05",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 332.57380000213743,
+    "answer_confidence": 0.2639,
+    "confidence": 0.03133333969148833,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": 0.2639,
+    "native_confidence": 0.0313,
+    "probabilities": {
+     "0": 0.1776,
+     "1": 0.2509,
+     "2": 0.2117,
+     "3": 0.2639,
+     "4": 0.096
+    },
+    "score": 1.8499,
+    "type": "score"
+   },
+   "confidence": 0.2639,
+   "correct": null,
+   "expected": 1,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.2639,
+    "noul_accuracy": null,
+    "score_mae": 0.8499000000000001
+   },
+   "tags": [
+    "score-frustration-05",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 627.1983000006003,
+    "answer_confidence": 1.0,
+    "choice": "U",
+    "confidence": 1.0,
+    "native_answer_confidence": 1.0,
+    "native_confidence": 0.9999,
+    "probabilities": {
+     "B": 0.0,
+     "B'": 0.0,
+     "B2": 0.0,
+     "D": 0.0,
+     "D'": 0.0,
+     "D2": 0.0,
+     "F": 0.0,
+     "F'": 0.0,
+     "F2": 0.0,
+     "L": 0.0,
+     "L'": 0.0,
+     "L2": 0.0,
+     "R": 0.0,
+     "R'": 0.0,
+     "R2": 0.0,
+     "U": 1.0,
+     "U'": 0.0,
+     "U2": 0.0
+    },
+    "type": "choice"
+   },
+   "confidence": 1.0,
+   "correct": false,
+   "expected": "U'",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 1.0,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-01",
+    "cardinality18",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1030.6097000029695,
+    "answer_confidence": 0.9937,
+    "choice": "U",
+    "confidence": 0.9810181659371844,
+    "native_answer_confidence": 0.9937,
+    "native_confidence": 0.9813,
+    "probabilities": {
+     "B": 0.0003,
+     "B'": 0.0002,
+     "B2": 0.0001,
+     "D": 0.0001,
+     "D'": 0.0002,
+     "D2": 0.0002,
+     "F": 0.0003,
+     "F'": 0.0003,
+     "F2": 0.0003,
+     "L": 0.0,
+     "L'": 0.0002,
+     "L2": 0.0002,
+     "R": 0.0007,
+     "R'": 0.0007,
+     "R2": 0.0006,
+     "U": 0.9937,
+     "U'": 0.0008,
+     "U2": 0.0012
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9937,
+   "correct": false,
+   "expected": "U'",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.9937,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-01",
+    "cardinality18",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 608.6309000020265,
+    "answer_confidence": 0.6084,
+    "choice": "F",
+    "confidence": 0.6760969833923924,
+    "native_answer_confidence": 0.6084,
+    "native_confidence": 0.6754,
+    "probabilities": {
+     "B": 0.0002,
+     "B'": 0.0008,
+     "B2": 0.0008,
+     "D": 0.0003,
+     "D'": 0.0013,
+     "D2": 0.0011,
+     "F": 0.6084,
+     "F'": 0.3353,
+     "F2": 0.0037,
+     "L": 0.0003,
+     "L'": 0.0036,
+     "L2": 0.0019,
+     "R": 0.0037,
+     "R'": 0.028,
+     "R2": 0.0041,
+     "U": 0.0006,
+     "U'": 0.0036,
+     "U2": 0.002
+    },
+    "type": "choice"
+   },
+   "confidence": 0.6084,
+   "correct": true,
+   "expected": "F",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.6084,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-02",
+    "cardinality18",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1089.9465999973472,
+    "answer_confidence": 1.0,
+    "choice": "F",
+    "confidence": 1.0,
+    "native_answer_confidence": 1.0,
+    "native_confidence": 0.9998,
+    "probabilities": {
+     "B": 0.0,
+     "B'": 0.0,
+     "B2": 0.0,
+     "D": 0.0,
+     "D'": 0.0,
+     "D2": 0.0,
+     "F": 1.0,
+     "F'": 0.0,
+     "F2": 0.0,
+     "L": 0.0,
+     "L'": 0.0,
+     "L2": 0.0,
+     "R": 0.0,
+     "R'": 0.0,
+     "R2": 0.0,
+     "U": 0.0,
+     "U'": 0.0,
+     "U2": 0.0
+    },
+    "type": "choice"
+   },
+   "confidence": 1.0,
+   "correct": true,
+   "expected": "F",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 1.0,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-02",
+    "cardinality18",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 636.2106000015046,
+    "answer_confidence": 0.9755,
+    "choice": "L",
+    "confidence": 0.9437585429436554,
+    "native_answer_confidence": 0.9755,
+    "native_confidence": 0.9439,
+    "probabilities": {
+     "B": 0.0004,
+     "B'": 0.0005,
+     "B2": 0.0005,
+     "D": 0.0001,
+     "D'": 0.0006,
+     "D2": 0.0008,
+     "F": 0.0001,
+     "F'": 0.0005,
+     "F2": 0.0001,
+     "L": 0.9755,
+     "L'": 0.0028,
+     "L2": 0.0123,
+     "R": 0.0012,
+     "R'": 0.0013,
+     "R2": 0.0013,
+     "U": 0.0002,
+     "U'": 0.001,
+     "U2": 0.0009
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9755,
+   "correct": false,
+   "expected": "L2",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.9755,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-03",
+    "cardinality18",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1031.329999997979,
+    "answer_confidence": 0.2897,
+    "choice": "R2",
+    "confidence": 0.14423227559130813,
+    "native_answer_confidence": 0.2897,
+    "native_confidence": 0.1443,
+    "probabilities": {
+     "B": 0.0424,
+     "B'": 0.0113,
+     "B2": 0.0412,
+     "D": 0.019,
+     "D'": 0.0172,
+     "D2": 0.0629,
+     "F": 0.0332,
+     "F'": 0.0154,
+     "F2": 0.0402,
+     "L": 0.0364,
+     "L'": 0.0193,
+     "L2": 0.1186,
+     "R": 0.0616,
+     "R'": 0.0395,
+     "R2": 0.2897,
+     "U": 0.0384,
+     "U'": 0.0191,
+     "U2": 0.0947
+    },
+    "type": "choice"
+   },
+   "confidence": 0.2897,
+   "correct": false,
+   "expected": "L2",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.2897,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-03",
+    "cardinality18",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 600.0421999997343,
+    "answer_confidence": 0.5784,
+    "choice": "opt_0",
+    "confidence": 0.22569436541383625,
+    "native_answer_confidence": 0.5784,
+    "native_confidence": 0.2257,
+    "probabilities": {
+     "opt_0": 0.5784,
+     "opt_1": 0.2376,
+     "opt_2": 0.1377,
+     "opt_3": 0.0463
+    },
+    "type": "choice"
+   },
+   "confidence": 0.5784,
+   "correct": false,
+   "expected": "opt_2",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.5784,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 600.0421999997343,
+    "answer_confidence": 0.6611,
+    "confidence": 0.6611,
+    "native_answer_confidence": null,
+    "native_confidence": 0.6611,
+    "noul": 0.3389,
+    "type": "noul"
+   },
+   "confidence": 0.6611,
+   "correct": false,
+   "expected": true,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6611,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1401.3248000010208,
+    "answer_confidence": 0.3825,
+    "choice": "opt_0",
+    "confidence": 0.03940825330061659,
+    "native_answer_confidence": 0.3825,
+    "native_confidence": 0.0394,
+    "probabilities": {
+     "opt_0": 0.3825,
+     "opt_1": 0.2556,
+     "opt_2": 0.2051,
+     "opt_3": 0.1567
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3825,
+   "correct": false,
+   "expected": "opt_2",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3825,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1401.3248000010208,
+    "answer_confidence": 0.7653,
+    "confidence": 0.7653,
+    "native_answer_confidence": null,
+    "native_confidence": 0.7653,
+    "noul": 0.2347,
+    "type": "noul"
+   },
+   "confidence": 0.7653,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7653,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 623.5132000001613,
+    "answer_confidence": 0.7531,
+    "choice": "opt_0",
+    "confidence": 0.43227442613692746,
+    "native_answer_confidence": 0.7531,
+    "native_confidence": 0.4323,
+    "probabilities": {
+     "opt_0": 0.7531,
+     "opt_1": 0.1538,
+     "opt_2": 0.0464,
+     "opt_3": 0.0467
+    },
+    "type": "choice"
+   },
+   "confidence": 0.7531,
+   "correct": true,
+   "expected": "opt_0",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.7531,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 623.5132000001613,
+    "answer_confidence": 0.8829,
+    "confidence": 0.8829,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8829,
+    "noul": 0.8829,
+    "type": "noul"
+   },
+   "confidence": 0.8829,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8829,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1407.8899000014644,
+    "answer_confidence": 0.5661,
+    "choice": "opt_0",
+    "confidence": 0.19222659034702683,
+    "native_answer_confidence": 0.5661,
+    "native_confidence": 0.1922,
+    "probabilities": {
+     "opt_0": 0.5661,
+     "opt_1": 0.2193,
+     "opt_2": 0.1457,
+     "opt_3": 0.0689
+    },
+    "type": "choice"
+   },
+   "confidence": 0.5661,
+   "correct": true,
+   "expected": "opt_0",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.5661,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1407.8899000014644,
+    "answer_confidence": 0.988,
+    "confidence": 0.988,
+    "native_answer_confidence": null,
+    "native_confidence": 0.988,
+    "noul": 0.012,
+    "type": "noul"
+   },
+   "confidence": 0.988,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.988,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 603.0433999985689,
+    "answer_confidence": 0.6583,
+    "choice": "opt_0",
+    "confidence": 0.2968480743746561,
+    "native_answer_confidence": 0.6583,
+    "native_confidence": 0.2968,
+    "probabilities": {
+     "opt_0": 0.6583,
+     "opt_1": 0.1508,
+     "opt_2": 0.1508,
+     "opt_3": 0.0401
+    },
+    "type": "choice"
+   },
+   "confidence": 0.6583,
+   "correct": false,
+   "expected": "opt_1",
+   "language": "en",
+   "model": "laya-en",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.6583,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 603.0433999985689,
+    "answer_confidence": 0.6915,
+    "confidence": 0.6915,
+    "native_answer_confidence": null,
+    "native_confidence": 0.6915,
+    "noul": 0.6915,
+    "type": "noul"
+   },
+   "confidence": 0.6915,
+   "correct": false,
+   "expected": false,
+   "language": "en",
+   "model": "laya-en",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6915,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1445.4449999975623,
+    "answer_confidence": 0.4112,
+    "choice": "opt_2",
+    "confidence": 0.093084338270503,
+    "native_answer_confidence": 0.4112,
+    "native_confidence": 0.0931,
+    "probabilities": {
+     "opt_0": 0.2848,
+     "opt_1": 0.2269,
+     "opt_2": 0.4112,
+     "opt_3": 0.0771
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4112,
+   "correct": false,
+   "expected": "opt_1",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.4112,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1445.4449999975623,
+    "answer_confidence": 0.7296,
+    "confidence": 0.7296,
+    "native_answer_confidence": null,
+    "native_confidence": 0.7296,
+    "noul": 0.2704,
+    "type": "noul"
+   },
+   "confidence": 0.7296,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7296,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 322.69910000104574,
+    "answer_confidence": 0.8202,
+    "confidence": 0.8202,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8202,
+    "noul": 0.8202,
+    "type": "noul"
+   },
+   "confidence": 0.8202,
+   "correct": true,
+   "expected": true,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8202,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "thai-register-01",
+    "thai-only",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 351.7062999999325,
+    "answer_confidence": 0.3508,
+    "choice": "billing",
+    "confidence": 0.029618289144283882,
+    "native_answer_confidence": 0.3508,
+    "native_confidence": 0.0296,
+    "probabilities": {
+     "billing": 0.3508,
+     "other": 0.1782,
+     "sales": 0.1855,
+     "technical": 0.2855
+    },
+    "type": "choice"
+   },
+   "confidence": 0.3508,
+   "correct": false,
+   "expected": "technical",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.3508,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "thai-register-02",
+    "thai-only",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 234.22710000158986,
+    "answer_confidence": 0.4753,
+    "confidence": 0.2156622284466866,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": 0.4753,
+    "native_confidence": 0.2156,
+    "probabilities": {
+     "0": 0.4753,
+     "1": 0.4726,
+     "2": 0.0521
+    },
+    "score": 0.5768,
+    "type": "score"
+   },
+   "confidence": 0.4753,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "laya-en",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.4753,
+    "noul_accuracy": null,
+    "score_mae": 1.4232
+   },
+   "tags": [
+    "thai-register-03",
+    "thai-only",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 398.87889999954496,
+    "answer_confidence": 0.4537,
+    "choice": "billing",
+    "confidence": 0.07675781206872478,
+    "native_answer_confidence": 0.4537,
+    "native_confidence": 0.0767,
+    "probabilities": {
+     "billing": 0.4537,
+     "other": 0.1363,
+     "sales": 0.2085,
+     "technical": 0.2015
+    },
+    "type": "choice"
+   },
+   "confidence": 0.4537,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "laya-en",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.4537,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "thai-register-04",
+    "thai-only",
+    "th"
+   ]
+  }
+ ],
+ "config": {
+  "coverage_metric_definition": 2,
+  "dataset_path": "decision_models\\data\\focused_items.jsonl",
+  "dataset_sha256": "8646f3551389c7d768eca620a12502e9e141edd20ac729a83b295f24014abbf0",
+  "laya_version": "0.3.27",
+  "models": [
+   "laya-en"
+  ],
+  "n_items": 68,
+  "on_error": "skip",
+  "openthai_model": "iapp/OpenThai-SystemOne",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.5",
+  "questions_sha256": "e3c54977db525ff0d53fd8257e93c010d126e80d54d8bf4ac789a4ae759bb7e0",
+  "routing": [
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   },
+   {
+    "answered_by": "laya-english",
+    "reason": null,
+    "requested": "laya-en"
+   }
+  ],
+  "schema": "laya-evals-report/1",
+  "timing": {
+   "batch_form": null,
+   "batch_size": null,
+   "chunks": 68,
+   "cost_metric": "per decision: that call divided by its own chunk size",
+   "latency_metric": "per request: the wall time of the call that returned it, unsplit",
+   "max_chunk": 1,
+   "min_confidence": null,
+   "min_confidence_sent": false,
+   "rows_alone": 68,
+   "rows_grouped": 0,
+   "sort_by_length": false,
+   "sort_by_length_sent": false
+  }
+ },
+ "overall": {
+  "aurc": 0.29894765713449084,
+  "brier": 0.21889530422535208,
+  "choice_accuracy": 0.5208333333333334,
+  "cost_per_decision_p50_ms": 314.4064999996772,
+  "cost_per_decision_p95_ms": 1401.3422000025457,
+  "ece": 0.16910140845070426,
+  "latency_p50_ms": 314.4064999996772,
+  "latency_p95_ms": 1401.3422000025457,
+  "mean_confidence": 0.6432688888888889,
+  "noul_accuracy": 0.6086956521739131,
+  "score_mae": 0.697657894736842,
+  "selective_accuracy@50": 0.75,
+  "selective_accuracy@80": 0.631578947368421
+ },
+ "slices": {
+  "language": {
+   "en": {
+    "aurc": 0.17329142977877016,
+    "brier": 0.15803751500000002,
+    "choice_accuracy": 0.7391304347826086,
+    "ece": 0.22307941176470591,
+    "mean_confidence": 0.7721604651162791,
+    "noul_accuracy": 0.8181818181818182,
+    "score_mae": 0.3201555555555556,
+    "selective_accuracy@50": 0.8823529411764706,
+    "selective_accuracy@80": 0.8214285714285714
+   },
+   "th": {
+    "aurc": 0.5497315520124799,
+    "brier": 0.27481867810810806,
+    "choice_accuracy": 0.32,
+    "ece": 0.24113783783783785,
+    "mean_confidence": 0.5253468085106383,
+    "noul_accuracy": 0.4166666666666667,
+    "score_mae": 1.03741,
+    "selective_accuracy@50": 0.5263157894736842,
+    "selective_accuracy@80": 0.36666666666666664
+   }
+  },
+  "model": {
+   "laya-en": {
+    "aurc": 0.29894765713449084,
+    "brier": 0.21889530422535208,
+    "choice_accuracy": 0.5208333333333334,
+    "ece": 0.16910140845070426,
+    "mean_confidence": 0.6432688888888889,
+    "noul_accuracy": 0.6086956521739131,
+    "score_mae": 0.697657894736842,
+    "selective_accuracy@50": 0.75,
+    "selective_accuracy@80": 0.631578947368421
+   }
+  },
+  "qid": {
+   "churn_threat": {
+    "aurc": 0.038580246913580245,
+    "brier": 0.1010537688888889,
+    "ece": 0.23924444444444445,
+    "mean_confidence": 0.8037333333333333,
+    "noul_accuracy": 0.7777777777777778,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.875
+   },
+   "department": {
+    "aurc": 0.20234063279341918,
+    "brier": 0.16742284950000003,
+    "choice_accuracy": 0.55,
+    "ece": 0.154185,
+    "mean_confidence": 0.507095,
+    "selective_accuracy@50": 0.8,
+    "selective_accuracy@80": 0.625
+   },
+   "frustration": {
+    "mean_confidence": 0.519009090909091,
+    "score_mae": 0.8063727272727274
+   },
+   "next_move": {
+    "aurc": 0.6138888888888889,
+    "brier": 0.5293860983333333,
+    "choice_accuracy": 0.3333333333333333,
+    "ece": 0.6084166666666666,
+    "mean_confidence": 0.8112166666666667,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.4
+   },
+   "placement": {
+    "aurc": 0.48888888888888893,
+    "brier": 0.22208766,
+    "choice_accuracy": 0.3333333333333333,
+    "ece": 0.30723333333333336,
+    "mean_confidence": 0.5582666666666667,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.4
+   },
+   "refund_requested": {
+    "aurc": 0.15967261904761904,
+    "brier": 0.27560856875,
+    "ece": 0.27068749999999997,
+    "mean_confidence": 0.8956875,
+    "noul_accuracy": 0.625,
+    "selective_accuracy@50": 0.75,
+    "selective_accuracy@80": 0.7142857142857143
+   },
+   "route": {
+    "aurc": 0.10458135614385614,
+    "brier": 0.125377029375,
+    "choice_accuracy": 0.625,
+    "ece": 0.17474374999999998,
+    "mean_confidence": 0.64664375,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.7692307692307693
+   },
+   "safe": {
+    "aurc": 0.6555555555555556,
+    "brier": 0.4273136866666667,
+    "ece": 0.4921,
+    "mean_confidence": 0.7864,
+    "noul_accuracy": 0.3333333333333333,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.4
+   },
+   "urgency": {
+    "mean_confidence": 0.5453125,
+    "score_mae": 0.548175
+   }
+  },
+  "tag": {
+   "cardinality18": {
+    "aurc": 0.6138888888888889,
+    "brier": 0.5293860983333333,
+    "choice_accuracy": 0.3333333333333333,
+    "ece": 0.6084166666666666,
+    "mean_confidence": 0.8112166666666667,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.4
+   },
+   "cardinality4": {
+    "aurc": 0.6110660173160174,
+    "brier": 0.32470067333333336,
+    "choice_accuracy": 0.3333333333333333,
+    "ece": 0.3585166666666666,
+    "mean_confidence": 0.6723333333333333,
+    "noul_accuracy": 0.3333333333333333,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.4
+   },
+   "cube-inverse-01": {
+    "aurc": 1.0,
+    "brier": 0.993719845,
+    "choice_accuracy": 0.0,
+    "ece": 0.99685,
+    "mean_confidence": 0.99685,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "cube-inverse-02": {
+    "aurc": 0.0,
+    "brier": 0.07667527999999998,
+    "choice_accuracy": 1.0,
+    "ece": 0.19579999999999997,
+    "mean_confidence": 0.8042,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "cube-inverse-03": {
+    "aurc": 1.0,
+    "brier": 0.51776317,
+    "choice_accuracy": 0.0,
+    "ece": 0.6326,
+    "mean_confidence": 0.6326,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "en": {
+    "aurc": 0.17329142977877016,
+    "brier": 0.15803751500000002,
+    "choice_accuracy": 0.7391304347826086,
+    "ece": 0.22307941176470591,
+    "mean_confidence": 0.7721604651162791,
+    "noul_accuracy": 0.8181818181818182,
+    "score_mae": 0.3201555555555556,
+    "selective_accuracy@50": 0.8823529411764706,
+    "selective_accuracy@80": 0.8214285714285714
+   },
+   "multi": {
+    "aurc": 0.21976920648795648,
+    "brier": 0.22710317,
+    "choice_accuracy": 0.5,
+    "ece": 0.2283375,
+    "mean_confidence": 0.6437625,
+    "noul_accuracy": 0.625,
+    "score_mae": 0.548175,
+    "selective_accuracy@50": 0.875,
+    "selective_accuracy@80": 0.6153846153846154
+   },
+   "multi-billing-01": {
+    "aurc": 0.4166666666666667,
+    "brier": 0.33094722750000005,
+    "choice_accuracy": 0.5,
+    "ece": 0.507775,
+    "mean_confidence": 0.6337166666666666,
+    "noul_accuracy": 0.5,
+    "score_mae": 0.5260999999999999,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.5
+   },
+   "multi-billing-refund-01": {
+    "aurc": 0.0625,
+    "brier": 0.025904375,
+    "choice_accuracy": 0.5,
+    "ece": 0.12304999999999995,
+    "mean_confidence": 0.6826500000000001,
+    "noul_accuracy": 1.0,
+    "score_mae": 0.85215,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.75
+   },
+   "multi-sales-01": {
+    "aurc": 0.4166666666666667,
+    "brier": 0.32715533250000006,
+    "choice_accuracy": 0.5,
+    "ece": 0.476625,
+    "mean_confidence": 0.6031666666666667,
+    "noul_accuracy": 0.5,
+    "score_mae": 0.6662,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.5
+   },
+   "multi-technical-01": {
+    "aurc": 0.33333333333333337,
+    "brier": 0.22440574500000002,
+    "choice_accuracy": 0.5,
+    "ece": 0.2502500000000001,
+    "mean_confidence": 0.6555166666666666,
+    "noul_accuracy": 0.5,
+    "score_mae": 0.14824999999999994,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.5
+   },
+   "noul": {
+    "aurc": 0.04910714285714286,
+    "brier": 0.10964448500000001,
+    "ece": 0.24667500000000003,
+    "mean_confidence": 0.801675,
+    "noul_accuracy": 0.75,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.8571428571428571
+   },
+   "noul-churn-01": {
+    "aurc": 0.25,
+    "brier": 0.22411898000000005,
+    "ece": 0.40730000000000005,
+    "mean_confidence": 0.7413000000000001,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "noul-churn-02": {
+    "aurc": 0.25,
+    "brier": 0.14840351999999998,
+    "ece": 0.2724,
+    "mean_confidence": 0.7724,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "noul-churn-03": {
+    "aurc": 0.0,
+    "brier": 0.03099592000000001,
+    "ece": 0.1746000000000001,
+    "mean_confidence": 0.8253999999999999,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "noul-churn-04": {
+    "aurc": 0.0,
+    "brier": 0.03505951999999998,
+    "ece": 0.13239999999999996,
+    "mean_confidence": 0.8676,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "placement-01": {
+    "aurc": 1.0,
+    "brier": 0.37589752750000005,
+    "choice_accuracy": 0.0,
+    "ece": 0.596825,
+    "mean_confidence": 0.596825,
+    "noul_accuracy": 0.0,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "placement-02": {
+    "aurc": 0.5208333333333334,
+    "brier": 0.3097713075,
+    "choice_accuracy": 1.0,
+    "ece": 0.44647499999999996,
+    "mean_confidence": 0.797525,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.75
+   },
+   "placement-03": {
+    "aurc": 0.4791666666666667,
+    "brier": 0.28843318500000004,
+    "choice_accuracy": 0.0,
+    "ece": 0.37265000000000004,
+    "mean_confidence": 0.62265,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.25
+   },
+   "route-ambiguous-01": {
+    "aurc": 0.0,
+    "brier": 0.30719376499999995,
+    "choice_accuracy": 1.0,
+    "ece": 0.5522499999999999,
+    "mean_confidence": 0.44775,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-cost-01": {
+    "aurc": 0.25,
+    "brier": 0.11881476500000002,
+    "choice_accuracy": 0.5,
+    "ece": 0.25175000000000003,
+    "mean_confidence": 0.73545,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "route-cost-02": {
+    "aurc": 0.25,
+    "brier": 0.0790105,
+    "choice_accuracy": 0.5,
+    "ece": 0.2131,
+    "mean_confidence": 0.6833,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "route-general-01": {
+    "aurc": 0.25,
+    "brier": 0.13746851999999998,
+    "choice_accuracy": 0.5,
+    "ece": 0.3696,
+    "mean_confidence": 0.5294000000000001,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "route-reservation-01": {
+    "aurc": 0.25,
+    "brier": 0.07784685000000001,
+    "choice_accuracy": 0.5,
+    "ece": 0.23010000000000003,
+    "mean_confidence": 0.6577999999999999,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "route-reservation-02": {
+    "aurc": 0.0,
+    "brier": 0.110725225,
+    "choice_accuracy": 1.0,
+    "ece": 0.25905,
+    "mean_confidence": 0.74095,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-weather-01": {
+    "aurc": 0.25,
+    "brier": 0.095652985,
+    "choice_accuracy": 0.5,
+    "ece": 0.22874999999999998,
+    "mean_confidence": 0.7081500000000001,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "route-weather-02": {
+    "aurc": 0.25,
+    "brier": 0.076303625,
+    "choice_accuracy": 0.5,
+    "ece": 0.21745,
+    "mean_confidence": 0.67035,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "routing": {
+    "aurc": 0.10458135614385614,
+    "brier": 0.125377029375,
+    "choice_accuracy": 0.625,
+    "ece": 0.17474374999999998,
+    "mean_confidence": 0.64664375,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.7692307692307693
+   },
+   "score": {
+    "mean_confidence": 0.5233800000000001,
+    "score_mae": 0.7446900000000001
+   },
+   "score-frustration-01": {
+    "mean_confidence": 0.6980500000000001,
+    "score_mae": 0.6653
+   },
+   "score-frustration-02": {
+    "mean_confidence": 0.5141,
+    "score_mae": 0.5332
+   },
+   "score-frustration-03": {
+    "mean_confidence": 0.5640000000000001,
+    "score_mae": 0.48200000000000004
+   },
+   "score-frustration-04": {
+    "mean_confidence": 0.42605000000000004,
+    "score_mae": 1.59495
+   },
+   "score-frustration-05": {
+    "mean_confidence": 0.4147,
+    "score_mae": 0.44800000000000006
+   },
+   "th": {
+    "aurc": 0.5497315520124799,
+    "brier": 0.27481867810810806,
+    "choice_accuracy": 0.32,
+    "ece": 0.24113783783783785,
+    "mean_confidence": 0.5253468085106383,
+    "noul_accuracy": 0.4166666666666667,
+    "score_mae": 1.03741,
+    "selective_accuracy@50": 0.5263157894736842,
+    "selective_accuracy@80": 0.36666666666666664
+   },
+   "thai-only": {
+    "aurc": 0.11111111111111112,
+    "brier": 0.15127745666666667,
+    "choice_accuracy": 0.5,
+    "ece": 0.35896666666666666,
+    "mean_confidence": 0.525,
+    "noul_accuracy": 1.0,
+    "score_mae": 1.4232,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.6666666666666666
+   },
+   "thai-register-01": {
+    "aurc": 0.0,
+    "brier": 0.03232803999999999,
+    "ece": 0.17979999999999996,
+    "mean_confidence": 0.8202,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "thai-register-02": {
+    "aurc": 1.0,
+    "brier": 0.12306064,
+    "choice_accuracy": 0.0,
+    "ece": 0.3508,
+    "mean_confidence": 0.3508,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "thai-register-03": {
+    "mean_confidence": 0.4753,
+    "score_mae": 1.4232
+   },
+   "thai-register-04": {
+    "aurc": 0.0,
+    "brier": 0.29844369,
+    "choice_accuracy": 1.0,
+    "ece": 0.5463,
+    "mean_confidence": 0.4537,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage": {
+    "aurc": 0.14357142857142854,
+    "brier": 0.14981704899999998,
+    "choice_accuracy": 0.6,
+    "ece": 0.13138999999999998,
+    "mean_confidence": 0.5415099999999999,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.75
+   },
+   "triage-billing-01": {
+    "aurc": 0.25,
+    "brier": 0.087859125,
+    "choice_accuracy": 0.5,
+    "ece": 0.24284999999999998,
+    "mean_confidence": 0.66995,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "triage-billing-02": {
+    "aurc": 0.0,
+    "brier": 0.22959728499999998,
+    "choice_accuracy": 1.0,
+    "ece": 0.37825,
+    "mean_confidence": 0.62175,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage-other-01": {
+    "aurc": 1.0,
+    "brier": 0.119372705,
+    "choice_accuracy": 0.0,
+    "ece": 0.34495,
+    "mean_confidence": 0.34495,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "triage-sales-01": {
+    "aurc": 0.25,
+    "brier": 0.155780505,
+    "choice_accuracy": 0.5,
+    "ece": 0.38295,
+    "mean_confidence": 0.40445,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "triage-technical-01": {
+    "aurc": 0.0,
+    "brier": 0.156475625,
+    "choice_accuracy": 1.0,
+    "ece": 0.33355,
+    "mean_confidence": 0.66645,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   }
+  }
+ }
+}
