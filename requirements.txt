@@ -1,0 +1,28 @@
+# Resolved against the interpreter this harness was built and run on.
+# Deliberately NOT a venv: creating one would re-download ~3 GB of torch, and
+# both decision models plus both cached weight sets already live in this
+# interpreter. Versions are pinned as observed, so a report can say what
+# produced it.
+#
+# Interpreter: CPython 3.14.5 (Windows)
+# Hardware:    NVIDIA GeForce RTX 5050 Laptop GPU, 8151 MiB
+
+laya==0.3.27                 # decision model + the eval harness this package scores with
+openthai-systemone==0.1.0    # decision model
+torch==2.14.1
+transformers==5.18.0
+tokenizers==0.23.2
+safetensors==0.8.0
+huggingface_hub==1.33.0
+numpy==2.5.3
+
+# Serving layer (Phase 5)
+fastapi==0.142.2
+uvicorn==0.54.0
+httpx==0.28.1
+
+# Tests
+pytest==9.1.1
+
+# Public benchmark replication (Phase 3) additionally needs:
+#   datasets  (pulls pyarrow; only required for `bench public`)

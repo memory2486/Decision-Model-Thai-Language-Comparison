@@ -1,0 +1,4050 @@
+{
+ "cases": [
+  {
+   "answer": {
+    "_latency_ms": 8472.758200001408,
+    "abstain": 0.00023192993830889463,
+    "answer_confidence": 0.9942238330841064,
+    "choice": "weather",
+    "confidence": 0.9698682727603885,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9698682472334137,
+    "probabilities": {
+     "cost": 0.00229374086484313,
+     "general": 0.0014392868615686893,
+     "reservation": 0.002043103566393256,
+     "weather": 0.9942238330841064
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9942238330841064,
+   "correct": true,
+   "expected": "weather",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9942238330841064,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 493.5466999995697,
+    "abstain": 0.000299803854431957,
+    "answer_confidence": 0.9937939047813416,
+    "choice": "weather",
+    "confidence": 0.9679800698855605,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9679800577712776,
+    "probabilities": {
+     "cost": 0.0023821021895855665,
+     "general": 0.001432170975022018,
+     "reservation": 0.002391807734966278,
+     "weather": 0.9937939047813416
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9937939047813416,
+   "correct": true,
+   "expected": "weather",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9937939047813416,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 390.2278000023216,
+    "abstain": 0.0007157666841521859,
+    "answer_confidence": 0.9941108226776123,
+    "choice": "reservation",
+    "confidence": 0.9694010246263679,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9694010187411399,
+    "probabilities": {
+     "cost": 0.0015678354538977146,
+     "general": 0.0016993075842037797,
+     "reservation": 0.9941108226776123,
+     "weather": 0.0026220271829515696
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9941108226776123,
+   "correct": true,
+   "expected": "reservation",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9941108226776123,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 453.0857999998261,
+    "abstain": 0.0027271637227386236,
+    "answer_confidence": 0.9903935194015503,
+    "choice": "reservation",
+    "confidence": 0.9535359693032268,
+    "native_answer_confidence": null,
+    "native_confidence": 0.953535979287721,
+    "probabilities": {
+     "cost": 0.0020739492028951645,
+     "general": 0.003899532137438655,
+     "reservation": 0.9903935194015503,
+     "weather": 0.0036329550202935934
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9903935194015503,
+   "correct": true,
+   "expected": "reservation",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9903935194015503,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 388.7849999991886,
+    "abstain": 0.00023009134747553617,
+    "answer_confidence": 0.9848423600196838,
+    "choice": "cost",
+    "confidence": 0.9336204089488815,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9336204259390127,
+    "probabilities": {
+     "cost": 0.9848423600196838,
+     "general": 0.00246257777325809,
+     "reservation": 0.00985001027584076,
+     "weather": 0.0028450284153223038
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9848423600196838,
+   "correct": true,
+   "expected": "cost",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9848423600196838,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 481.64660000111326,
+    "abstain": 0.0007985822740010917,
+    "answer_confidence": 0.9853567481040955,
+    "choice": "cost",
+    "confidence": 0.9353457450469775,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9353457451435527,
+    "probabilities": {
+     "cost": 0.9853567481040955,
+     "general": 0.0026737439911812544,
+     "reservation": 0.009353767149150372,
+     "weather": 0.0026157416868954897
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9853567481040955,
+   "correct": true,
+   "expected": "cost",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9853567481040955,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 371.81280000004335,
+    "abstain": 0.0018819683464244008,
+    "answer_confidence": 0.9887329936027527,
+    "choice": "general",
+    "confidence": 0.9484376205826113,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9484376180963872,
+    "probabilities": {
+     "cost": 0.0018974096747115254,
+     "general": 0.9887329936027527,
+     "reservation": 0.007539572659879923,
+     "weather": 0.0018300259253010154
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9887329936027527,
+   "correct": true,
+   "expected": "general",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9887329936027527,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-general-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 474.1878999993787,
+    "abstain": 0.0024173827841877937,
+    "answer_confidence": 0.9888378381729126,
+    "choice": "general",
+    "confidence": 0.9496260168162237,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9496260128393914,
+    "probabilities": {
+     "cost": 0.0015920678852126002,
+     "general": 0.9888378381729126,
+     "reservation": 0.008169727399945259,
+     "weather": 0.0014003599062561989
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9888378381729126,
+   "correct": true,
+   "expected": "general",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9888378381729126,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-general-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 442.7742000007129,
+    "abstain": 0.0007912199944257736,
+    "answer_confidence": 0.9097446799278259,
+    "choice": "reservation",
+    "confidence": 0.762992628199131,
+    "native_answer_confidence": null,
+    "native_confidence": 0.7629926436507857,
+    "probabilities": {
+     "cost": 0.08446930348873138,
+     "general": 0.0024483599700033665,
+     "reservation": 0.9097446799278259,
+     "weather": 0.0033376747742295265
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9097446799278259,
+   "correct": true,
+   "expected": "reservation",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9097446799278259,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-ambiguous-01",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 473.751400000765,
+    "abstain": 0.0006243480020202696,
+    "answer_confidence": 0.70430588722229,
+    "choice": "reservation",
+    "confidence": 0.5328801122906623,
+    "native_answer_confidence": null,
+    "native_confidence": 0.5328801147703239,
+    "probabilities": {
+     "cost": 0.28810223937034607,
+     "general": 0.0030069327913224697,
+     "reservation": 0.70430588722229,
+     "weather": 0.004584946669638157
+    },
+    "type": "choice"
+   },
+   "confidence": 0.70430588722229,
+   "correct": true,
+   "expected": "reservation",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.70430588722229,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-ambiguous-01",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 392.6236000006611,
+    "abstain": 0.00028427952202036977,
+    "answer_confidence": 0.9933529496192932,
+    "choice": "weather",
+    "confidence": 0.9659917995495811,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9659918254636889,
+    "probabilities": {
+     "cost": 0.002497816225513816,
+     "general": 0.0016650187317281961,
+     "reservation": 0.002484253840520978,
+     "weather": 0.9933529496192932
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9933529496192932,
+   "correct": true,
+   "expected": "weather",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9933529496192932,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-02",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 527.2891000022355,
+    "abstain": 0.0002963277220260352,
+    "answer_confidence": 0.9930355548858643,
+    "choice": "weather",
+    "confidence": 0.964642246865058,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9646422211705612,
+    "probabilities": {
+     "cost": 0.002939205849543214,
+     "general": 0.0017021901439875364,
+     "reservation": 0.0023230130318552256,
+     "weather": 0.9930355548858643
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9930355548858643,
+   "correct": true,
+   "expected": "weather",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9930355548858643,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-weather-02",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 553.9704999973765,
+    "abstain": 0.00027161301113665104,
+    "answer_confidence": 0.9923160672187805,
+    "choice": "cost",
+    "confidence": 0.9614465832885848,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9614465900370479,
+    "probabilities": {
+     "cost": 0.9923160672187805,
+     "general": 0.0021364788990467787,
+     "reservation": 0.0028955177403986454,
+     "weather": 0.0026519473176449537
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9923160672187805,
+   "correct": true,
+   "expected": "cost",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9923160672187805,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-02",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 591.6885999977239,
+    "abstain": 0.00020969599427189678,
+    "answer_confidence": 0.9915449619293213,
+    "choice": "cost",
+    "confidence": 0.9583824642152688,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9583824638251797,
+    "probabilities": {
+     "cost": 0.9915449619293213,
+     "general": 0.0022449204698204994,
+     "reservation": 0.0021823495626449585,
+     "weather": 0.004027708433568478
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9915449619293213,
+   "correct": true,
+   "expected": "cost",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9915449619293213,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-cost-02",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 618.4291999998095,
+    "abstain": 0.0004246734024491161,
+    "answer_confidence": 0.9934175610542297,
+    "choice": "reservation",
+    "confidence": 0.9663717667707307,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9663718184435414,
+    "probabilities": {
+     "cost": 0.0020905379205942154,
+     "general": 0.0015249530551955104,
+     "reservation": 0.9934175610542297,
+     "weather": 0.0029669071082025766
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9934175610542297,
+   "correct": true,
+   "expected": "reservation",
+   "language": "en",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9934175610542297,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-02",
+    "routing",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 550.157700003183,
+    "abstain": 0.0004977044300176203,
+    "answer_confidence": 0.9938949942588806,
+    "choice": "reservation",
+    "confidence": 0.9683549437752018,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9683549718884717,
+    "probabilities": {
+     "cost": 0.0019419471500441432,
+     "general": 0.0017650724621489644,
+     "reservation": 0.9938949942588806,
+     "weather": 0.002398027339950204
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9938949942588806,
+   "correct": true,
+   "expected": "reservation",
+   "language": "th",
+   "model": "openthai",
+   "qid": "route",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9938949942588806,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "route-reservation-02",
+    "routing",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 394.31750000221655,
+    "abstain": 0.00038821122143417597,
+    "answer_confidence": 0.993101179599762,
+    "choice": "billing",
+    "confidence": 0.9648564750937492,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9648564739323313,
+    "probabilities": {
+     "billing": 0.993101179599762,
+     "other": 0.001871469896286726,
+     "sales": 0.0024108237121254206,
+     "technical": 0.0026165239978581667
+    },
+    "type": "choice"
+   },
+   "confidence": 0.993101179599762,
+   "correct": true,
+   "expected": "billing",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.993101179599762,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 515.7015000004321,
+    "abstain": 0.0004700272111222148,
+    "answer_confidence": 0.9934390783309937,
+    "choice": "billing",
+    "confidence": 0.9663134374141552,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9663134410824892,
+    "probabilities": {
+     "billing": 0.9934390783309937,
+     "other": 0.0019209800520911813,
+     "sales": 0.002253133337944746,
+     "technical": 0.0023867536801844835
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9934390783309937,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9934390783309937,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 452.0018999974127,
+    "abstain": 0.0004309772630222142,
+    "answer_confidence": 0.9919825196266174,
+    "choice": "technical",
+    "confidence": 0.960309979410559,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9603099566974956,
+    "probabilities": {
+     "billing": 0.0015400482807308435,
+     "other": 0.002767907688394189,
+     "sales": 0.003709494136273861,
+     "technical": 0.9919825196266174
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9919825196266174,
+   "correct": true,
+   "expected": "technical",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9919825196266174,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-technical-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 473.573999999644,
+    "abstain": 0.0004478154587559402,
+    "answer_confidence": 0.992274284362793,
+    "choice": "technical",
+    "confidence": 0.9612687101906114,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9612686954825618,
+    "probabilities": {
+     "billing": 0.0022118408232927322,
+     "other": 0.0025080153718590736,
+     "sales": 0.003005837555974722,
+     "technical": 0.992274284362793
+    },
+    "type": "choice"
+   },
+   "confidence": 0.992274284362793,
+   "correct": true,
+   "expected": "technical",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.992274284362793,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-technical-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 394.6159000006446,
+    "abstain": 0.00035487377317622304,
+    "answer_confidence": 0.9917821884155273,
+    "choice": "sales",
+    "confidence": 0.9592069266029964,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9592069405917292,
+    "probabilities": {
+     "billing": 0.00238344119861722,
+     "other": 0.0024263744708150625,
+     "sales": 0.9917821884155273,
+     "technical": 0.0034080157056450844
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9917821884155273,
+   "correct": true,
+   "expected": "sales",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9917821884155273,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-sales-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 397.7740000009362,
+    "abstain": 0.0002612738753668964,
+    "answer_confidence": 0.9907517433166504,
+    "choice": "sales",
+    "confidence": 0.9551964868889469,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9551964986540907,
+    "probabilities": {
+     "billing": 0.004576942417770624,
+     "other": 0.0019791368395090103,
+     "sales": 0.9907517433166504,
+     "technical": 0.002692135516554117
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9907517433166504,
+   "correct": true,
+   "expected": "sales",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9907517433166504,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-sales-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 360.8552999976382,
+    "abstain": 0.01343599334359169,
+    "answer_confidence": 0.986568808555603,
+    "choice": "other",
+    "confidence": 0.9395615149666481,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9395615236174057,
+    "probabilities": {
+     "billing": 0.008220050483942032,
+     "other": 0.986568808555603,
+     "sales": 0.002874780213460326,
+     "technical": 0.002336368663236499
+    },
+    "type": "choice"
+   },
+   "confidence": 0.986568808555603,
+   "correct": true,
+   "expected": "other",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.986568808555603,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-other-01",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 413.9857000009215,
+    "abstain": 0.11024299263954163,
+    "answer_confidence": 0.9896766543388367,
+    "choice": "other",
+    "confidence": 0.9522157778508947,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9522157867151197,
+    "probabilities": {
+     "billing": 0.006915265694260597,
+     "other": 0.9896766543388367,
+     "sales": 0.002204785356298089,
+     "technical": 0.0012033093953505158
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9896766543388367,
+   "correct": true,
+   "expected": "other",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9896766543388367,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-other-01",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 375.03080000169575,
+    "abstain": 0.0005252979462966323,
+    "answer_confidence": 0.9922880530357361,
+    "choice": "billing",
+    "confidence": 0.9612911082584005,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9612911230951258,
+    "probabilities": {
+     "billing": 0.9922880530357361,
+     "other": 0.0027639640029519796,
+     "sales": 0.0025101415812969208,
+     "technical": 0.0024378655944019556
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9922880530357361,
+   "correct": true,
+   "expected": "billing",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9922880530357361,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-02",
+    "triage",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 412.0063000009395,
+    "abstain": 0.0010364062618464231,
+    "answer_confidence": 0.990135669708252,
+    "choice": "billing",
+    "confidence": 0.9529756967589077,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9529757028068728,
+    "probabilities": {
+     "billing": 0.990135669708252,
+     "other": 0.003005268983542919,
+     "sales": 0.001619091839529574,
+     "technical": 0.0052399225533008575
+    },
+    "type": "choice"
+   },
+   "confidence": 0.990135669708252,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.990135669708252,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "triage-billing-02",
+    "triage",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 709.2529000001377,
+    "abstain": 0.00042846996802836657,
+    "answer_confidence": 0.9924267530441284,
+    "choice": "billing",
+    "confidence": 0.9619090722540368,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9619090782575073,
+    "probabilities": {
+     "billing": 0.9924267530441284,
+     "other": 0.0023272871039807796,
+     "sales": 0.0023482181131839752,
+     "technical": 0.002897749189287424
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9924267530441284,
+   "correct": true,
+   "expected": "billing",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9924267530441284,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 709.2529000001377,
+    "answer_confidence": 0.6996731162071228,
+    "confidence": 0.4071523540610118,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.40715233632417813,
+    "probabilities": {
+     "0": 0.008924201130867004,
+     "1": 0.291402667760849,
+     "2": 0.6996731162071228
+    },
+    "score": 1.690748929977417,
+    "type": "score"
+   },
+   "confidence": 0.6996731162071228,
+   "correct": null,
+   "expected": 2,
+   "language": "en",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6996731162071228,
+    "noul_accuracy": null,
+    "score_mae": 0.309251070022583
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 709.2529000001377,
+    "answer_confidence": 0.9876943230628967,
+    "confidence": 0.9876943230628967,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.9876943230628967,
+    "type": "noul"
+   },
+   "confidence": 0.9876943230628967,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9876943230628967,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 765.2837999994517,
+    "abstain": 0.0005072670173831284,
+    "answer_confidence": 0.9926961064338684,
+    "choice": "billing",
+    "confidence": 0.9630528506538427,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9630528166303233,
+    "probabilities": {
+     "billing": 0.9926961064338684,
+     "other": 0.002585360547527671,
+     "sales": 0.002244862960651517,
+     "technical": 0.0024737389758229256
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9926961064338684,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9926961064338684,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 765.2837999994517,
+    "answer_confidence": 0.9049019813537598,
+    "confidence": 0.695088825542892,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.6950888134271559,
+    "probabilities": {
+     "0": 0.005424520932137966,
+     "1": 0.0896734669804573,
+     "2": 0.9049019813537598
+    },
+    "score": 1.899477481842041,
+    "type": "score"
+   },
+   "confidence": 0.9049019813537598,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9049019813537598,
+    "noul_accuracy": null,
+    "score_mae": 0.10052251815795898
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 765.2837999994517,
+    "answer_confidence": 0.9879589080810547,
+    "confidence": 0.9879589080810547,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.9879589080810547,
+    "type": "noul"
+   },
+   "confidence": 0.9879589080810547,
+   "correct": true,
+   "expected": true,
+   "language": "th",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9879589080810547,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-refund-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 722.8785999977845,
+    "abstain": 0.00047072130837477744,
+    "answer_confidence": 0.991449773311615,
+    "choice": "technical",
+    "confidence": 0.9578805799720964,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9578806023265884,
+    "probabilities": {
+     "billing": 0.0019784264732152224,
+     "other": 0.003531854134052992,
+     "sales": 0.003039922332391143,
+     "technical": 0.991449773311615
+    },
+    "type": "choice"
+   },
+   "confidence": 0.991449773311615,
+   "correct": true,
+   "expected": "technical",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.991449773311615,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 722.8785999977845,
+    "answer_confidence": 0.7649132609367371,
+    "confidence": 0.450665294141922,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.4506653019784529,
+    "probabilities": {
+     "0": 0.015891335904598236,
+     "1": 0.2191954106092453,
+     "2": 0.7649132609367371
+    },
+    "score": 1.7490218877792358,
+    "type": "score"
+   },
+   "confidence": 0.7649132609367371,
+   "correct": null,
+   "expected": 1,
+   "language": "en",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7649132609367371,
+    "noul_accuracy": null,
+    "score_mae": 0.7490218877792358
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 722.8785999977845,
+    "answer_confidence": 0.994506842456758,
+    "confidence": 0.994506842456758,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.005493157543241978,
+    "type": "noul"
+   },
+   "confidence": 0.994506842456758,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.994506842456758,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 825.4530999984127,
+    "abstain": 0.0004084024694748223,
+    "answer_confidence": 0.9918376803398132,
+    "choice": "technical",
+    "confidence": 0.9594814535539047,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9594814813343135,
+    "probabilities": {
+     "billing": 0.0019531482830643654,
+     "other": 0.003089816775172949,
+     "sales": 0.003119397908449173,
+     "technical": 0.9918376803398132
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9918376803398132,
+   "correct": true,
+   "expected": "technical",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9918376803398132,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 825.4530999984127,
+    "answer_confidence": 0.95550137758255,
+    "confidence": 0.8197162798307569,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.8197162908210014,
+    "probabilities": {
+     "0": 0.005214069504290819,
+     "1": 0.03928457200527191,
+     "2": 0.95550137758255
+    },
+    "score": 1.9502873420715332,
+    "type": "score"
+   },
+   "confidence": 0.95550137758255,
+   "correct": null,
+   "expected": 1,
+   "language": "th",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.95550137758255,
+    "noul_accuracy": null,
+    "score_mae": 0.9502873420715332
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 825.4530999984127,
+    "answer_confidence": 0.9941424885764718,
+    "confidence": 0.9941424885764718,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.005857511423528194,
+    "type": "noul"
+   },
+   "confidence": 0.9941424885764718,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9941424885764718,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-technical-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 735.8893999989959,
+    "abstain": 0.05285903066396713,
+    "answer_confidence": 0.9475170373916626,
+    "choice": "other",
+    "confidence": 0.8312711573395722,
+    "native_answer_confidence": null,
+    "native_confidence": 0.831271185649106,
+    "probabilities": {
+     "billing": 0.002189770108088851,
+     "other": 0.9475170373916626,
+     "sales": 0.043956730514764786,
+     "technical": 0.00633650878444314
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9475170373916626,
+   "correct": false,
+   "expected": "sales",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.9475170373916626,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 735.8893999989959,
+    "answer_confidence": 0.9776928424835205,
+    "confidence": 0.8950823510679593,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.8950823702486379,
+    "probabilities": {
+     "0": 0.9776928424835205,
+     "1": 0.01953321322798729,
+     "2": 0.0027739624492824078
+    },
+    "score": 0.02508113905787468,
+    "type": "score"
+   },
+   "confidence": 0.9776928424835205,
+   "correct": null,
+   "expected": 0,
+   "language": "en",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9776928424835205,
+    "noul_accuracy": null,
+    "score_mae": 0.02508113905787468
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 735.8893999989959,
+    "answer_confidence": 0.9934222414158285,
+    "confidence": 0.9934222414158285,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.006577758584171534,
+    "type": "noul"
+   },
+   "confidence": 0.9934222414158285,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9934222414158285,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 717.8372999987914,
+    "abstain": 0.4476492404937744,
+    "answer_confidence": 0.9578530192375183,
+    "choice": "other",
+    "confidence": 0.8582187564365532,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8582187710007507,
+    "probabilities": {
+     "billing": 0.003558631520718336,
+     "other": 0.9578530192375183,
+     "sales": 0.03594324365258217,
+     "technical": 0.0026451419107615948
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9578530192375183,
+   "correct": false,
+   "expected": "sales",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.9578530192375183,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 717.8372999987914,
+    "answer_confidence": 0.948149561882019,
+    "confidence": 0.7933352665550224,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.7933352776999575,
+    "probabilities": {
+     "0": 0.948149561882019,
+     "1": 0.04336026683449745,
+     "2": 0.008490181528031826
+    },
+    "score": 0.060340628027915955,
+    "type": "score"
+   },
+   "confidence": 0.948149561882019,
+   "correct": null,
+   "expected": 0,
+   "language": "th",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.948149561882019,
+    "noul_accuracy": null,
+    "score_mae": 0.060340628027915955
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 717.8372999987914,
+    "answer_confidence": 0.9943133541382849,
+    "confidence": 0.9943133541382849,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.005686645861715078,
+    "type": "noul"
+   },
+   "confidence": 0.9943133541382849,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9943133541382849,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-sales-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 649.6170999998867,
+    "abstain": 0.08068230748176575,
+    "answer_confidence": 0.446069598197937,
+    "choice": "technical",
+    "confidence": 0.22011597224401536,
+    "native_answer_confidence": null,
+    "native_confidence": 0.22011594855990013,
+    "probabilities": {
+     "billing": 0.18589457869529724,
+     "other": 0.35954800248146057,
+     "sales": 0.008487854152917862,
+     "technical": 0.446069598197937
+    },
+    "type": "choice"
+   },
+   "confidence": 0.446069598197937,
+   "correct": false,
+   "expected": "billing",
+   "language": "en",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.446069598197937,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 649.6170999998867,
+    "answer_confidence": 0.9708808660507202,
+    "confidence": 0.8671196853475521,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.8671196828859351,
+    "probabilities": {
+     "0": 0.005643101874738932,
+     "1": 0.02347603254020214,
+     "2": 0.9708808660507202
+    },
+    "score": 1.9652377367019653,
+    "type": "score"
+   },
+   "confidence": 0.9708808660507202,
+   "correct": null,
+   "expected": 2,
+   "language": "en",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9708808660507202,
+    "noul_accuracy": null,
+    "score_mae": 0.03476226329803467
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 649.6170999998867,
+    "answer_confidence": 0.9901237450540066,
+    "confidence": 0.9901237450540066,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.009876254945993423,
+    "type": "noul"
+   },
+   "confidence": 0.9901237450540066,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9901237450540066,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 776.6031999999541,
+    "abstain": 0.03993457555770874,
+    "answer_confidence": 0.49746090173721313,
+    "choice": "technical",
+    "confidence": 0.32564780134431204,
+    "native_answer_confidence": null,
+    "native_confidence": 0.3256477707996859,
+    "probabilities": {
+     "billing": 0.42133012413978577,
+     "other": 0.07596515864133835,
+     "sales": 0.005243826657533646,
+     "technical": 0.49746090173721313
+    },
+    "type": "choice"
+   },
+   "confidence": 0.49746090173721313,
+   "correct": false,
+   "expected": "billing",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.49746090173721313,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 776.6031999999541,
+    "answer_confidence": 0.9834189414978027,
+    "confidence": 0.9157531309589616,
+    "legend": {
+     "0": "not urgent",
+     "1": "soon",
+     "2": "critical deadline or blocking issue"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.9157531326521039,
+    "probabilities": {
+     "0": 0.003203029278665781,
+     "1": 0.013378029689192772,
+     "2": 0.9834189414978027
+    },
+    "score": 1.9802159070968628,
+    "type": "score"
+   },
+   "confidence": 0.9834189414978027,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "openthai",
+   "qid": "urgency",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9834189414978027,
+    "noul_accuracy": null,
+    "score_mae": 0.019784092903137207
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 776.6031999999541,
+    "answer_confidence": 0.9742000885307789,
+    "confidence": 0.9742000885307789,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.025799911469221115,
+    "type": "noul"
+   },
+   "confidence": 0.9742000885307789,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "openthai",
+   "qid": "refund_requested",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9742000885307789,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "multi-billing-01",
+    "multi",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 218.855999999505,
+    "answer_confidence": 0.9523077011108398,
+    "confidence": 0.9523077011108398,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.9523077011108398,
+    "type": "noul"
+   },
+   "confidence": 0.9523077011108398,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9523077011108398,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-01",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 283.2760999990569,
+    "answer_confidence": 0.7816729545593262,
+    "confidence": 0.7816729545593262,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.7816729545593262,
+    "type": "noul"
+   },
+   "confidence": 0.7816729545593262,
+   "correct": true,
+   "expected": true,
+   "language": "th",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7816729545593262,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-01",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 237.91909999999916,
+    "answer_confidence": 0.9953082059510052,
+    "confidence": 0.9953082059510052,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.00469179404899478,
+    "type": "noul"
+   },
+   "confidence": 0.9953082059510052,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9953082059510052,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-02",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 321.17899999866495,
+    "answer_confidence": 0.9950451655313373,
+    "confidence": 0.9950451655313373,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.004954834468662739,
+    "type": "noul"
+   },
+   "confidence": 0.9950451655313373,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9950451655313373,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-02",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 246.15110000013374,
+    "answer_confidence": 0.9552928805351257,
+    "confidence": 0.9552928805351257,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.9552928805351257,
+    "type": "noul"
+   },
+   "confidence": 0.9552928805351257,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9552928805351257,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-03",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 222.3472000005131,
+    "answer_confidence": 0.6206272840499878,
+    "confidence": 0.6206272840499878,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.3793727159500122,
+    "type": "noul"
+   },
+   "confidence": 0.6206272840499878,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6206272840499878,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-03",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 241.67310000120779,
+    "answer_confidence": 0.9901700420305133,
+    "confidence": 0.9901700420305133,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.009829957969486713,
+    "type": "noul"
+   },
+   "confidence": 0.9901700420305133,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9901700420305133,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-04",
+    "noul",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 221.25700000106008,
+    "answer_confidence": 0.990862169303,
+    "confidence": 0.990862169303,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.009137830697000027,
+    "type": "noul"
+   },
+   "confidence": 0.990862169303,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.990862169303,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "noul-churn-04",
+    "noul",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 399.27220000026864,
+    "answer_confidence": 0.9855316281318665,
+    "confidence": 0.9248170294671422,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.9248170362436267,
+    "probabilities": {
+     "0": 0.0026901031378656626,
+     "1": 0.01177828386425972,
+     "2": 0.9855316281318665
+    },
+    "score": 1.9828414916992188,
+    "type": "score"
+   },
+   "confidence": 0.9855316281318665,
+   "correct": null,
+   "expected": 2,
+   "language": "en",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9855316281318665,
+    "noul_accuracy": null,
+    "score_mae": 0.01715850830078125
+   },
+   "tags": [
+    "score-frustration-01",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 437.2856000009051,
+    "answer_confidence": 0.9832444787025452,
+    "confidence": 0.9167709373422369,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.9167709196777885,
+    "probabilities": {
+     "0": 0.0020920869428664446,
+     "1": 0.014663416892290115,
+     "2": 0.9832444787025452
+    },
+    "score": 1.9811524152755737,
+    "type": "score"
+   },
+   "confidence": 0.9832444787025452,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9832444787025452,
+    "noul_accuracy": null,
+    "score_mae": 0.01884758472442627
+   },
+   "tags": [
+    "score-frustration-01",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 297.440700000152,
+    "answer_confidence": 0.5876291990280151,
+    "confidence": 0.3057316155328984,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.3057316048527986,
+    "probabilities": {
+     "0": 0.5876291990280151,
+     "1": 0.39066892862319946,
+     "2": 0.021701784804463387
+    },
+    "score": 0.43407249450683594,
+    "type": "score"
+   },
+   "confidence": 0.5876291990280151,
+   "correct": null,
+   "expected": 0,
+   "language": "en",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5876291990280151,
+    "noul_accuracy": null,
+    "score_mae": 0.43407249450683594
+   },
+   "tags": [
+    "score-frustration-02",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 385.9410000004573,
+    "answer_confidence": 0.9360510110855103,
+    "confidence": 0.7663236075623467,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.7663235968727747,
+    "probabilities": {
+     "0": 0.9360510110855103,
+     "1": 0.058333199471235275,
+     "2": 0.005615762434899807
+    },
+    "score": 0.06956472247838974,
+    "type": "score"
+   },
+   "confidence": 0.9360510110855103,
+   "correct": null,
+   "expected": 0,
+   "language": "th",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9360510110855103,
+    "noul_accuracy": null,
+    "score_mae": 0.06956472247838974
+   },
+   "tags": [
+    "score-frustration-02",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 263.4098999988055,
+    "answer_confidence": 0.6056618690490723,
+    "confidence": 0.35102753578630363,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.3510274814182407,
+    "probabilities": {
+     "0": 0.008841656148433685,
+     "1": 0.38549643754959106,
+     "2": 0.6056618690490723
+    },
+    "score": 1.5968201160430908,
+    "type": "score"
+   },
+   "confidence": 0.6056618690490723,
+   "correct": null,
+   "expected": 1,
+   "language": "en",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.6056618690490723,
+    "noul_accuracy": null,
+    "score_mae": 0.5968201160430908
+   },
+   "tags": [
+    "score-frustration-03",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 319.09109999833163,
+    "answer_confidence": 0.5114116072654724,
+    "confidence": 0.29622138935793174,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.29622139029776207,
+    "probabilities": {
+     "0": 0.01899154856801033,
+     "1": 0.46959686279296875,
+     "2": 0.5114116072654724
+    },
+    "score": 1.4924200773239136,
+    "type": "score"
+   },
+   "confidence": 0.5114116072654724,
+   "correct": null,
+   "expected": 1,
+   "language": "th",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5114116072654724,
+    "noul_accuracy": null,
+    "score_mae": 0.4924200773239136
+   },
+   "tags": [
+    "score-frustration-03",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 389.2645999985689,
+    "answer_confidence": 0.9729019999504089,
+    "confidence": 0.9104712660182602,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.9104712494486454,
+    "probabilities": {
+     "0": 0.0017775904852896929,
+     "1": 0.0018434961093589664,
+     "2": 0.0018278786446899176,
+     "3": 0.02164895460009575,
+     "4": 0.9729019999504089
+    },
+    "score": 3.9620540142059326,
+    "type": "score"
+   },
+   "confidence": 0.9729019999504089,
+   "correct": null,
+   "expected": 4,
+   "language": "en",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9729019999504089,
+    "noul_accuracy": null,
+    "score_mae": 0.03794598579406738
+   },
+   "tags": [
+    "score-frustration-04",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 498.4258000004047,
+    "answer_confidence": 0.9274200797080994,
+    "confidence": 0.816758000723109,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.8167580136453304,
+    "probabilities": {
+     "0": 0.001627462450414896,
+     "1": 0.0018214533338323236,
+     "2": 0.005177328363060951,
+     "3": 0.06395360827445984,
+     "4": 0.9274200797080994
+    },
+    "score": 3.91371750831604,
+    "type": "score"
+   },
+   "confidence": 0.9274200797080994,
+   "correct": null,
+   "expected": 4,
+   "language": "th",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9274200797080994,
+    "noul_accuracy": null,
+    "score_mae": 0.08628249168395996
+   },
+   "tags": [
+    "score-frustration-04",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 347.29800000059186,
+    "answer_confidence": 0.8227733373641968,
+    "confidence": 0.6568092998797053,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.6568092878119822,
+    "probabilities": {
+     "0": 0.149942547082901,
+     "1": 0.8227733373641968,
+     "2": 0.025116221979260445,
+     "3": 0.001183148822747171,
+     "4": 0.0009847292676568031
+    },
+    "score": 0.8804941773414612,
+    "type": "score"
+   },
+   "confidence": 0.8227733373641968,
+   "correct": null,
+   "expected": 1,
+   "language": "en",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.8227733373641968,
+    "noul_accuracy": null,
+    "score_mae": 0.11950582265853882
+   },
+   "tags": [
+    "score-frustration-05",
+    "score",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 445.5894000020635,
+    "answer_confidence": 0.657636821269989,
+    "confidence": 0.5508828052952686,
+    "legend": {
+     "0": "calm",
+     "1": "slightly annoyed",
+     "2": "annoyed",
+     "3": "angry",
+     "4": "furious"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.5508827669168376,
+    "probabilities": {
+     "0": 0.32386302947998047,
+     "1": 0.657636821269989,
+     "2": 0.016304844990372658,
+     "3": 0.0011323416838422418,
+     "4": 0.0010629876051098108
+    },
+    "score": 0.6978955268859863,
+    "type": "score"
+   },
+   "confidence": 0.657636821269989,
+   "correct": null,
+   "expected": 1,
+   "language": "th",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.657636821269989,
+    "noul_accuracy": null,
+    "score_mae": 0.30210447311401367
+   },
+   "tags": [
+    "score-frustration-05",
+    "score",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1092.3225000005914,
+    "abstain": 0.0325067900121212,
+    "answer_confidence": 0.8255995512008667,
+    "choice": "R'",
+    "confidence": 0.7044325765079549,
+    "native_answer_confidence": null,
+    "native_confidence": 0.7044325591084206,
+    "probabilities": {
+     "B": 0.007681736722588539,
+     "B'": 0.008738400414586067,
+     "B2": 0.0041933017782866955,
+     "D": 0.0015544216148555279,
+     "D'": 0.006584406364709139,
+     "D2": 0.002531122649088502,
+     "F": 0.0007102646050043404,
+     "F'": 0.005935982801020145,
+     "F2": 0.004073919262737036,
+     "L": 0.004665922839194536,
+     "L'": 0.007470276672393084,
+     "L2": 0.005904464516788721,
+     "R": 0.016801800578832626,
+     "R'": 0.8255995512008667,
+     "R2": 0.012078258208930492,
+     "U": 0.016969414427876472,
+     "U'": 0.06583505868911743,
+     "U2": 0.002671771915629506
+    },
+    "type": "choice"
+   },
+   "confidence": 0.8255995512008667,
+   "correct": false,
+   "expected": "U'",
+   "language": "en",
+   "model": "openthai",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.8255995512008667,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-01",
+    "cardinality18",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1242.8326000008383,
+    "abstain": 0.0011921784607693553,
+    "answer_confidence": 0.9637826085090637,
+    "choice": "U",
+    "confidence": 0.9208482543851032,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9208482527484627,
+    "probabilities": {
+     "B": 0.00022852806432638317,
+     "B'": 0.00028737494722008705,
+     "B2": 0.00022827016073279083,
+     "D": 0.0006369223119691014,
+     "D'": 0.0006654761964455247,
+     "D2": 0.0003766871232073754,
+     "F": 0.00012665032409131527,
+     "F'": 0.0010094812605530024,
+     "F2": 0.0003640155482571572,
+     "L": 0.0018104629125446081,
+     "L'": 0.0006314178463071585,
+     "L2": 0.001752962707541883,
+     "R": 0.0066892970353364944,
+     "R'": 0.006173477973788977,
+     "R2": 0.001856951043009758,
+     "U": 0.9637826085090637,
+     "U'": 0.0004698877455666661,
+     "U2": 0.012909497134387493
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9637826085090637,
+   "correct": false,
+   "expected": "U'",
+   "language": "th",
+   "model": "openthai",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.9637826085090637,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-01",
+    "cardinality18",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1035.3408999981184,
+    "abstain": 0.019390398636460304,
+    "answer_confidence": 0.5596466660499573,
+    "choice": "F'",
+    "confidence": 0.5465501516088787,
+    "native_answer_confidence": null,
+    "native_confidence": 0.5465501822168204,
+    "probabilities": {
+     "B": 0.005411201622337103,
+     "B'": 0.0028018071316182613,
+     "B2": 0.0010642390698194504,
+     "D": 0.003381267422810197,
+     "D'": 0.008801647461950779,
+     "D2": 0.005247645545750856,
+     "F": 0.019823800772428513,
+     "F'": 0.5596466660499573,
+     "F2": 0.025897962972521782,
+     "L": 0.0047876969911158085,
+     "L'": 0.004957631696015596,
+     "L2": 0.002967438893392682,
+     "R": 0.029323464259505272,
+     "R'": 0.29380202293395996,
+     "R2": 0.01095680519938469,
+     "U": 0.0012652273289859295,
+     "U'": 0.018581591546535492,
+     "U2": 0.0012818945106118917
+    },
+    "type": "choice"
+   },
+   "confidence": 0.5596466660499573,
+   "correct": false,
+   "expected": "F",
+   "language": "en",
+   "model": "openthai",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.5596466660499573,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-02",
+    "cardinality18",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1300.163200001407,
+    "abstain": 0.0014554023509845138,
+    "answer_confidence": 0.9772741794586182,
+    "choice": "F'",
+    "confidence": 0.9432355151524784,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9432355071370393,
+    "probabilities": {
+     "B": 0.000185761324246414,
+     "B'": 0.00017416129412595183,
+     "B2": 0.0001307269703829661,
+     "D": 0.0007818255689926445,
+     "D'": 0.0021153222769498825,
+     "D2": 0.0005851848982274532,
+     "F": 0.004041541833430529,
+     "F'": 0.9772741794586182,
+     "F2": 0.002077912911772728,
+     "L": 0.0008670227834954858,
+     "L'": 0.0006785292644053698,
+     "L2": 0.0008755463059060276,
+     "R": 0.004357461351901293,
+     "R'": 0.002518636640161276,
+     "R2": 0.0014029978774487972,
+     "U": 0.0003105957293882966,
+     "U'": 0.0007222375716082752,
+     "U2": 0.0009003268205560744
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9772741794586182,
+   "correct": false,
+   "expected": "F",
+   "language": "th",
+   "model": "openthai",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.9772741794586182,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-02",
+    "cardinality18",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1233.250000001135,
+    "abstain": 0.018461834639310837,
+    "answer_confidence": 0.8567456603050232,
+    "choice": "R'",
+    "confidence": 0.7511615343120447,
+    "native_answer_confidence": null,
+    "native_confidence": 0.7511615394522312,
+    "probabilities": {
+     "B": 0.006144650746136904,
+     "B'": 0.006997192744165659,
+     "B2": 0.001758430851623416,
+     "D": 0.0009260373190045357,
+     "D'": 0.004643295891582966,
+     "D2": 0.001296364120207727,
+     "F": 0.0006078452570363879,
+     "F'": 0.0028716668020933867,
+     "F2": 0.0032825693488121033,
+     "L": 0.003355588996782899,
+     "L'": 0.009746475145220757,
+     "L2": 0.042297448962926865,
+     "R": 0.036408163607120514,
+     "R'": 0.8567456603050232,
+     "R2": 0.011673316359519958,
+     "U": 0.002569974400103092,
+     "U'": 0.008001157082617283,
+     "U2": 0.0006741609540767968
+    },
+    "type": "choice"
+   },
+   "confidence": 0.8567456603050232,
+   "correct": false,
+   "expected": "L2",
+   "language": "en",
+   "model": "openthai",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.8567456603050232,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-03",
+    "cardinality18",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 1438.7299999980314,
+    "abstain": 0.0006018185522407293,
+    "answer_confidence": 0.9888415336608887,
+    "choice": "L2",
+    "confidence": 0.9698614009897318,
+    "native_answer_confidence": null,
+    "native_confidence": 0.969861395556215,
+    "probabilities": {
+     "B": 0.00017286026559304446,
+     "B'": 0.00034510993282310665,
+     "B2": 0.00010818102600751445,
+     "D": 0.00020320227486081421,
+     "D'": 0.00043344232835806906,
+     "D2": 0.00014987024769652635,
+     "F": 8.206528582377359e-05,
+     "F'": 0.00030409899773076177,
+     "F2": 0.0001612439809832722,
+     "L": 0.0005604979232884943,
+     "L'": 0.0010892229620367289,
+     "L2": 0.9888415336608887,
+     "R": 0.0029177016112953424,
+     "R'": 0.0021738947834819555,
+     "R2": 0.00111283827573061,
+     "U": 0.0006851095240563154,
+     "U'": 0.00015446347242686898,
+     "U2": 0.0005046374863013625
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9888415336608887,
+   "correct": true,
+   "expected": "L2",
+   "language": "th",
+   "model": "openthai",
+   "qid": "next_move",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9888415336608887,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "cube-inverse-03",
+    "cardinality18",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 850.8466999992379,
+    "abstain": 0.00034319175756536424,
+    "answer_confidence": 0.6589992046356201,
+    "choice": "opt_2",
+    "confidence": 0.27474121349433234,
+    "native_answer_confidence": null,
+    "native_confidence": 0.27474125010959627,
+    "probabilities": {
+     "opt_0": 0.10209754854440689,
+     "opt_1": 0.08512776345014572,
+     "opt_2": 0.6589992046356201,
+     "opt_3": 0.15377549827098846
+    },
+    "type": "choice"
+   },
+   "confidence": 0.6589992046356201,
+   "correct": true,
+   "expected": "opt_2",
+   "language": "en",
+   "model": "openthai",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.6589992046356201,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 850.8466999992379,
+    "answer_confidence": 0.7394580245018005,
+    "confidence": 0.7394580245018005,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.26054197549819946,
+    "type": "noul"
+   },
+   "confidence": 0.7394580245018005,
+   "correct": false,
+   "expected": true,
+   "language": "en",
+   "model": "openthai",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7394580245018005,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 883.7316000026476,
+    "abstain": 0.00042389557347632945,
+    "answer_confidence": 0.6271564960479736,
+    "choice": "opt_3",
+    "confidence": 0.2842402494300258,
+    "native_answer_confidence": null,
+    "native_confidence": 0.28424028187337635,
+    "probabilities": {
+     "opt_0": 0.0739624872803688,
+     "opt_1": 0.05730723962187767,
+     "opt_2": 0.24157379567623138,
+     "opt_3": 0.6271564960479736
+    },
+    "type": "choice"
+   },
+   "confidence": 0.6271564960479736,
+   "correct": false,
+   "expected": "opt_2",
+   "language": "th",
+   "model": "openthai",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.6271564960479736,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 883.7316000026476,
+    "answer_confidence": 0.7849976718425751,
+    "confidence": 0.7849976718425751,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.21500232815742493,
+    "type": "noul"
+   },
+   "confidence": 0.7849976718425751,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "openthai",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7849976718425751,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-01",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 736.0569999982545,
+    "abstain": 0.0005277559976093471,
+    "answer_confidence": 0.39625632762908936,
+    "choice": "opt_0",
+    "confidence": 0.05639234040946084,
+    "native_answer_confidence": null,
+    "native_confidence": 0.056392334548150735,
+    "probabilities": {
+     "opt_0": 0.39625632762908936,
+     "opt_1": 0.13021782040596008,
+     "opt_2": 0.27546846866607666,
+     "opt_3": 0.1980573534965515
+    },
+    "type": "choice"
+   },
+   "confidence": 0.39625632762908936,
+   "correct": true,
+   "expected": "opt_0",
+   "language": "en",
+   "model": "openthai",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.39625632762908936,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 736.0569999982545,
+    "answer_confidence": 0.5721463561058044,
+    "confidence": 0.5721463561058044,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.5721463561058044,
+    "type": "noul"
+   },
+   "confidence": 0.5721463561058044,
+   "correct": true,
+   "expected": true,
+   "language": "en",
+   "model": "openthai",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5721463561058044,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 958.7436000001617,
+    "abstain": 0.0004684671002905816,
+    "answer_confidence": 0.34611645340919495,
+    "choice": "opt_3",
+    "confidence": 0.02740478645226674,
+    "native_answer_confidence": null,
+    "native_confidence": 0.027404744736549747,
+    "probabilities": {
+     "opt_0": 0.26218393445014954,
+     "opt_1": 0.15510877966880798,
+     "opt_2": 0.23659080266952515,
+     "opt_3": 0.34611645340919495
+    },
+    "type": "choice"
+   },
+   "confidence": 0.34611645340919495,
+   "correct": false,
+   "expected": "opt_0",
+   "language": "th",
+   "model": "openthai",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.34611645340919495,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 958.7436000001617,
+    "answer_confidence": 0.7690607309341431,
+    "confidence": 0.7690607309341431,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.23093926906585693,
+    "type": "noul"
+   },
+   "confidence": 0.7690607309341431,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "openthai",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7690607309341431,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-02",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 727.8131000020949,
+    "abstain": 0.0005201276508159935,
+    "answer_confidence": 0.36565953493118286,
+    "choice": "opt_1",
+    "confidence": 0.07251769956233567,
+    "native_answer_confidence": null,
+    "native_confidence": 0.072517685867024,
+    "probabilities": {
+     "opt_0": 0.0957590714097023,
+     "opt_1": 0.36565953493118286,
+     "opt_2": 0.20957747101783752,
+     "opt_3": 0.3290039002895355
+    },
+    "type": "choice"
+   },
+   "confidence": 0.36565953493118286,
+   "correct": true,
+   "expected": "opt_1",
+   "language": "en",
+   "model": "openthai",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.36565953493118286,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 727.8131000020949,
+    "answer_confidence": 0.7594100683927536,
+    "confidence": 0.7594100683927536,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.2405899316072464,
+    "type": "noul"
+   },
+   "confidence": 0.7594100683927536,
+   "correct": true,
+   "expected": false,
+   "language": "en",
+   "model": "openthai",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.7594100683927536,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "en"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 966.1840000007942,
+    "abstain": 0.0005376000772230327,
+    "answer_confidence": 0.595333456993103,
+    "choice": "opt_3",
+    "confidence": 0.20392846028030376,
+    "native_answer_confidence": null,
+    "native_confidence": 0.20392842551274004,
+    "probabilities": {
+     "opt_0": 0.14359155297279358,
+     "opt_1": 0.08611436933279037,
+     "opt_2": 0.17496059834957123,
+     "opt_3": 0.595333456993103
+    },
+    "type": "choice"
+   },
+   "confidence": 0.595333456993103,
+   "correct": false,
+   "expected": "opt_1",
+   "language": "th",
+   "model": "openthai",
+   "qid": "placement",
+   "scores": {
+    "choice_accuracy": 0.0,
+    "mean_confidence": 0.595333456993103,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 966.1840000007942,
+    "answer_confidence": 0.809684231877327,
+    "confidence": 0.809684231877327,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.19031576812267303,
+    "type": "noul"
+   },
+   "confidence": 0.809684231877327,
+   "correct": true,
+   "expected": false,
+   "language": "th",
+   "model": "openthai",
+   "qid": "safe",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.809684231877327,
+    "noul_accuracy": 1.0,
+    "score_mae": null
+   },
+   "tags": [
+    "placement-03",
+    "cardinality4",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 322.80330000139656,
+    "answer_confidence": 0.9546059481799603,
+    "confidence": 0.9546059481799603,
+    "native_answer_confidence": null,
+    "native_confidence": null,
+    "noul": 0.04539405182003975,
+    "type": "noul"
+   },
+   "confidence": 0.9546059481799603,
+   "correct": false,
+   "expected": true,
+   "language": "th",
+   "model": "openthai",
+   "qid": "churn_threat",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.9546059481799603,
+    "noul_accuracy": 0.0,
+    "score_mae": null
+   },
+   "tags": [
+    "thai-register-01",
+    "thai-only",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 458.9297999991686,
+    "abstain": 0.0015372441848739982,
+    "answer_confidence": 0.9767677187919617,
+    "choice": "technical",
+    "confidence": 0.9058999759403841,
+    "native_answer_confidence": null,
+    "native_confidence": 0.9058999290565592,
+    "probabilities": {
+     "billing": 0.002234974643215537,
+     "other": 0.014812138862907887,
+     "sales": 0.006185212172567844,
+     "technical": 0.9767677187919617
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9767677187919617,
+   "correct": true,
+   "expected": "technical",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9767677187919617,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "thai-register-02",
+    "thai-only",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 351.34300000208896,
+    "answer_confidence": 0.5825032591819763,
+    "confidence": 0.3275617412524717,
+    "legend": {
+     "0": "calm",
+     "1": "mildly annoyed",
+     "2": "angry"
+    },
+    "native_answer_confidence": null,
+    "native_confidence": 0.3275617652716031,
+    "probabilities": {
+     "0": 0.013403601944446564,
+     "1": 0.5825032591819763,
+     "2": 0.4040931761264801
+    },
+    "score": 1.3906896114349365,
+    "type": "score"
+   },
+   "confidence": 0.5825032591819763,
+   "correct": null,
+   "expected": 2,
+   "language": "th",
+   "model": "openthai",
+   "qid": "frustration",
+   "scores": {
+    "choice_accuracy": null,
+    "mean_confidence": 0.5825032591819763,
+    "noul_accuracy": null,
+    "score_mae": 0.6093103885650635
+   },
+   "tags": [
+    "thai-register-03",
+    "thai-only",
+    "th"
+   ]
+  },
+  {
+   "answer": {
+    "_latency_ms": 487.6881999989564,
+    "abstain": 0.0037684733979403973,
+    "answer_confidence": 0.9735925197601318,
+    "choice": "billing",
+    "confidence": 0.8970705312709757,
+    "native_answer_confidence": null,
+    "native_confidence": 0.8970705547395762,
+    "probabilities": {
+     "billing": 0.9735925197601318,
+     "other": 0.019083496183156967,
+     "sales": 0.003732401644811034,
+     "technical": 0.003591627348214388
+    },
+    "type": "choice"
+   },
+   "confidence": 0.9735925197601318,
+   "correct": true,
+   "expected": "billing",
+   "language": "th",
+   "model": "openthai",
+   "qid": "department",
+   "scores": {
+    "choice_accuracy": 1.0,
+    "mean_confidence": 0.9735925197601318,
+    "noul_accuracy": null,
+    "score_mae": null
+   },
+   "tags": [
+    "thai-register-04",
+    "thai-only",
+    "th"
+   ]
+  }
+ ],
+ "config": {
+  "coverage_metric_definition": 2,
+  "dataset_path": "decision_models\\data\\focused_items.jsonl",
+  "dataset_sha256": "8646f3551389c7d768eca620a12502e9e141edd20ac729a83b295f24014abbf0",
+  "laya_version": "0.3.27",
+  "models": [
+   "openthai"
+  ],
+  "n_items": 68,
+  "on_error": "skip",
+  "openthai_model": "iapp/OpenThai-SystemOne",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.5",
+  "questions_sha256": "e3c54977db525ff0d53fd8257e93c010d126e80d54d8bf4ac789a4ae759bb7e0",
+  "routing": [
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   },
+   {
+    "answered_by": "openthai",
+    "reason": null,
+    "requested": "openthai"
+   }
+  ],
+  "schema": "laya-evals-report/1",
+  "timing": {
+   "batch_form": null,
+   "batch_size": null,
+   "chunks": 68,
+   "cost_metric": "per decision: that call divided by its own chunk size",
+   "latency_metric": "per request: the wall time of the call that returned it, unsplit",
+   "max_chunk": 1,
+   "min_confidence": null,
+   "min_confidence_sent": false,
+   "rows_alone": 68,
+   "rows_grouped": 0,
+   "sort_by_length": false,
+   "sort_by_length_sent": false
+  }
+ },
+ "overall": {
+  "aurc": 0.05987956946189295,
+  "brier": 0.15642064887074078,
+  "choice_accuracy": 0.75,
+  "cost_per_decision_p50_ms": 466.2701500001276,
+  "cost_per_decision_p95_ms": 1242.8491000027861,
+  "ece": 0.16163145487760786,
+  "latency_p50_ms": 466.2701500001276,
+  "latency_p95_ms": 1242.8491000027861,
+  "mean_confidence": 0.8744210700142301,
+  "noul_accuracy": 0.782608695652174,
+  "score_mae": 0.2648991371848081,
+  "selective_accuracy@50": 1.0,
+  "selective_accuracy@80": 0.8421052631578947
+ },
+ "slices": {
+  "language": {
+   "en": {
+    "aurc": 0.04449533109821513,
+    "brier": 0.13266165794963664,
+    "choice_accuracy": 0.782608695652174,
+    "ece": 0.15045161939719143,
+    "mean_confidence": 0.8642868063477582,
+    "noul_accuracy": 0.9090909090909091,
+    "score_mae": 0.2581799208290047,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.8571428571428571
+   },
+   "th": {
+    "aurc": 0.07201001448250874,
+    "brier": 0.17825323512256622,
+    "choice_accuracy": 0.72,
+    "ece": 0.21933362893508496,
+    "mean_confidence": 0.8836928431558958,
+    "noul_accuracy": 0.6666666666666666,
+    "score_mae": 0.2709464319050312,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.8333333333333334
+   }
+  },
+  "model": {
+   "openthai": {
+    "aurc": 0.05987956946189295,
+    "brier": 0.15642064887074078,
+    "choice_accuracy": 0.75,
+    "ece": 0.16163145487760786,
+    "mean_confidence": 0.8744210700142301,
+    "noul_accuracy": 0.782608695652174,
+    "score_mae": 0.2648991371848081,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.8421052631578947
+   }
+  },
+  "qid": {
+   "churn_threat": {
+    "aurc": 0.07297178130511464,
+    "brier": 0.14984637933582196,
+    "ece": 0.18583849357027146,
+    "mean_confidence": 0.9150991501390107,
+    "noul_accuracy": 0.7777777777777778,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.875
+   },
+   "department": {
+    "aurc": 0.026391468868249057,
+    "brier": 0.11320076593758124,
+    "choice_accuracy": 0.8,
+    "ece": 0.13398356437683107,
+    "mean_confidence": 0.933983564376831,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "frustration": {
+    "mean_confidence": 0.779342299157923,
+    "score_mae": 0.25309387865391647
+   },
+   "next_move": {
+    "aurc": 0.5916666666666667,
+    "brier": 0.6021497309812478,
+    "choice_accuracy": 0.16666666666666666,
+    "ece": 0.695315033197403,
+    "mean_confidence": 0.8619816998640696,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.2
+   },
+   "placement": {
+    "aurc": 0.4277777777777778,
+    "brier": 0.29178659747697777,
+    "choice_accuracy": 0.5,
+    "ece": 0.29557614028453827,
+    "mean_confidence": 0.49825357894102734,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.6
+   },
+   "refund_requested": {
+    "aurc": 0.0,
+    "brier": 0.00014996043650982441,
+    "ece": 0.010454751085489988,
+    "mean_confidence": 0.98954524891451,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route": {
+    "aurc": 0.0,
+    "brier": 0.006048713297710728,
+    "choice_accuracy": 1.0,
+    "ece": 0.03175595775246619,
+    "mean_confidence": 0.9682440422475338,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "safe": {
+    "aurc": 0.4611111111111111,
+    "brier": 0.33860604500729513,
+    "ece": 0.44518265128135676,
+    "mean_confidence": 0.7391261806090673,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.4
+   },
+   "urgency": {
+    "mean_confidence": 0.900641493499279,
+    "score_mae": 0.2811313676647842
+   }
+  },
+  "tag": {
+   "cardinality18": {
+    "aurc": 0.5916666666666667,
+    "brier": 0.6021497309812478,
+    "choice_accuracy": 0.16666666666666666,
+    "ece": 0.695315033197403,
+    "mean_confidence": 0.8619816998640696,
+    "selective_accuracy@50": 0.3333333333333333,
+    "selective_accuracy@80": 0.2
+   },
+   "cardinality4": {
+    "aurc": 0.4977663540163541,
+    "brier": 0.3151963212421364,
+    "choice_accuracy": 0.5,
+    "ece": 0.29907045513391495,
+    "mean_confidence": 0.6186898797750473,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.5
+   },
+   "cube-inverse-01": {
+    "aurc": 1.0,
+    "brier": 0.8052457677038038,
+    "choice_accuracy": 0.0,
+    "ece": 0.8946910798549652,
+    "mean_confidence": 0.8946910798549652,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "cube-inverse-02": {
+    "aurc": 1.0,
+    "brier": 0.6341346063286739,
+    "choice_accuracy": 0.0,
+    "ece": 0.7684604227542877,
+    "mean_confidence": 0.7684604227542877,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "cube-inverse-03": {
+    "aurc": 0.25,
+    "brier": 0.36706881891126564,
+    "choice_accuracy": 0.5,
+    "ece": 0.43395206332206726,
+    "mean_confidence": 0.9227935969829559,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "en": {
+    "aurc": 0.04449533109821513,
+    "brier": 0.13266165794963664,
+    "choice_accuracy": 0.782608695652174,
+    "ece": 0.15045161939719143,
+    "mean_confidence": 0.8642868063477582,
+    "noul_accuracy": 0.9090909090909091,
+    "score_mae": 0.2581799208290047,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.8571428571428571
+   },
+   "multi": {
+    "aurc": 0.04186126373626373,
+    "brier": 0.14144790575406185,
+    "choice_accuracy": 0.5,
+    "ece": 0.17085455381311485,
+    "mean_confidence": 0.9141168670418361,
+    "noul_accuracy": 1.0,
+    "score_mae": 0.2811313676647842,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.9230769230769231
+   },
+   "multi-billing-01": {
+    "aurc": 0.20833333333333334,
+    "brier": 0.11180215275931202,
+    "choice_accuracy": 0.0,
+    "ece": 0.24480166658759117,
+    "mean_confidence": 0.8103590235114098,
+    "noul_accuracy": 1.0,
+    "score_mae": 0.027273178100585938,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "multi-billing-refund-01": {
+    "aurc": 0.0,
+    "brier": 0.00010177962754021053,
+    "choice_accuracy": 1.0,
+    "ece": 0.00980597734451294,
+    "mean_confidence": 0.9275585313638052,
+    "noul_accuracy": 1.0,
+    "score_mae": 0.204886794090271,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "multi-sales-01": {
+    "aurc": 0.20833333333333334,
+    "brier": 0.4538366368647628,
+    "choice_accuracy": 0.0,
+    "ece": 0.4732764130458236,
+    "mean_confidence": 0.9698246760914723,
+    "noul_accuracy": 1.0,
+    "score_mae": 0.04271088354289532,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "multi-technical-01": {
+    "aurc": 0.0,
+    "brier": 5.1053764632370564e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.007015803828835487,
+    "mean_confidence": 0.9487252372006575,
+    "noul_accuracy": 1.0,
+    "score_mae": 0.8496546149253845,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "noul": {
+    "aurc": 0.015625,
+    "brier": 0.054668112215229596,
+    "ece": 0.11999602062860501,
+    "mean_confidence": 0.9101608003838919,
+    "noul_accuracy": 0.875,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "noul-churn-01": {
+    "aurc": 0.0,
+    "brier": 0.02497062707209352,
+    "ece": 0.133009672164917,
+    "mean_confidence": 0.866990327835083,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "noul-churn-02": {
+    "aurc": 0.0,
+    "brier": 2.3281658005015597e-05,
+    "ece": 0.004823314258828759,
+    "mean_confidence": 0.9951766857411712,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "noul-churn-03": {
+    "aurc": 0.25,
+    "brier": 0.19358847611905539,
+    "ece": 0.33266720175743103,
+    "mean_confidence": 0.7879600822925568,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.5
+   },
+   "noul-churn-04": {
+    "aurc": 0.0,
+    "brier": 9.006401176445567e-05,
+    "ece": 0.00948389433324337,
+    "mean_confidence": 0.9905161056667566,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "placement-01": {
+    "aurc": 0.8541666666666667,
+    "brier": 0.41815658194317007,
+    "choice_accuracy": 0.5,
+    "ece": 0.45265284925699234,
+    "mean_confidence": 0.7026528492569923,
+    "noul_accuracy": 0.0,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.25
+   },
+   "placement-02": {
+    "aurc": 0.5833333333333334,
+    "brier": 0.3147040424267431,
+    "choice_accuracy": 0.5,
+    "ece": 0.3636353984475136,
+    "mean_confidence": 0.520894967019558,
+    "noul_accuracy": 0.5,
+    "selective_accuracy@50": 0.5,
+    "selective_accuracy@80": 0.5
+   },
+   "placement-03": {
+    "aurc": 0.14583333333333334,
+    "brier": 0.21272833935649615,
+    "choice_accuracy": 0.5,
+    "ece": 0.4151449054479599,
+    "mean_confidence": 0.6325218230485916,
+    "noul_accuracy": 1.0,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.75
+   },
+   "route-ambiguous-01": {
+    "aurc": 0.0,
+    "brier": 0.04779051556636382,
+    "choice_accuracy": 1.0,
+    "ece": 0.19297471642494202,
+    "mean_confidence": 0.807025283575058,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-cost-01": {
+    "aurc": 0.0,
+    "brier": 0.00022208943792989544,
+    "choice_accuracy": 1.0,
+    "ece": 0.014900445938110352,
+    "mean_confidence": 0.9850995540618896,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-cost-02": {
+    "aurc": 0.0,
+    "brier": 6.526524588146287e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.008069485425949097,
+    "mean_confidence": 0.9919305145740509,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-general-01": {
+    "aurc": 0.0,
+    "brier": 0.00012576964490484954,
+    "choice_accuracy": 1.0,
+    "ece": 0.011214584112167358,
+    "mean_confidence": 0.9887854158878326,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-reservation-01": {
+    "aurc": 0.0,
+    "brier": 6.348343951145807e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.007747828960418701,
+    "mean_confidence": 0.9922521710395813,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-reservation-02": {
+    "aurc": 0.0,
+    "brier": 4.0299798786946894e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.006343722343444824,
+    "mean_confidence": 0.9936562776565552,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-weather-01": {
+    "aurc": 0.0,
+    "brier": 3.593986105165925e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.005991131067276001,
+    "mean_confidence": 0.994008868932724,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "route-weather-02": {
+    "aurc": 0.0,
+    "brier": 4.634338725573173e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.006805747747421265,
+    "mean_confidence": 0.9931942522525787,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "routing": {
+    "aurc": 0.0,
+    "brier": 0.006048713297710728,
+    "choice_accuracy": 1.0,
+    "ece": 0.03175595775246619,
+    "mean_confidence": 0.9682440422475338,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "score": {
+    "mean_confidence": 0.7990262031555175,
+    "score_mae": 0.21747222766280175
+   },
+   "score-frustration-01": {
+    "mean_confidence": 0.9843880534172058,
+    "score_mae": 0.01800304651260376
+   },
+   "score-frustration-02": {
+    "mean_confidence": 0.7618401050567627,
+    "score_mae": 0.25181860849261284
+   },
+   "score-frustration-03": {
+    "mean_confidence": 0.5585367381572723,
+    "score_mae": 0.5446200966835022
+   },
+   "score-frustration-04": {
+    "mean_confidence": 0.9501610398292542,
+    "score_mae": 0.06211423873901367
+   },
+   "score-frustration-05": {
+    "mean_confidence": 0.7402050793170929,
+    "score_mae": 0.21080514788627625
+   },
+   "th": {
+    "aurc": 0.07201001448250874,
+    "brier": 0.17825323512256622,
+    "choice_accuracy": 0.72,
+    "ece": 0.21933362893508496,
+    "mean_confidence": 0.8836928431558958,
+    "noul_accuracy": 0.6666666666666666,
+    "score_mae": 0.2709464319050312,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.8333333333333334
+   },
+   "thai-only": {
+    "aurc": 0.11111111111111112,
+    "brier": 0.3041698700677698,
+    "choice_accuracy": 1.0,
+    "ece": 0.3016553955773513,
+    "mean_confidence": 0.8718673614785075,
+    "noul_accuracy": 0.0,
+    "score_mae": 0.6093103885650635,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 0.6666666666666666
+   },
+   "thai-register-01": {
+    "aurc": 1.0,
+    "brier": 0.9112725163005609,
+    "ece": 0.9546059481799603,
+    "mean_confidence": 0.9546059481799603,
+    "noul_accuracy": 0.0,
+    "selective_accuracy@50": 0.0,
+    "selective_accuracy@80": 0.0
+   },
+   "thai-register-02": {
+    "aurc": 0.0,
+    "brier": 0.0005397388901293709,
+    "choice_accuracy": 1.0,
+    "ece": 0.02323228120803833,
+    "mean_confidence": 0.9767677187919617,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "thai-register-03": {
+    "mean_confidence": 0.5825032591819763,
+    "score_mae": 0.6093103885650635
+   },
+   "thai-register-04": {
+    "aurc": 0.0,
+    "brier": 0.0006973550126190275,
+    "choice_accuracy": 1.0,
+    "ece": 0.026407480239868164,
+    "mean_confidence": 0.9735925197601318,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage": {
+    "aurc": 0.0,
+    "brier": 8.114162759653709e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.008799982070922807,
+    "mean_confidence": 0.9912000179290772,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage-billing-01": {
+    "aurc": 0.0,
+    "brier": 4.5319708030788775e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.006729871034622192,
+    "mean_confidence": 0.9932701289653778,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage-billing-02": {
+    "aurc": 0.0,
+    "brier": 7.838956904215877e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.008788138628005981,
+    "mean_confidence": 0.991211861371994,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage-other-01": {
+    "aurc": 0.0,
+    "brier": 0.0001434841846279511,
+    "choice_accuracy": 1.0,
+    "ece": 0.011877268552780151,
+    "mean_confidence": 0.9881227314472198,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage-sales-01": {
+    "aurc": 0.0,
+    "brier": 7.653133945950685e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.008733034133911133,
+    "mean_confidence": 0.9912669658660889,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   },
+   "triage-technical-01": {
+    "aurc": 0.0,
+    "brier": 6.198333682227997e-05,
+    "choice_accuracy": 1.0,
+    "ece": 0.0078715980052948,
+    "mean_confidence": 0.9921284019947052,
+    "selective_accuracy@50": 1.0,
+    "selective_accuracy@80": 1.0
+   }
+  }
+ }
+}
