@@ -25,10 +25,10 @@ No rows errored: every backend answered every item it was asked.
 
 | model | n | n scored | acc | choice | noul | score_MAE | ECE | AURC | sel@80 | mean max-p | mean entropy |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| laya-auto | 90 | 90 | 0.678 | 0.708 | 0.696 | 0.575 | 0.193 | 0.197 | 0.772 | 0.769 | 0.610 |
-| laya-en | 90 | 90 | 0.533 | 0.521 | 0.609 | 0.698 | 0.169 | 0.299 | 0.632 | 0.643 | 0.451 |
-| laya-ml | 90 | 90 | 0.633 | 0.688 | 0.652 | 0.789 | 0.204 | 0.142 | 0.772 | 0.776 | 0.630 |
-| openthai | 90 | 90 | 0.767 | 0.750 | 0.783 | 0.265 | 0.162 | 0.060 | 0.842 | 0.874 | 0.791 |
+| laya-auto | 90 | 90 | 0.678 | 0.708 | 0.696 | 0.576 | 0.191 | 0.198 | 0.772 | 0.769 | 0.609 |
+| laya-en | 90 | 90 | 0.544 | 0.542 | 0.609 | 0.699 | 0.175 | 0.300 | 0.632 | 0.643 | 0.451 |
+| laya-ml | 90 | 90 | 0.633 | 0.688 | 0.652 | 0.789 | 0.190 | 0.144 | 0.772 | 0.776 | 0.630 |
+| openthai | 90 | 90 | 0.767 | 0.750 | 0.783 | 0.265 | 0.162 | 0.059 | 0.842 | 0.875 | 0.791 |
 
 ## By language
 
@@ -36,14 +36,14 @@ The headline table. `chance` is the mean 1/options over the group, so a reading 
 
 | model | lang | n | n scored | acc | choice | noul | score_MAE | ECE | AURC | sel@80 | mean max-p | mean entropy | chance |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| laya-auto | en | 43 | 43 | 0.767 | 0.739 | 0.818 | 0.320 | 0.223 | 0.173 | 0.821 | 0.772 | 0.615 | 0.312 |
-| laya-auto | th | 47 | 47 | 0.596 | 0.680 | 0.583 | 0.805 | 0.294 | 0.180 | 0.733 | 0.767 | 0.606 | 0.313 |
-| laya-en | en | 43 | 43 | 0.767 | 0.739 | 0.818 | 0.320 | 0.223 | 0.173 | 0.821 | 0.772 | 0.615 | 0.312 |
-| laya-en | th | 47 | 47 | 0.319 | 0.320 | 0.417 | 1.037 | 0.241 | 0.550 | 0.367 | 0.525 | 0.302 | 0.313 |
-| laya-ml | en | 43 | 43 | 0.674 | 0.696 | 0.727 | 0.770 | 0.191 | 0.113 | 0.821 | 0.786 | 0.657 | 0.312 |
-| laya-ml | th | 47 | 47 | 0.596 | 0.680 | 0.583 | 0.805 | 0.294 | 0.180 | 0.733 | 0.767 | 0.606 | 0.313 |
-| openthai | en | 43 | 43 | 0.814 | 0.783 | 0.909 | 0.258 | 0.150 | 0.044 | 0.857 | 0.864 | 0.775 | 0.312 |
-| openthai | th | 47 | 47 | 0.723 | 0.720 | 0.667 | 0.271 | 0.219 | 0.072 | 0.833 | 0.884 | 0.805 | 0.313 |
+| laya-auto | en | 43 | 43 | 0.767 | 0.739 | 0.818 | 0.321 | 0.222 | 0.173 | 0.821 | 0.771 | 0.614 | 0.312 |
+| laya-auto | th | 47 | 47 | 0.596 | 0.680 | 0.583 | 0.805 | 0.269 | 0.184 | 0.767 | 0.767 | 0.606 | 0.313 |
+| laya-en | en | 43 | 43 | 0.767 | 0.739 | 0.818 | 0.321 | 0.222 | 0.173 | 0.821 | 0.771 | 0.614 | 0.312 |
+| laya-en | th | 47 | 47 | 0.340 | 0.360 | 0.417 | 1.040 | 0.248 | 0.546 | 0.367 | 0.526 | 0.303 | 0.313 |
+| laya-ml | en | 43 | 43 | 0.674 | 0.696 | 0.727 | 0.771 | 0.190 | 0.115 | 0.821 | 0.785 | 0.656 | 0.312 |
+| laya-ml | th | 47 | 47 | 0.596 | 0.680 | 0.583 | 0.805 | 0.269 | 0.184 | 0.767 | 0.767 | 0.606 | 0.313 |
+| openthai | en | 43 | 43 | 0.814 | 0.783 | 0.909 | 0.257 | 0.150 | 0.044 | 0.857 | 0.865 | 0.776 | 0.312 |
+| openthai | th | 47 | 47 | 0.723 | 0.720 | 0.667 | 0.272 | 0.220 | 0.070 | 0.833 | 0.884 | 0.805 | 0.313 |
 
 ## By language and question family
 
@@ -51,33 +51,33 @@ The headline table. `chance` is the mean 1/options over the group, so a reading 
 |---|---|---|---|---|---|---|---|---|
 | laya-auto | en | cardinality18 | 3 | 0.333 | 0.333 | - | - | 18 |
 | laya-auto | en | cardinality4 | 6 | 0.333 | 0.333 | 0.333 | - | 3 |
-| laya-auto | en | multi | 12 | 0.917 | 0.750 | 1 | 0.277 | 3 |
+| laya-auto | en | multi | 12 | 0.917 | 0.750 | 1 | 0.276 | 3 |
 | laya-auto | en | noul | 4 | 1 | - | 1 | - | 2 |
 | laya-auto | en | routing | 8 | 1 | 1 | - | - | 4 |
-| laya-auto | en | score | 5 | 0.600 | - | - | 0.355 | 3.800 |
+| laya-auto | en | score | 5 | 0.600 | - | - | 0.358 | 3.800 |
 | laya-auto | en | triage | 5 | 0.800 | 0.800 | - | - | 4 |
 | laya-auto | th | cardinality18 | 3 | 0.667 | 0.667 | - | - | 18 |
 | laya-auto | th | cardinality4 | 6 | 0.333 | 0.333 | 0.333 | - | 3 |
-| laya-auto | th | multi | 12 | 0.667 | 0.500 | 1 | 0.674 | 3 |
+| laya-auto | th | multi | 12 | 0.667 | 0.500 | 1 | 0.675 | 3 |
 | laya-auto | th | noul | 4 | 0.500 | - | 0.500 | - | 2 |
 | laya-auto | th | routing | 8 | 0.875 | 0.875 | - | - | 4 |
 | laya-auto | th | score | 5 | 0.400 | - | - | 0.912 | 3.800 |
-| laya-auto | th | thai-only | 4 | 0.500 | 1 | 0.000 | 0.796 | 3.250 |
+| laya-auto | th | thai-only | 4 | 0.500 | 1 | 0.000 | 0.797 | 3.250 |
 | laya-auto | th | triage | 5 | 0.600 | 0.600 | - | - | 4 |
 | laya-en | en | cardinality18 | 3 | 0.333 | 0.333 | - | - | 18 |
 | laya-en | en | cardinality4 | 6 | 0.333 | 0.333 | 0.333 | - | 3 |
-| laya-en | en | multi | 12 | 0.917 | 0.750 | 1 | 0.277 | 3 |
+| laya-en | en | multi | 12 | 0.917 | 0.750 | 1 | 0.276 | 3 |
 | laya-en | en | noul | 4 | 1 | - | 1 | - | 2 |
 | laya-en | en | routing | 8 | 1 | 1 | - | - | 4 |
-| laya-en | en | score | 5 | 0.600 | - | - | 0.355 | 3.800 |
+| laya-en | en | score | 5 | 0.600 | - | - | 0.358 | 3.800 |
 | laya-en | en | triage | 5 | 0.800 | 0.800 | - | - | 4 |
 | laya-en | th | cardinality18 | 3 | 0.333 | 0.333 | - | - | 18 |
 | laya-en | th | cardinality4 | 6 | 0.333 | 0.333 | 0.333 | - | 3 |
-| laya-en | th | multi | 12 | 0.250 | 0.250 | 0.250 | 0.820 | 3 |
+| laya-en | th | multi | 12 | 0.333 | 0.500 | 0.250 | 0.822 | 3 |
 | laya-en | th | noul | 4 | 0.500 | - | 0.500 | - | 2 |
 | laya-en | th | routing | 8 | 0.250 | 0.250 | - | - | 4 |
-| laya-en | th | score | 5 | 0.200 | - | - | 1.134 | 3.800 |
-| laya-en | th | thai-only | 4 | 0.500 | 0.500 | 1 | 1.423 | 3.250 |
+| laya-en | th | score | 5 | 0.200 | - | - | 1.135 | 3.800 |
+| laya-en | th | thai-only | 4 | 0.500 | 0.500 | 1 | 1.433 | 3.250 |
 | laya-en | th | triage | 5 | 0.400 | 0.400 | - | - | 4 |
 | laya-ml | en | cardinality18 | 3 | 0.333 | 0.333 | - | - | 18 |
 | laya-ml | en | cardinality4 | 6 | 0.500 | 0.333 | 0.667 | - | 3 |
@@ -88,26 +88,26 @@ The headline table. `chance` is the mean 1/options over the group, so a reading 
 | laya-ml | en | triage | 5 | 0.800 | 0.800 | - | - | 4 |
 | laya-ml | th | cardinality18 | 3 | 0.667 | 0.667 | - | - | 18 |
 | laya-ml | th | cardinality4 | 6 | 0.333 | 0.333 | 0.333 | - | 3 |
-| laya-ml | th | multi | 12 | 0.667 | 0.500 | 1 | 0.674 | 3 |
+| laya-ml | th | multi | 12 | 0.667 | 0.500 | 1 | 0.675 | 3 |
 | laya-ml | th | noul | 4 | 0.500 | - | 0.500 | - | 2 |
 | laya-ml | th | routing | 8 | 0.875 | 0.875 | - | - | 4 |
 | laya-ml | th | score | 5 | 0.400 | - | - | 0.912 | 3.800 |
-| laya-ml | th | thai-only | 4 | 0.500 | 1 | 0.000 | 0.796 | 3.250 |
+| laya-ml | th | thai-only | 4 | 0.500 | 1 | 0.000 | 0.797 | 3.250 |
 | laya-ml | th | triage | 5 | 0.600 | 0.600 | - | - | 4 |
 | openthai | en | cardinality18 | 3 | 0.000 | 0.000 | - | - | 18 |
 | openthai | en | cardinality4 | 6 | 0.833 | 1 | 0.667 | - | 3 |
-| openthai | en | multi | 12 | 0.750 | 0.500 | 1 | 0.280 | 3 |
+| openthai | en | multi | 12 | 0.750 | 0.500 | 1 | 0.281 | 3 |
 | openthai | en | noul | 4 | 1 | - | 1 | - | 2 |
 | openthai | en | routing | 8 | 1 | 1 | - | - | 4 |
-| openthai | en | score | 5 | 0.800 | - | - | 0.241 | 3.800 |
+| openthai | en | score | 5 | 0.800 | - | - | 0.238 | 3.800 |
 | openthai | en | triage | 5 | 1 | 1 | - | - | 4 |
 | openthai | th | cardinality18 | 3 | 0.333 | 0.333 | - | - | 18 |
 | openthai | th | cardinality4 | 6 | 0.167 | 0.000 | 0.333 | - | 3 |
 | openthai | th | multi | 12 | 0.750 | 0.500 | 1 | 0.283 | 3 |
 | openthai | th | noul | 4 | 0.750 | - | 0.750 | - | 2 |
 | openthai | th | routing | 8 | 1 | 1 | - | - | 4 |
-| openthai | th | score | 5 | 1 | - | - | 0.194 | 3.800 |
-| openthai | th | thai-only | 4 | 0.500 | 1 | 0.000 | 0.609 | 3.250 |
+| openthai | th | score | 5 | 1 | - | - | 0.195 | 3.800 |
+| openthai | th | thai-only | 4 | 0.500 | 1 | 0.000 | 0.612 | 3.250 |
 | openthai | th | triage | 5 | 1 | 1 | - | - | 4 |
 
 ## By option count
@@ -116,18 +116,18 @@ Laya splits its option budget (`head_max_len`) across the options, so accuracy i
 
 | model | options | n | acc | choice | chance | p50 ms | p95 ms |
 |---|---|---|---|---|---|---|---|
-| laya-auto | 2-2 | 23 | 0.696 | - | 0.500 | 215.266 | 564.542 |
-| laya-auto | 3-5 | 61 | 0.689 | 0.738 | 0.267 | 203.657 | 564.542 |
-| laya-auto | 6-20 | 6 | 0.500 | 0.500 | 0.056 | 343.548 | 508.624 |
-| laya-en | 2-2 | 23 | 0.609 | - | 0.500 | 560.478 | 1407.890 |
-| laya-en | 3-5 | 61 | 0.525 | 0.548 | 0.267 | 332.574 | 1401.325 |
-| laya-en | 6-20 | 6 | 0.333 | 0.333 | 0.056 | 833.410 | 1089.947 |
-| laya-ml | 2-2 | 23 | 0.652 | - | 0.500 | 178.327 | 246.411 |
-| laya-ml | 3-5 | 61 | 0.639 | 0.714 | 0.267 | 93.080 | 240.087 |
-| laya-ml | 6-20 | 6 | 0.500 | 0.500 | 0.056 | 210.918 | 240.688 |
-| openthai | 2-2 | 23 | 0.783 | - | 0.500 | 717.837 | 958.744 |
-| openthai | 3-5 | 61 | 0.820 | 0.833 | 0.267 | 493.547 | 883.732 |
-| openthai | 6-20 | 6 | 0.167 | 0.167 | 0.056 | 1238.041 | 1438.730 |
+| laya-auto | 2-2 | 23 | 0.696 | - | 0.500 | 26.651 | 39.728 |
+| laya-auto | 3-5 | 61 | 0.689 | 0.738 | 0.267 | 26.857 | 41.714 |
+| laya-auto | 6-20 | 6 | 0.500 | 0.500 | 0.056 | 28.048 | 65.738 |
+| laya-en | 2-2 | 23 | 0.609 | - | 0.500 | 39.051 | 74.024 |
+| laya-en | 3-5 | 61 | 0.541 | 0.571 | 0.267 | 28.949 | 67.607 |
+| laya-en | 6-20 | 6 | 0.333 | 0.333 | 0.056 | 33.522 | 38.593 |
+| laya-ml | 2-2 | 23 | 0.652 | - | 0.500 | 22.462 | 30.476 |
+| laya-ml | 3-5 | 61 | 0.639 | 0.714 | 0.267 | 22.676 | 35.722 |
+| laya-ml | 6-20 | 6 | 0.500 | 0.500 | 0.056 | 23.300 | 24.353 |
+| openthai | 2-2 | 23 | 0.783 | - | 0.500 | 105.834 | 164.252 |
+| openthai | 3-5 | 61 | 0.820 | 0.833 | 0.267 | 92.225 | 164.252 |
+| openthai | 6-20 | 6 | 0.167 | 0.167 | 0.056 | 87.086 | 122.950 |
 
 ## Latency
 
@@ -135,18 +135,18 @@ Measured on this machine, per backend call, for one question set over one state.
 
 | model | lang | n | p50 ms | p95 ms |
 |---|---|---|---|---|
-| laya-auto | en | 43 | 470.903 | 569.420 |
-| laya-auto | th | 47 | 119.322 | 240.401 |
-| laya-auto | all | 90 | 215.266 | 564.542 |
-| laya-en | en | 43 | 495.505 | 627.198 |
-| laya-en | th | 47 | 359.758 | 1407.890 |
-| laya-en | all | 90 | 379.318 | 1407.890 |
-| laya-ml | en | 43 | 166.418 | 224.846 |
-| laya-ml | th | 47 | 100.883 | 246.411 |
-| laya-ml | all | 90 | 106.766 | 246.411 |
-| openthai | en | 43 | 649.617 | 1092.323 |
-| openthai | th | 47 | 527.289 | 1242.833 |
-| openthai | all | 90 | 572.830 | 1233.250 |
+| laya-auto | en | 43 | 31.095 | 55.515 |
+| laya-auto | th | 47 | 24.691 | 39.728 |
+| laya-auto | all | 90 | 26.798 | 55.515 |
+| laya-en | en | 43 | 30.013 | 44.365 |
+| laya-en | th | 47 | 29.795 | 74.024 |
+| laya-en | all | 90 | 29.904 | 74.024 |
+| laya-ml | en | 43 | 22.988 | 35.722 |
+| laya-ml | th | 47 | 22.584 | 26.220 |
+| laya-ml | all | 90 | 22.772 | 35.722 |
+| openthai | en | 43 | 104.660 | 159.270 |
+| openthai | th | 47 | 92.225 | 164.252 |
+| openthai | all | 90 | 101.145 | 164.252 |
 
 ## Confidence is two different numbers
 
@@ -158,10 +158,10 @@ OpenThai-SystemOne exposes no max-probability field at all -- it reports only th
 
 | model | n | mean max-p | mean entropy | native entropy | native max-p | max-p minus entropy |
 |---|---|---|---|---|---|---|
-| laya-auto | 90 | 0.769 | 0.610 | 0.610 | 0.716 | 0.159 |
-| laya-en | 90 | 0.643 | 0.451 | 0.451 | 0.579 | 0.192 |
+| laya-auto | 90 | 0.769 | 0.609 | 0.609 | 0.715 | 0.160 |
+| laya-en | 90 | 0.643 | 0.451 | 0.451 | 0.578 | 0.192 |
 | laya-ml | 90 | 0.776 | 0.630 | 0.630 | 0.724 | 0.146 |
-| openthai | 90 | 0.874 | 0.791 | 0.755 | - | 0.084 |
+| openthai | 90 | 0.875 | 0.791 | 0.755 | - | 0.084 |
 
 ### Routing decisions that hinge on which field is read
 
@@ -169,26 +169,26 @@ Route_gate gates at `DELEGATION_FLOOR = 0.8`. Reading `max(p)` where it exists a
 
 | qid | model | lang | max-p | entropy | correct |
 |---|---|---|---|---|---|
-| route | laya-auto | en | 0.928 | 0.761 | yes |
-| route | laya-auto | th | 0.895 | 0.750 | no |
-| department | laya-auto | en | 0.927 | 0.754 | yes |
-| department | laya-auto | en | 0.879 | 0.645 | yes |
-| department | laya-auto | en | 0.916 | 0.726 | yes |
-| department | laya-auto | th | 0.893 | 0.705 | yes |
-| urgency | laya-auto | th | 0.808 | 0.509 | - |
-| department | laya-auto | en | 0.892 | 0.675 | yes |
-| urgency | laya-auto | en | 0.950 | 0.793 | - |
-| department | laya-auto | th | 0.873 | 0.630 | no |
-| urgency | laya-auto | th | 0.908 | 0.710 | - |
-| frustration | laya-auto | en | 0.914 | 0.714 | - |
-| department | laya-auto | th | 0.839 | 0.563 | yes |
-| route | laya-en | en | 0.928 | 0.761 | yes |
-| department | laya-en | en | 0.927 | 0.754 | yes |
-| department | laya-en | en | 0.879 | 0.645 | yes |
-| department | laya-en | en | 0.916 | 0.726 | yes |
-| department | laya-en | en | 0.892 | 0.675 | yes |
-| urgency | laya-en | en | 0.950 | 0.793 | - |
-| frustration | laya-en | en | 0.914 | 0.714 | - |
+| route | laya-auto | en | 0.928 | 0.762 | yes |
+| route | laya-auto | th | 0.895 | 0.751 | no |
+| department | laya-auto | en | 0.928 | 0.758 | yes |
+| department | laya-auto | en | 0.878 | 0.643 | yes |
+| department | laya-auto | en | 0.914 | 0.720 | yes |
+| department | laya-auto | th | 0.891 | 0.701 | yes |
+| urgency | laya-auto | th | 0.806 | 0.505 | - |
+| department | laya-auto | en | 0.887 | 0.664 | yes |
+| urgency | laya-auto | en | 0.951 | 0.797 | - |
+| department | laya-auto | th | 0.876 | 0.637 | no |
+| urgency | laya-auto | th | 0.907 | 0.708 | - |
+| frustration | laya-auto | en | 0.913 | 0.711 | - |
+| department | laya-auto | th | 0.845 | 0.575 | yes |
+| route | laya-en | en | 0.928 | 0.762 | yes |
+| department | laya-en | en | 0.928 | 0.758 | yes |
+| department | laya-en | en | 0.878 | 0.643 | yes |
+| department | laya-en | en | 0.914 | 0.720 | yes |
+| department | laya-en | en | 0.887 | 0.664 | yes |
+| urgency | laya-en | en | 0.951 | 0.797 | - |
+| frustration | laya-en | en | 0.913 | 0.711 | - |
 
 ## Where the models disagree
 
@@ -201,29 +201,28 @@ The highest-value items for a human to look at, and the natural place to conside
 | cube-inverse-03 | en | next_move | L | L | L2 | R' | L2 |
 | cube-inverse-03 | th | next_move | L2 | R2 | L2 | L2 | L2 |
 | multi-billing-01 | th | department | sales | billing | sales | technical | billing |
-| multi-billing-01 | th | refund_requested | 0.108 | 0.823 | 0.108 | 0.026 | no |
-| multi-billing-01 | th | urgency | 1.906 | 1.011 | 1.906 | 1.980 | 2 |
-| multi-billing-refund-01 | th | department | billing | sales | billing | billing | billing |
-| multi-billing-refund-01 | th | urgency | 1.794 | 0.776 | 1.794 | 1.899 | 2 |
+| multi-billing-01 | th | refund_requested | 0.108 | 0.818 | 0.108 | 0.025 | no |
+| multi-billing-01 | th | urgency | 1.905 | 1 | 1.905 | 1.979 | 2 |
+| multi-billing-refund-01 | th | urgency | 1.792 | 0.779 | 1.792 | 1.898 | 2 |
 | multi-sales-01 | en | department | sales | sales | technical | other | sales |
-| multi-sales-01 | th | refund_requested | 0.001 | 0.832 | 0.001 | 0.006 | no |
-| multi-sales-01 | en | urgency | 0.338 | 0.338 | 1.594 | 0.025 | 0.000 |
-| multi-sales-01 | th | urgency | 1.764 | 0.994 | 1.764 | 0.060 | 0.000 |
+| multi-sales-01 | th | refund_requested | 0.001 | 0.834 | 0.001 | 0.006 | no |
+| multi-sales-01 | en | urgency | 0.344 | 0.344 | 1.594 | 0.025 | 0.000 |
+| multi-sales-01 | th | urgency | 1.767 | 0.998 | 1.767 | 0.062 | 0.000 |
 | multi-technical-01 | th | department | technical | billing | technical | technical | technical |
-| multi-technical-01 | th | refund_requested | 0.000 | 0.893 | 0.000 | 0.006 | no |
-| multi-technical-01 | en | urgency | 0.775 | 0.775 | 1.404 | 1.749 | 1 |
-| multi-technical-01 | th | urgency | 1.630 | 1.071 | 1.630 | 1.950 | 1 |
-| noul-churn-01 | en | churn_threat | 0.834 | 0.834 | 0.068 | 0.952 | yes |
-| noul-churn-01 | th | churn_threat | 0.032 | 0.351 | 0.032 | 0.782 | yes |
-| noul-churn-02 | th | churn_threat | 0.002 | 0.545 | 0.002 | 0.005 | no |
-| noul-churn-03 | en | churn_threat | 0.803 | 0.803 | 0.006 | 0.955 | yes |
-| noul-churn-03 | th | churn_threat | 0.033 | 0.848 | 0.033 | 0.379 | yes |
+| multi-technical-01 | th | refund_requested | 0.000 | 0.890 | 0.000 | 0.006 | no |
+| multi-technical-01 | en | urgency | 0.784 | 0.784 | 1.409 | 1.753 | 1 |
+| multi-technical-01 | th | urgency | 1.628 | 1.071 | 1.628 | 1.948 | 1 |
+| noul-churn-01 | en | churn_threat | 0.834 | 0.834 | 0.067 | 0.953 | yes |
+| noul-churn-01 | th | churn_threat | 0.032 | 0.349 | 0.032 | 0.788 | yes |
+| noul-churn-02 | th | churn_threat | 0.002 | 0.528 | 0.002 | 0.005 | no |
+| noul-churn-03 | en | churn_threat | 0.802 | 0.802 | 0.006 | 0.956 | yes |
+| noul-churn-03 | th | churn_threat | 0.032 | 0.850 | 0.032 | 0.377 | yes |
 | placement-01 | en | placement | opt_0 | opt_0 | opt_2 | opt_2 | opt_2 |
-| placement-01 | en | safe | 0.339 | 0.339 | 0.698 | 0.261 | yes |
+| placement-01 | en | safe | 0.340 | 0.340 | 0.691 | 0.261 | yes |
 | placement-02 | en | placement | opt_0 | opt_0 | opt_3 | opt_0 | opt_0 |
 | placement-02 | th | placement | opt_0 | opt_0 | opt_0 | opt_3 | opt_0 |
 | placement-03 | en | placement | opt_0 | opt_0 | opt_0 | opt_1 | opt_1 |
-| placement-03 | en | safe | 0.692 | 0.692 | 0.632 | 0.241 | no |
+| placement-03 | en | safe | 0.690 | 0.690 | 0.627 | 0.241 | no |
 | route-ambiguous-01 | th | route | cost | reservation | cost | reservation | reservation |
 | route-cost-01 | th | route | cost | reservation | cost | cost | cost |
 | route-cost-02 | th | route | cost | reservation | cost | cost | cost |
@@ -231,15 +230,15 @@ The highest-value items for a human to look at, and the natural place to conside
 | route-reservation-01 | th | route | reservation | general | reservation | reservation | reservation |
 | route-weather-01 | th | route | weather | reservation | weather | weather | weather |
 | route-weather-02 | th | route | weather | reservation | weather | weather | weather |
-| score-frustration-01 | en | frustration | 1.908 | 1.908 | 1.214 | 1.983 | 2 |
-| score-frustration-01 | th | frustration | 1.309 | 0.761 | 1.309 | 1.981 | 2 |
-| score-frustration-02 | en | frustration | 0.482 | 0.482 | 1.091 | 0.434 | 0.000 |
-| score-frustration-02 | th | frustration | 0.898 | 0.585 | 0.898 | 0.070 | 0.000 |
-| score-frustration-03 | en | frustration | 1.522 | 1.522 | 1.198 | 1.597 | 1 |
-| score-frustration-04 | en | frustration | 3.367 | 3.367 | 1.766 | 3.962 | 4 |
-| score-frustration-04 | th | frustration | 1.266 | 1.443 | 1.266 | 3.914 | 4 |
-| score-frustration-05 | th | frustration | 1.113 | 1.850 | 1.113 | 0.698 | 1 |
-| thai-register-01 | th | churn_threat | 0.013 | 0.820 | 0.013 | 0.045 | yes |
+| score-frustration-01 | en | frustration | 1.907 | 1.907 | 1.211 | 1.982 | 2 |
+| score-frustration-01 | th | frustration | 1.307 | 0.750 | 1.307 | 1.980 | 2 |
+| score-frustration-02 | en | frustration | 0.482 | 0.482 | 1.088 | 0.428 | 0.000 |
+| score-frustration-02 | th | frustration | 0.894 | 0.578 | 0.894 | 0.070 | 0.000 |
+| score-frustration-03 | en | frustration | 1.521 | 1.521 | 1.194 | 1.598 | 1 |
+| score-frustration-04 | en | frustration | 3.352 | 3.352 | 1.766 | 3.962 | 4 |
+| score-frustration-04 | th | frustration | 1.267 | 1.453 | 1.267 | 3.913 | 4 |
+| score-frustration-05 | th | frustration | 1.112 | 1.861 | 1.112 | 0.690 | 1 |
+| thai-register-01 | th | churn_threat | 0.013 | 0.818 | 0.013 | 0.045 | yes |
 | thai-register-02 | th | department | technical | billing | technical | technical | technical |
 | triage-billing-01 | th | department | billing | sales | billing | billing | billing |
 | triage-other-01 | en | department | billing | billing | billing | other | other |
@@ -252,7 +251,7 @@ Measured winner per language: en -> `openthai`, th -> `openthai`.
 
 One model wins in every language measured, so the routing policy can use `openthai` as a single default and keep the others as fallbacks rather than branching on language.
 
-That default is not the fastest: `laya-ml` answers in 107 ms p50 against `openthai` at 573 ms (5.4x), for 0.633 vs 0.767 accuracy. A latency-bound caller should trade the accuracy deliberately rather than inherit this default.
+That default is not the fastest: `laya-ml` answers in 23 ms p50 against `openthai` at 101 ms (4.4x), for 0.633 vs 0.767 accuracy. A latency-bound caller should trade the accuracy deliberately rather than inherit this default.
 
 | language | best | acc | runner-up | acc | margin |
 |---|---|---|---|---|---|
